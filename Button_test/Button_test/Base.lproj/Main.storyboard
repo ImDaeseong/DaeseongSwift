@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Button_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX7-4e-aGo">
+                                <rect key="frame" x="149.66666666666666" y="30" width="114.99999999999997" height="37"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="D7z-bq-z3i"/>
+                                    <constraint firstAttribute="width" constant="115" id="SYG-Nk-H5L"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gg-St-Fvi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="754-TR-gLC" userLabel="Btn2">
+                                <rect key="frame" x="174.66666666666666" y="77" width="65" height="65"/>
+                                <state key="normal" backgroundImage="ico_kakao.png"/>
+                                <connections>
+                                    <action selector="btn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3FV-Df-iac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms0-CZ-3Pk" userLabel="Btn3" customClass="BorderRoundButton" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="151.66666666666666" y="152" width="110.99999999999997" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="2XC-Ap-J0E"/>
+                                    <constraint firstAttribute="height" constant="44" id="zna-j4-kwE"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CvA-DV-PNP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ6-qp-VbT" userLabel="Btn4" customClass="RoundButton" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="140.66666666666666" y="206" width="132.99999999999997" height="134"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="Sql-dd-DYR"/>
+                                    <constraint firstAttribute="width" constant="133" id="kv2-Lp-SUR"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwM-Ks-NVT" userLabel="Btn5">
+                                <rect key="frame" x="139.66666666666666" y="350" width="134.99999999999997" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="cbJ-AF-c7R"/>
+                                    <constraint firstAttribute="height" constant="64" id="q2g-ss-Lhb"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="ico_kakao.png">
+                                    <color key="titleColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LX7-4e-aGo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6uZ-nJ-Yhg"/>
+                            <constraint firstItem="754-TR-gLC" firstAttribute="top" secondItem="LX7-4e-aGo" secondAttribute="bottom" constant="10" id="OXB-Et-M0P"/>
+                            <constraint firstItem="nQ6-qp-VbT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f83-jk-dtB"/>
+                            <constraint firstItem="lwM-Ks-NVT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lm5-9e-txR"/>
+                            <constraint firstItem="lwM-Ks-NVT" firstAttribute="top" secondItem="nQ6-qp-VbT" secondAttribute="bottom" constant="10" id="nBB-1r-3iJ"/>
+                            <constraint firstItem="754-TR-gLC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTd-kl-aKM"/>
+                            <constraint firstItem="ms0-CZ-3Pk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rb6-1x-ibe"/>
+                            <constraint firstItem="nQ6-qp-VbT" firstAttribute="top" secondItem="ms0-CZ-3Pk" secondAttribute="bottom" constant="10" id="sYh-R8-0kv"/>
+                            <constraint firstItem="ms0-CZ-3Pk" firstAttribute="top" secondItem="754-TR-gLC" secondAttribute="bottom" constant="10" id="tEi-hL-ZUX"/>
+                            <constraint firstItem="LX7-4e-aGo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="u7P-HT-R1o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="LX7-4e-aGo" id="7H6-UM-ytR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2095.6521739130435" y="45.652173913043484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_kakao.png" width="65" height="65"/>
+    </resources>
+</document>
