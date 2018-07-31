@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ActivityIndicatorView_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ffu-jf-jRk" userLabel="grayIndicator1">
+                                <rect key="frame" x="197" y="75" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1H-dd-NBN" userLabel="btn2">
+                                <rect key="frame" x="50" y="120" width="154.66666666666666" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESb-3e-dBQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GO6-cW-itq" userLabel="btn1">
+                                <rect key="frame" x="209.66666666666663" y="120" width="154.33333333333337" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stopBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SbV-QQ-7Fm"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Kah-UK-68f" userLabel="grayIndicator2">
+                                <rect key="frame" x="197" y="218" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GO6-cW-itq" secondAttribute="trailing" constant="50" id="0Sr-KW-g0e"/>
+                            <constraint firstItem="GO6-cW-itq" firstAttribute="top" secondItem="Ffu-jf-jRk" secondAttribute="bottom" constant="25" id="3bf-rg-AhF"/>
+                            <constraint firstItem="v1H-dd-NBN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8QC-5J-9Jy"/>
+                            <constraint firstItem="v1H-dd-NBN" firstAttribute="top" secondItem="Ffu-jf-jRk" secondAttribute="bottom" constant="25" id="Ajc-ek-IBL"/>
+                            <constraint firstItem="Kah-UK-68f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AmL-cI-pCT"/>
+                            <constraint firstItem="GO6-cW-itq" firstAttribute="width" secondItem="v1H-dd-NBN" secondAttribute="width" id="I87-Yd-kAX"/>
+                            <constraint firstItem="Ffu-jf-jRk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="Sfs-M9-zhV"/>
+                            <constraint firstItem="GO6-cW-itq" firstAttribute="leading" secondItem="v1H-dd-NBN" secondAttribute="trailing" constant="5" id="YY3-uV-J1E"/>
+                            <constraint firstItem="GO6-cW-itq" firstAttribute="leading" secondItem="v1H-dd-NBN" secondAttribute="trailing" constant="5" id="Zco-Yq-OOR"/>
+                            <constraint firstItem="Kah-UK-68f" firstAttribute="top" secondItem="Ffu-jf-jRk" secondAttribute="bottom" constant="123" id="lNa-h9-Lnq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GO6-cW-itq" secondAttribute="trailing" constant="50" id="pJl-HX-TWe"/>
+                            <constraint firstItem="Ffu-jf-jRk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="swO-vt-9fg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="indicator1" destination="Ffu-jf-jRk" id="wEQ-Ua-Xg1"/>
+                        <outlet property="indicator2" destination="Kah-UK-68f" id="mgw-y9-zMu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="134"/>
+        </scene>
+    </scenes>
+</document>
