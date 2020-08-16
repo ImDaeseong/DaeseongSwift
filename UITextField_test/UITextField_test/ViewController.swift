@@ -13,8 +13,7 @@ class ViewController: UIViewController {
             VC1.modalTransitionStyle = UIModalTransitionStyle.coverVertical
             self.present(VC1, animated: true)
         }
-        
-        print("btn1_click")
+        //print("btn1_click")
     }
     
     @IBAction func btn2_click(_ sender: UIButton) {
@@ -27,9 +26,7 @@ class ViewController: UIViewController {
             VC2.modalTransitionStyle = UIModalTransitionStyle.coverVertical
             self.present(VC2, animated: true)
         }
-        
-        print("btn2_click")
-        
+        //print("btn2_click")
     }
     
 }
