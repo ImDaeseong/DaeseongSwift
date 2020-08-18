@@ -153,16 +153,27 @@
                                     <constraint firstAttribute="height" constant="50" id="IvD-UP-j3d"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-CY-6nc" userLabel="img2">
+                                <rect key="frame" x="10" y="247.5" width="355" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rLa-CY-6nc" secondAttribute="height" multiplier="60:29" id="ihW-tg-IYC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5Xw-qc-Mws" firstAttribute="trailing" secondItem="5VJ-zh-B8w" secondAttribute="trailing" constant="10" id="4SQ-QN-Wd8"/>
                             <constraint firstItem="5VJ-zh-B8w" firstAttribute="top" secondItem="5Xw-qc-Mws" secondAttribute="top" constant="10" id="8nh-Z9-jem"/>
+                            <constraint firstItem="rLa-CY-6nc" firstAttribute="centerY" secondItem="Qaj-25-BgM" secondAttribute="centerY" id="Csa-qs-EB9"/>
+                            <constraint firstItem="rLa-CY-6nc" firstAttribute="centerX" secondItem="Qaj-25-BgM" secondAttribute="centerX" id="VEx-bC-JCi"/>
+                            <constraint firstAttribute="trailing" secondItem="rLa-CY-6nc" secondAttribute="trailing" constant="10" id="oGm-bm-bjh"/>
+                            <constraint firstItem="rLa-CY-6nc" firstAttribute="leading" secondItem="Qaj-25-BgM" secondAttribute="leading" constant="10" id="yfa-1b-qx2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Xw-qc-Mws"/>
                     </view>
                     <connections>
-                        <outlet property="img1" destination="5VJ-zh-B8w" id="B2o-ZK-qGV"/>
+                        <outlet property="img1" destination="rLa-CY-6nc" id="iI0-n4-NPq"/>
+                        <outlet property="img2" destination="rLa-CY-6nc" id="NYH-Gj-2xn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXZ-af-6JQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
