@@ -3,6 +3,8 @@ import UIKit
 class item1: UIViewController {
     
     @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    
     
     var alertController : UIAlertController!
     var alertCancel : UIAlertAction!
@@ -27,6 +29,10 @@ class item1: UIViewController {
         alertController.addAction(alertCancel)
         alertController.addAction(alertOk)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func btn2_click(_ sender: UIButton) {
+        
     }
     
 }

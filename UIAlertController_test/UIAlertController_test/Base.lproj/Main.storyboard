@@ -79,22 +79,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4K-0x-OSz" userLabel="btn1">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="137.5" y="142" width="100" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VtH-DY-5QT"/>
+                                    <constraint firstAttribute="height" constant="50" id="gw7-VC-pMS"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btn1_click:" destination="EO7-9l-cjT" eventType="touchUpInside" id="WYY-u7-J9i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-H8-evh" userLabel="btn2">
+                                <rect key="frame" x="137.5" y="475.5" width="100" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PqG-Ne-jHt"/>
+                                    <constraint firstAttribute="width" constant="100" id="VJf-qr-9Q8"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn1_click:" destination="EO7-9l-cjT" eventType="touchUpInside" id="0mG-rI-0l4"/>
+                                    <action selector="btn2_click:" destination="EO7-9l-cjT" eventType="touchUpInside" id="BB5-ny-enD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="g4K-0x-OSz" firstAttribute="centerX" secondItem="x2p-Nf-JNn" secondAttribute="centerX" id="cNO-XR-0BE"/>
-                            <constraint firstItem="g4K-0x-OSz" firstAttribute="centerY" secondItem="x2p-Nf-JNn" secondAttribute="centerY" id="mas-5L-l16"/>
+                            <constraint firstItem="g4K-0x-OSz" firstAttribute="centerY" secondItem="x2p-Nf-JNn" secondAttribute="centerY" multiplier="2/4" id="mas-5L-l16"/>
+                            <constraint firstItem="yf4-H8-evh" firstAttribute="centerX" secondItem="x2p-Nf-JNn" secondAttribute="centerX" id="ovG-UA-nzX"/>
+                            <constraint firstItem="yf4-H8-evh" firstAttribute="centerY" secondItem="x2p-Nf-JNn" secondAttribute="centerY" multiplier="6/4" id="s0i-y1-seY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5B9-7m-xUF"/>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="g4K-0x-OSz" id="uWQ-Ok-NSN"/>
+                        <outlet property="btn2" destination="yf4-H8-evh" id="V3X-Im-JGC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fr-by-vqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -110,8 +135,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9d-wT-ZU5" userLabel="btn1">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="137.5" y="607" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Ez-uQ-0MX"/>
+                                    <constraint firstAttribute="width" constant="100" id="vGg-61-u5C"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btn1_click:" destination="KW8-Q2-vy2" eventType="touchUpInside" id="Vc0-Xd-idA"/>
                                 </connections>
@@ -120,7 +152,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="D9d-wT-ZU5" firstAttribute="centerX" secondItem="kBg-qr-zqo" secondAttribute="centerX" id="309-Sn-jA9"/>
-                            <constraint firstItem="D9d-wT-ZU5" firstAttribute="centerY" secondItem="kBg-qr-zqo" secondAttribute="centerY" id="yZx-dc-wNo"/>
+                            <constraint firstItem="I5F-Tu-vUZ" firstAttribute="bottom" secondItem="D9d-wT-ZU5" secondAttribute="bottom" constant="10" id="niA-vj-VWf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I5F-Tu-vUZ"/>
                     </view>
@@ -140,9 +172,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvI-gt-36R" userLabel="btn1">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvI-gt-36R" userLabel="btn1">
+                                <rect key="frame" x="137.5" y="308.5" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="R17-Zh-Y0e"/>
+                                    <constraint firstAttribute="height" constant="50" id="gqo-YO-qUD"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="2" height="1"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btn1_click:" destination="q0k-Mg-sci" eventType="touchUpInside" id="8rP-1G-dHd"/>
                                 </connections>
