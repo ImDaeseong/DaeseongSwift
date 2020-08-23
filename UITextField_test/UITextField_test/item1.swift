@@ -21,8 +21,6 @@ class item1: UIViewController {
     }
     
     @objc func imgview1_Tapped(_ sender: UITapGestureRecognizer) {
-        
         self.dismiss(animated: true, completion: nil)
     }
-    
 }

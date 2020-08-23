@@ -30,7 +30,6 @@ class item3: UIViewController {
         self.present(alertController, animated: true) {
             print("show")
         }
-        
     }
 }
 

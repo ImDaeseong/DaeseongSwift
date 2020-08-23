@@ -17,7 +17,6 @@ class item2: UIViewController {
     }
     
     @objc func viewTapped(_ sender: UITapGestureRecognizer) {
-        
         self.dismiss(animated: true, completion: nil)
     }
 }

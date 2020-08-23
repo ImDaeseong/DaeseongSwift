@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKp-ey-GUa" userLabel="btn1">
+                                <rect key="frame" x="164.5" y="207.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="am6-vG-N5J" kind="presentation" id="Pm8-xZ-Kbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32J-aH-h16" userLabel="btn2">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="FWu-UN-Dow" kind="presentation" id="b0R-cL-oJS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z9-M2-Rp7" userLabel="btn3">
+                                <rect key="frame" x="164.5" y="429.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="huh-OI-UJh" kind="presentation" id="zZg-zN-OCf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-Gw-pY5" userLabel="btn4">
+                                <rect key="frame" x="164.5" y="541" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="HpP-8I-8lq" kind="presentation" id="lRW-TG-Onp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="32J-aH-h16" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2RU-Ow-BY7"/>
+                            <constraint firstItem="hHB-Gw-pY5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4XF-It-jXZ"/>
+                            <constraint firstItem="hHB-Gw-pY5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="5/3" id="Ftx-mv-Lys"/>
+                            <constraint firstItem="jKp-ey-GUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GEf-pA-NSI"/>
+                            <constraint firstItem="jKp-ey-GUa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2/3" id="QUO-ah-Zsm"/>
+                            <constraint firstItem="7Z9-M2-Rp7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="daZ-au-aBb"/>
+                            <constraint firstItem="7Z9-M2-Rp7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="4/3" id="hi8-vU-b5O"/>
+                            <constraint firstItem="32J-aH-h16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wAZ-fb-s04"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="135"/>
+        </scene>
+        <!--item1-->
+        <scene sceneID="7lN-c6-njv">
+            <objects>
+                <viewController id="am6-vG-N5J" userLabel="item1" customClass="item1" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2OA-Ql-tou">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpA-BC-HSQ" userLabel="btn1">
+                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="am6-vG-N5J" eventType="touchUpInside" id="5zU-PY-E7J"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lfM-o9-qdz" userLabel="segment1">
+                                <rect key="frame" x="127" y="319.5" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment1changed:" destination="am6-vG-N5J" eventType="valueChanged" id="gcm-Xa-T5b"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lfM-o9-qdz" firstAttribute="centerY" secondItem="2OA-Ql-tou" secondAttribute="centerY" id="6ki-cT-EfZ"/>
+                            <constraint firstItem="tDG-3M-r9q" firstAttribute="trailing" secondItem="qpA-BC-HSQ" secondAttribute="trailing" constant="10" id="Czd-HX-C8H"/>
+                            <constraint firstItem="qpA-BC-HSQ" firstAttribute="top" secondItem="tDG-3M-r9q" secondAttribute="top" constant="10" id="RBN-jk-xjx"/>
+                            <constraint firstItem="lfM-o9-qdz" firstAttribute="centerX" secondItem="2OA-Ql-tou" secondAttribute="centerX" id="tFR-9Y-CjS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tDG-3M-r9q"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="qpA-BC-HSQ" id="C5N-hh-Euq"/>
+                        <outlet property="segment1" destination="lfM-o9-qdz" id="83r-wq-Jmr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fui-L3-tpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="134"/>
+        </scene>
+        <!--item2-->
+        <scene sceneID="axC-T3-h6F">
+            <objects>
+                <viewController id="FWu-UN-Dow" userLabel="item2" customClass="item2" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="esY-vK-Drn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhO-yr-Lth" userLabel="btn1">
+                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="FWu-UN-Dow" eventType="touchUpInside" id="dcq-wo-kkp"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Ua-8n-Ae6" userLabel="segment1">
+                                <rect key="frame" x="10" y="319.5" width="355" height="29"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment1changed:" destination="FWu-UN-Dow" eventType="valueChanged" id="Eb1-mi-dcy"/>
+                                    <action selector="segment2changed:" destination="am6-vG-N5J" eventType="valueChanged" id="EK2-SI-l0b"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XhO-yr-Lth" firstAttribute="top" secondItem="zNM-gu-wGy" secondAttribute="top" constant="10" id="24W-kI-o38"/>
+                            <constraint firstItem="0Ua-8n-Ae6" firstAttribute="centerY" secondItem="esY-vK-Drn" secondAttribute="centerY" id="B2p-Sr-BDJ"/>
+                            <constraint firstItem="zNM-gu-wGy" firstAttribute="trailing" secondItem="XhO-yr-Lth" secondAttribute="trailing" constant="10" id="Cq4-bh-qbp"/>
+                            <constraint firstItem="0Ua-8n-Ae6" firstAttribute="leading" secondItem="zNM-gu-wGy" secondAttribute="leading" constant="10" id="a8w-Ch-DIh"/>
+                            <constraint firstItem="zNM-gu-wGy" firstAttribute="trailing" secondItem="0Ua-8n-Ae6" secondAttribute="trailing" constant="10" id="vq3-eZ-hrQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zNM-gu-wGy"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="XhO-yr-Lth" id="yLt-gh-OTO"/>
+                        <outlet property="segment1" destination="0Ua-8n-Ae6" id="5bz-pJ-1sx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Haf-FG-NQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1271" y="134"/>
+        </scene>
+        <!--item3-->
+        <scene sceneID="E0W-eK-aa1">
+            <objects>
+                <viewController id="huh-OI-UJh" userLabel="item3" customClass="item3" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tnl-hE-X12">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yG-75-DKA" userLabel="btn1">
+                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="huh-OI-UJh" eventType="touchUpInside" id="neb-xT-uNt"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NGG-sU-0w6" userLabel="segment1">
+                                <rect key="frame" x="127" y="319.5" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment1changed:" destination="huh-OI-UJh" eventType="valueChanged" id="S1e-PQ-tOF"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6yG-75-DKA" firstAttribute="top" secondItem="6w3-ST-Jz2" secondAttribute="top" constant="10" id="Fpg-7C-X2F"/>
+                            <constraint firstItem="NGG-sU-0w6" firstAttribute="centerX" secondItem="tnl-hE-X12" secondAttribute="centerX" id="QVv-dn-7fl"/>
+                            <constraint firstItem="NGG-sU-0w6" firstAttribute="centerY" secondItem="tnl-hE-X12" secondAttribute="centerY" id="aOW-zq-YEz"/>
+                            <constraint firstItem="6w3-ST-Jz2" firstAttribute="trailing" secondItem="6yG-75-DKA" secondAttribute="trailing" constant="10" id="c6r-6M-D01"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6w3-ST-Jz2"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="6yG-75-DKA" id="W55-Lg-tQt"/>
+                        <outlet property="segment1" destination="NGG-sU-0w6" id="Mn1-pP-bcb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbB-Sc-jCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892" y="134"/>
+        </scene>
+        <!--item4-->
+        <scene sceneID="g4M-xA-kR4">
+            <objects>
+                <viewController id="HpP-8I-8lq" userLabel="item4" customClass="item4" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ruV-eF-lpA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCZ-hA-Vjf" userLabel="btn1">
+                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="huh-OI-UJh" eventType="touchUpInside" id="72Y-EW-7om"/>
+                                    <action selector="btn1_click:" destination="HpP-8I-8lq" eventType="touchUpInside" id="yxa-Rd-i9g"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iTH-AB-6ny" userLabel="segment1">
+                                <rect key="frame" x="10" y="319.5" width="355" height="29"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment1changed:" destination="HpP-8I-8lq" eventType="valueChanged" id="Qhe-0P-hXJ"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iTH-AB-6ny" firstAttribute="leading" secondItem="0Je-lj-b47" secondAttribute="leading" constant="10" id="0II-WB-soa"/>
+                            <constraint firstItem="0Je-lj-b47" firstAttribute="trailing" secondItem="iTH-AB-6ny" secondAttribute="trailing" constant="10" id="4IX-se-q8j"/>
+                            <constraint firstItem="WCZ-hA-Vjf" firstAttribute="top" secondItem="0Je-lj-b47" secondAttribute="top" constant="10" id="CXJ-Ja-VMA"/>
+                            <constraint firstItem="0Je-lj-b47" firstAttribute="trailing" secondItem="WCZ-hA-Vjf" secondAttribute="trailing" constant="10" id="VbY-gh-OtS"/>
+                            <constraint firstItem="iTH-AB-6ny" firstAttribute="centerY" secondItem="ruV-eF-lpA" secondAttribute="centerY" id="nex-Ch-v58"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Je-lj-b47"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="WCZ-hA-Vjf" id="FlV-fj-5N0"/>
+                        <outlet property="segment1" destination="iTH-AB-6ny" id="2P1-sM-Qya"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQE-fP-XfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2513" y="136"/>
+        </scene>
+    </scenes>
+</document>

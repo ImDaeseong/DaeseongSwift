@@ -8,8 +8,6 @@ class ViewController1: UIViewController {
     }
     
     @IBAction func button1_click(_ sender: UIButton) {
-        
         dismiss(animated: true, completion: nil)
     }
-    
 }

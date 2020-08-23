@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UISwitch_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFs-2d-70U" userLabel="btn1">
+                                <rect key="frame" x="164.5" y="207.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="mnV-B5-3Y5" kind="show" id="mIF-Vr-BSs"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-a9-ubZ" userLabel="btn2">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Cae-RU-cwd" kind="show" id="ohE-6Q-QE5"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Av9-n7-Zoe" userLabel="btn3">
+                                <rect key="frame" x="164.5" y="429.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="nOx-Z7-PlZ" kind="show" id="nMw-9v-mYI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vc6-a9-ubZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GGU-Cd-XC5"/>
+                            <constraint firstItem="BFs-2d-70U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2/3" id="KP1-mI-Amv"/>
+                            <constraint firstItem="Av9-n7-Zoe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wbc-0T-tLz"/>
+                            <constraint firstItem="Av9-n7-Zoe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="4/3" id="hTC-e2-uoh"/>
+                            <constraint firstItem="BFs-2d-70U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m3U-Ty-ldY"/>
+                            <constraint firstItem="Vc6-a9-ubZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nwy-U5-kMc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="131"/>
+        </scene>
+        <!--item1-->
+        <scene sceneID="NJZ-gT-qtx">
+            <objects>
+                <viewController id="mnV-B5-3Y5" userLabel="item1" customClass="item1" customModule="UISwitch_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Obc-6I-K3b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="종료" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yt2-nE-pa5" userLabel="tv1">
+                                <rect key="frame" x="265" y="30" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="cyi-Um-y76"/>
+                                    <constraint firstAttribute="width" constant="100" id="ugr-7b-52b"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4UY-eI-bnB" userLabel="switch1">
+                                <rect key="frame" x="163" y="207" width="51" height="31"/>
+                                <color key="onTintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switch1_changed:" destination="mnV-B5-3Y5" eventType="valueChanged" id="W1q-JI-ZIY"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QNj-p3-bLK" userLabel="switch2">
+                                <rect key="frame" x="163" y="318" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switch1_changed:" destination="mnV-B5-3Y5" eventType="valueChanged" id="7Z0-uB-LG2"/>
+                                    <action selector="switch2_changed:" destination="mnV-B5-3Y5" eventType="valueChanged" id="uc0-d1-Bqg"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n2Y-dw-TZ2" firstAttribute="trailing" secondItem="Yt2-nE-pa5" secondAttribute="trailing" constant="10" id="FxV-Ew-qu4"/>
+                            <constraint firstItem="QNj-p3-bLK" firstAttribute="centerY" secondItem="Obc-6I-K3b" secondAttribute="centerY" id="GMP-IL-Xzx"/>
+                            <constraint firstItem="Yt2-nE-pa5" firstAttribute="top" secondItem="n2Y-dw-TZ2" secondAttribute="top" constant="10" id="Z3z-OF-Sqr"/>
+                            <constraint firstItem="QNj-p3-bLK" firstAttribute="centerX" secondItem="Obc-6I-K3b" secondAttribute="centerX" id="pIr-dF-554"/>
+                            <constraint firstItem="4UY-eI-bnB" firstAttribute="centerY" secondItem="Obc-6I-K3b" secondAttribute="centerY" multiplier="2/3" id="wY5-Jg-sne"/>
+                            <constraint firstItem="4UY-eI-bnB" firstAttribute="centerX" secondItem="Obc-6I-K3b" secondAttribute="centerX" id="x5q-Yb-UNw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n2Y-dw-TZ2"/>
+                    </view>
+                    <connections>
+                        <outlet property="switch1" destination="4UY-eI-bnB" id="gfr-Io-DZi"/>
+                        <outlet property="switch2" destination="QNj-p3-bLK" id="NDQ-Xq-tzA"/>
+                        <outlet property="tv1" destination="Yt2-nE-pa5" id="TYb-37-qwN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zm3-DS-DtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="130.88455772113943"/>
+        </scene>
+        <!--item2-->
+        <scene sceneID="Stw-nf-dBc">
+            <objects>
+                <viewController id="Cae-RU-cwd" userLabel="item2" customClass="item2" customModule="UISwitch_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzW-to-vcI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="종료" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4g5-VQ-GCQ" userLabel="tv1">
+                                <rect key="frame" x="265" y="30" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="r5X-Bn-s28"/>
+                                    <constraint firstAttribute="height" constant="35" id="z1y-Wa-jmR"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32j-VP-Zw7" userLabel="switch1">
+                                <rect key="frame" x="163" y="318" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switch1_changed:" destination="Cae-RU-cwd" eventType="valueChanged" id="Kma-wM-d6q"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4g5-VQ-GCQ" firstAttribute="top" secondItem="tfY-CV-l7f" secondAttribute="top" constant="10" id="1Tx-78-ipN"/>
+                            <constraint firstItem="32j-VP-Zw7" firstAttribute="centerY" secondItem="hzW-to-vcI" secondAttribute="centerY" id="Zfv-Cw-yzO"/>
+                            <constraint firstItem="tfY-CV-l7f" firstAttribute="trailing" secondItem="4g5-VQ-GCQ" secondAttribute="trailing" constant="10" id="fR5-jw-aIm"/>
+                            <constraint firstItem="32j-VP-Zw7" firstAttribute="centerX" secondItem="hzW-to-vcI" secondAttribute="centerX" id="gf1-Ix-OnB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tfY-CV-l7f"/>
+                    </view>
+                    <connections>
+                        <outlet property="switch1" destination="32j-VP-Zw7" id="E1y-SS-7CF"/>
+                        <outlet property="tv1" destination="4g5-VQ-GCQ" id="9A0-ZW-oA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZq-Ih-MxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374" y="131"/>
+        </scene>
+        <!--item3-->
+        <scene sceneID="h93-HQ-gRu">
+            <objects>
+                <viewController id="nOx-Z7-PlZ" userLabel="item3" customClass="item3" customModule="UISwitch_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ipd-fp-Hd5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="종료" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-iE-K1D" userLabel="tv1">
+                                <rect key="frame" x="265" y="30" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="f6D-NL-cGJ"/>
+                                    <constraint firstAttribute="height" constant="35" id="op6-Ve-Gsp"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="645-Fr-Ekb" userLabel="switch1" customClass="UISwitchEx1" customModule="UISwitch_test" customModuleProvider="target">
+                                <rect key="frame" x="163" y="318" width="51" height="31"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="switch1_changed:" destination="nOx-Z7-PlZ" eventType="valueChanged" id="bdO-Sd-fb5"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Buq-iE-K1D" firstAttribute="top" secondItem="oP0-mo-lPv" secondAttribute="top" constant="10" id="OCT-wc-B3J"/>
+                            <constraint firstItem="oP0-mo-lPv" firstAttribute="trailing" secondItem="Buq-iE-K1D" secondAttribute="trailing" constant="10" id="WUs-fZ-7GV"/>
+                            <constraint firstItem="645-Fr-Ekb" firstAttribute="centerX" secondItem="ipd-fp-Hd5" secondAttribute="centerX" id="aJx-dJ-wqj"/>
+                            <constraint firstItem="645-Fr-Ekb" firstAttribute="centerY" secondItem="ipd-fp-Hd5" secondAttribute="centerY" id="eJ4-e5-SaL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oP0-mo-lPv"/>
+                    </view>
+                    <connections>
+                        <outlet property="switch1" destination="645-Fr-Ekb" id="cBV-hO-eWH"/>
+                        <outlet property="tv1" destination="Buq-iE-K1D" id="Stz-gI-g6n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmc-w2-Do5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1986" y="131"/>
+        </scene>
+    </scenes>
+</document>

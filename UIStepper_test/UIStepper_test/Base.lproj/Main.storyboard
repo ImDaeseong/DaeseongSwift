@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIStepper_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWy-gi-sId" userLabel="btn1">
+                                <rect key="frame" x="164.5" y="207.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="hbW-kC-ghV" kind="showDetail" id="mlF-m4-TcB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhQ-St-ddg" userLabel="btn2">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Ptg-yA-G1c" kind="showDetail" id="hUZ-LA-HT5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsY-eS-XOc" userLabel="btn3">
+                                <rect key="frame" x="164.5" y="429.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="d5u-ui-mOf" kind="showDetail" id="z38-sU-Ddd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QsY-eS-XOc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T5R-Ly-J6l"/>
+                            <constraint firstItem="QsY-eS-XOc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="4/3" id="XGr-Yg-8b1"/>
+                            <constraint firstItem="BhQ-St-ddg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fOe-Q8-821"/>
+                            <constraint firstItem="eWy-gi-sId" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2/3" id="fre-uA-Atk"/>
+                            <constraint firstItem="BhQ-St-ddg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phF-T1-z0Z"/>
+                            <constraint firstItem="eWy-gi-sId" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y9b-HK-xDu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="134"/>
+        </scene>
+        <!--item1-->
+        <scene sceneID="GNI-8t-hkD">
+            <objects>
+                <viewController id="hbW-kC-ghV" userLabel="item1" customClass="item1" customModule="UIStepper_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uub-yy-fDV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaX-8j-b6S" userLabel="btn1">
+                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="hbW-kC-ghV" eventType="touchUpInside" id="8bp-Fn-FWe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFO-X3-dWT" userLabel="label1">
+                                <rect key="frame" x="10" y="101" width="355" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xmD-FD-sMo" userLabel="stepper1">
+                                <rect key="frame" x="140.5" y="131.5" width="94" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="stepper1_valuechanged:" destination="hbW-kC-ghV" eventType="valueChanged" id="VC3-wI-H6Z"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xCc-xB-axI" firstAttribute="trailing" secondItem="uaX-8j-b6S" secondAttribute="trailing" constant="10" id="5ZV-4M-ekM"/>
+                            <constraint firstItem="HFO-X3-dWT" firstAttribute="centerY" secondItem="Uub-yy-fDV" secondAttribute="centerY" multiplier="1/3" id="LnN-nR-Maz"/>
+                            <constraint firstItem="xCc-xB-axI" firstAttribute="trailing" secondItem="HFO-X3-dWT" secondAttribute="trailing" constant="10" id="Rl6-C9-4YJ"/>
+                            <constraint firstItem="HFO-X3-dWT" firstAttribute="leading" secondItem="xCc-xB-axI" secondAttribute="leading" constant="10" id="SDY-Nj-rxn"/>
+                            <constraint firstItem="xmD-FD-sMo" firstAttribute="centerX" secondItem="HFO-X3-dWT" secondAttribute="centerX" id="Xtw-gc-ju3"/>
+                            <constraint firstItem="xmD-FD-sMo" firstAttribute="top" secondItem="HFO-X3-dWT" secondAttribute="bottom" constant="10" id="mhE-6w-Lg0"/>
+                            <constraint firstItem="uaX-8j-b6S" firstAttribute="top" secondItem="xCc-xB-axI" secondAttribute="top" constant="10" id="pQP-wq-pUR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xCc-xB-axI"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="HFO-X3-dWT" id="1S2-aN-0on"/>
+                        <outlet property="stepper1" destination="xmD-FD-sMo" id="5Rn-dO-fGT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfi-f4-pfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="134"/>
+        </scene>
+        <!--item2-->
+        <scene sceneID="kZb-Mm-sqi">
+            <objects>
+                <viewController id="Ptg-yA-G1c" userLabel="item2" customClass="item2" customModule="UIStepper_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U3S-Uh-JWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3X-oA-uBQ" userLabel="btn1">
+                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="Ptg-yA-G1c" eventType="touchUpInside" id="SwP-F5-igP"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jUt-Dm-5kI" userLabel="stepper1">
+                                <rect key="frame" x="140.5" y="319" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepper1_valuechanged:" destination="Ptg-yA-G1c" eventType="valueChanged" id="1Lc-za-FrO"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czu-sr-Iim" userLabel="label1">
+                                <rect key="frame" x="10" y="358" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Czu-sr-Iim" firstAttribute="top" secondItem="jUt-Dm-5kI" secondAttribute="bottom" constant="10" id="A4i-tB-VIB"/>
+                            <constraint firstItem="jUt-Dm-5kI" firstAttribute="centerY" secondItem="U3S-Uh-JWQ" secondAttribute="centerY" id="I7r-ip-Sbc"/>
+                            <constraint firstItem="jUt-Dm-5kI" firstAttribute="centerX" secondItem="U3S-Uh-JWQ" secondAttribute="centerX" id="Nks-8W-OuI"/>
+                            <constraint firstItem="Czu-sr-Iim" firstAttribute="leading" secondItem="t3B-pJ-6pV" secondAttribute="leading" constant="10" id="XQM-bY-hkF"/>
+                            <constraint firstItem="t3B-pJ-6pV" firstAttribute="trailing" secondItem="q3X-oA-uBQ" secondAttribute="trailing" constant="10" id="iIc-a7-cdY"/>
+                            <constraint firstItem="t3B-pJ-6pV" firstAttribute="trailing" secondItem="Czu-sr-Iim" secondAttribute="trailing" constant="10" id="ire-VT-SNU"/>
+                            <constraint firstItem="q3X-oA-uBQ" firstAttribute="top" secondItem="t3B-pJ-6pV" secondAttribute="top" constant="10" id="lhb-cU-mUg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t3B-pJ-6pV"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="Czu-sr-Iim" id="PVD-mC-veA"/>
+                        <outlet property="stepper1" destination="jUt-Dm-5kI" id="TOx-Jg-yzV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3N2-Px-tc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="132"/>
+        </scene>
+        <!--item3-->
+        <scene sceneID="aa2-tr-c7O">
+            <objects>
+                <viewController id="d5u-ui-mOf" userLabel="item3" customClass="item3" customModule="UIStepper_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Un-da-oqX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-Lv-wXb" userLabel="btn1">
+                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="d5u-ui-mOf" eventType="touchUpInside" id="xQ3-yE-sVd"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2hj-aX-bXZ" userLabel="stepper1" customClass="UIStepperEx1" customModule="UIStepper_test" customModuleProvider="target">
+                                <rect key="frame" x="140.5" y="319" width="94" height="29"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stepper1_valuechanged:" destination="d5u-ui-mOf" eventType="valueChanged" id="xj5-LW-PM4"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pk8-Ad-GkX" userLabel="label1">
+                                <rect key="frame" x="10" y="358" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nme-Lv-wXb" firstAttribute="top" secondItem="hIy-Cv-7gy" secondAttribute="top" constant="10" id="1Fi-CY-gfG"/>
+                            <constraint firstItem="2hj-aX-bXZ" firstAttribute="centerY" secondItem="7Un-da-oqX" secondAttribute="centerY" id="5fP-JK-Zme"/>
+                            <constraint firstItem="pk8-Ad-GkX" firstAttribute="top" secondItem="2hj-aX-bXZ" secondAttribute="bottom" constant="10" id="UNy-kn-1NF"/>
+                            <constraint firstItem="pk8-Ad-GkX" firstAttribute="leading" secondItem="hIy-Cv-7gy" secondAttribute="leading" constant="10" id="VjC-Uw-0dH"/>
+                            <constraint firstItem="hIy-Cv-7gy" firstAttribute="trailing" secondItem="pk8-Ad-GkX" secondAttribute="trailing" constant="10" id="eTX-BT-UaQ"/>
+                            <constraint firstItem="2hj-aX-bXZ" firstAttribute="centerX" secondItem="7Un-da-oqX" secondAttribute="centerX" id="gS1-UM-WRL"/>
+                            <constraint firstItem="hIy-Cv-7gy" firstAttribute="trailing" secondItem="Nme-Lv-wXb" secondAttribute="trailing" constant="10" id="jCT-Aj-j6T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hIy-Cv-7gy"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="pk8-Ad-GkX" id="bYJ-rn-COl"/>
+                        <outlet property="stepper1" destination="2hj-aX-bXZ" id="biG-Sz-MEQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHs-dL-345" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="132"/>
+        </scene>
+    </scenes>
+</document>

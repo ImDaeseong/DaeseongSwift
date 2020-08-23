@@ -12,6 +12,5 @@ class ImageViewEx1 : UIImageView {
         self.contentMode = .scaleAspectFit
         self.backgroundColor = UIColor.clear
         self.translatesAutoresizingMaskIntoConstraints = false
-        
     }
 }

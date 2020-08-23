@@ -5,7 +5,6 @@ class item1: UIViewController {
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     
-    
     var alertController : UIAlertController!
     var alertCancel : UIAlertAction!
     var alertOk : UIAlertAction!
@@ -32,7 +31,5 @@ class item1: UIViewController {
     }
     
     @IBAction func btn2_click(_ sender: UIButton) {
-        
     }
-    
 }

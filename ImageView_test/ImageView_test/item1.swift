@@ -12,12 +12,10 @@ class item1: UIViewController {
         let tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(img1Tapped))
         img1.addGestureRecognizer(tapGesture1)
         img1.isUserInteractionEnabled = true
-        
     }
     
     @objc func img1Tapped() {
         
         dismiss(animated: false, completion: nil)
     }
-    
 }

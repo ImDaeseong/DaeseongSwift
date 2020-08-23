@@ -22,8 +22,6 @@ class item3: UIViewController {
     }
     
     @objc func img1Tapped() {
-        
         dismiss(animated: false, completion: nil)
     }
-    
 }

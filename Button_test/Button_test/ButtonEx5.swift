@@ -23,7 +23,5 @@ class ButtonEx5 : UIButton {
             self.setTitleColor(UIColor.orange, for: UIControl.State.normal)
             self.layer.borderColor = UIColor.orange.cgColor
         }
-        
     }
-    
 }

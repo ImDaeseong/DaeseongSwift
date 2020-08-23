@@ -18,8 +18,5 @@ class ImageViewEx3 : UIImageView {
         gradient.startPoint = CGPoint(x: 0.5, y: 0.5)
         gradient.endPoint = CGPoint(x: 0.5, y: 1.0)
         self.layer.insertSublayer(gradient, at: 0)
-       
     }
-    
-    
 }

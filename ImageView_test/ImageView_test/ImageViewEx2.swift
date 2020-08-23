@@ -10,6 +10,5 @@ class ImageViewEx2 : UIImageView {
         self.clipsToBounds = true
         self.contentMode = .scaleAspectFit
         self.backgroundColor = UIColor.clear
-        
     }
 }

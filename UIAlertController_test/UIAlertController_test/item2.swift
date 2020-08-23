@@ -33,6 +33,5 @@ class item2: UIViewController {
         alertController.addAction(alertOk)
         alertController.addAction(alertDelete)
         self.present(alertController, animated: true, completion: nil)
-        
     }
 }

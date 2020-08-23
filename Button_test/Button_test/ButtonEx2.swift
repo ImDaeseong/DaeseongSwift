@@ -11,6 +11,5 @@ class ButtonEx2 : UIButton {
         self.layer.shadowOpacity = 0.75
         self.layer.shadowRadius = 1.5
         self.layer.shadowOffset = CGSize(width: 0.0, height: 2.5)
-        
     }
 }

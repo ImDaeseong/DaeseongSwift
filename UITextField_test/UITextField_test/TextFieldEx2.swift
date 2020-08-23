@@ -2,7 +2,6 @@ import UIKit
 
 class TextFieldEx2: UITextField {
     
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -18,7 +17,5 @@ class TextFieldEx2: UITextField {
         self.textColor = UIColor.orange
         self.textAlignment = .center
         self.layer.masksToBounds = true
-        
     }
-    
 }

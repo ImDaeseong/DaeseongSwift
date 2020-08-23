@@ -37,5 +37,4 @@ class item3: UIViewController, UITableViewDelegate, UITableViewDataSource {
         alart.addAction(ok)
         self.present(alart, animated: false)
     }
-    
 }

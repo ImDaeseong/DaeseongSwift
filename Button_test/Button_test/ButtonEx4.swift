@@ -11,5 +11,4 @@ class ButtonEx4 : UIButton {
         self.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         self.setImage(img, for: UIControl.State.normal)
     }
-    
 }
