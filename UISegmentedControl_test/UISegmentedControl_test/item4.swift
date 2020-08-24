@@ -6,7 +6,7 @@ class item4: UIViewController {
     
     @IBOutlet weak var segment1: UISegmentedControl!
     
-    var itemName = [UIImage(named: "img1.png"), UIImage(named: "img2.png"), UIImage(named: "img3.png"), UIImage(named: "img4.png")]
+    var itemName = [UIImage(named: "img1.png"), UIImage(named: "img1.png"), UIImage(named: "img1.png"), UIImage(named: "img1.png")]
 
     override func viewDidLoad() {
         super.viewDidLoad()

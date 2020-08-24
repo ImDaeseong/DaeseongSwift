@@ -225,8 +225,8 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iTH-AB-6ny" userLabel="segment1">
                                 <rect key="frame" x="10" y="319.5" width="355" height="29"/>
                                 <segments>
-                                    <segment title=""/>
-                                    <segment title=""/>
+                                    <segment title="" image="img1"/>
+                                    <segment title="" image="img1"/>
                                 </segments>
                                 <connections>
                                     <action selector="segment1changed:" destination="HpP-8I-8lq" eventType="valueChanged" id="Qhe-0P-hXJ"/>
@@ -253,4 +253,7 @@
             <point key="canvasLocation" x="2513" y="136"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img1" width="12" height="12"/>
+    </resources>
 </document>
