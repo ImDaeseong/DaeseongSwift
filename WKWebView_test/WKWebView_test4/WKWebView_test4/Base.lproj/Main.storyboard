@@ -24,15 +24,30 @@
                                     <constraint firstAttribute="width" secondItem="FEL-Dc-0zu" secondAttribute="height" multiplier="2:3" id="x9X-sO-021"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FC7-gS-A0p" userLabel="btn1">
+                                <rect key="frame" x="10" y="610" width="355" height="47"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="html 페이지에 메시지 전달하기"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bNA-FW-8Ns"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FC7-gS-A0p" secondAttribute="bottom" constant="10" id="2zY-Y0-5r1"/>
+                            <constraint firstItem="FC7-gS-A0p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="5vA-Ly-28V"/>
                             <constraint firstItem="FEL-Dc-0zu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Jrh-4w-HF5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FC7-gS-A0p" secondAttribute="trailing" constant="10" id="SIf-11-ig4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FEL-Dc-0zu" secondAttribute="trailing" constant="10" id="Vz3-cs-DHW"/>
+                            <constraint firstItem="FC7-gS-A0p" firstAttribute="top" secondItem="FEL-Dc-0zu" secondAttribute="bottom" constant="10" id="cuc-ac-0hl"/>
                             <constraint firstItem="FEL-Dc-0zu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uOc-Y2-Keg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="view1" destination="FEL-Dc-0zu" id="fGo-vh-pVd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

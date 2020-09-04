@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <script type="text/javascript">
+        function ClickEvent() {
+            window.webkit.messageHandlers.iosClickEvent.postMessage({});
+        }
+    
+        function SendClickEvent() {
+            window.webkit.messageHandlers.iosSendClickEvent.postMessage('SendClickEvent 전달할 데이터');
+        }
+    
+        function sendMessage(message) {
+            document.getElementById("name").innerHTML = message
+            return "완료"
+        }
+    </script>
+    <title>웹페이지에서 swift 내부로 데이터 읽어오기</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    name：<span id="name"></span>
+    <br>
+    <br>
+    <br>
+    <button type="button" onclick='SendClickEvent();'>웹페이지 클릭이벤트 item1에서 인식하기(문자열 전달받기)</button>
+    <br>
+    <br>
+    <br>
+    <button type="button" onclick='ClickEvent();'>웹페이지 클릭이벤트 item1에서 인식하기</button>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
