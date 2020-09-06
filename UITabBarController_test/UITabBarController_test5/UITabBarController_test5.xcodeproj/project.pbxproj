@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A141A94F250474DA00918C8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141A94E250474DA00918C8D /* AppDelegate.swift */; };
-		A141A951250474DA00918C8D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141A950250474DA00918C8D /* FirstViewController.swift */; };
-		A141A953250474DA00918C8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141A952250474DA00918C8D /* SecondViewController.swift */; };
+		A141A951250474DA00918C8D /* item1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141A950250474DA00918C8D /* item1.swift */; };
+		A141A953250474DA00918C8D /* item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141A952250474DA00918C8D /* item2.swift */; };
 		A141A956250474DA00918C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A141A954250474DA00918C8D /* Main.storyboard */; };
 		A141A958250474DB00918C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A141A957250474DB00918C8D /* Assets.xcassets */; };
 		A141A95B250474DB00918C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A141A959250474DB00918C8D /* LaunchScreen.storyboard */; };
 		A141A9632504798000918C8D /* UITabBarControllerEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141A9622504798000918C8D /* UITabBarControllerEx1.swift */; };
+		A141A9652504899900918C8D /* item3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A141A9642504899900918C8D /* item3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A141A94B250474DA00918C8D /* UITabBarController_test5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITabBarController_test5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A141A94E250474DA00918C8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A141A950250474DA00918C8D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A141A952250474DA00918C8D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A141A950250474DA00918C8D /* item1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item1.swift; sourceTree = "<group>"; };
+		A141A952250474DA00918C8D /* item2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item2.swift; sourceTree = "<group>"; };
 		A141A955250474DA00918C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A141A957250474DB00918C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A141A95A250474DB00918C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A141A95C250474DB00918C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A141A9622504798000918C8D /* UITabBarControllerEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerEx1.swift; sourceTree = "<group>"; };
+		A141A9642504899900918C8D /* item3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				A141A94E250474DA00918C8D /* AppDelegate.swift */,
-				A141A950250474DA00918C8D /* FirstViewController.swift */,
-				A141A952250474DA00918C8D /* SecondViewController.swift */,
+				A141A950250474DA00918C8D /* item1.swift */,
+				A141A952250474DA00918C8D /* item2.swift */,
 				A141A954250474DA00918C8D /* Main.storyboard */,
 				A141A957250474DB00918C8D /* Assets.xcassets */,
 				A141A959250474DB00918C8D /* LaunchScreen.storyboard */,
 				A141A95C250474DB00918C8D /* Info.plist */,
 				A141A9622504798000918C8D /* UITabBarControllerEx1.swift */,
+				A141A9642504899900918C8D /* item3.swift */,
 			);
 			path = UITabBarController_test5;
 			sourceTree = "<group>";
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A141A953250474DA00918C8D /* SecondViewController.swift in Sources */,
+				A141A953250474DA00918C8D /* item2.swift in Sources */,
 				A141A94F250474DA00918C8D /* AppDelegate.swift in Sources */,
 				A141A9632504798000918C8D /* UITabBarControllerEx1.swift in Sources */,
-				A141A951250474DA00918C8D /* FirstViewController.swift in Sources */,
+				A141A951250474DA00918C8D /* item1.swift in Sources */,
+				A141A9652504899900918C8D /* item3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
