@@ -236,7 +236,7 @@ public func getFileSize(size : Double) -> String? {
 
 public func getTime() ->String {
     
-    let format1 = "yyyy-MM-dd hh:mm:ss"
+    let format1 = "yyyy-MM-dd HH:mm:ss"
     //let format2 = "yyyy-MM-dd"
     //let format3 = "yyyy년 MM월 dd일 HH시 mm분 ss초"
     
@@ -246,3 +246,19 @@ public func getTime() ->String {
     return dataFormat.string(from: Date())
 }
 
+public func getDateSubtract(from : Date, to : Date) -> Double {
+    
+    var interval: Double!
+    
+    interval = to.timeIntervalSince(from)
+    let days = (interval / 86400)
+    return floor(days)
+}
+
+public func getTimeSubtract(from : Date, to : Date) -> Double {
+    
+    let hours = floor( to.timeIntervalSince(from) / 60 / 60)
+    let minute = floor( to.timeIntervalSince(from) - (hours * 60 * 60) / 60)
+    
+    return hours
+}

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         print("getSubString: \(getSubString(sInput: sResult1, sStart: ":/", sEnd: "/")!)")
         print("getLeft: \(getLeft(sInput: sResult1, length: 10)!)")
         print("getRight: \(getRight(sInput: sResult1, length: 12)!)")
+        print("getTime: \(getTime())")
         
         
         let sResult2 : String = "사과,감자,파인애플,귤,포도,당근,고구마"
@@ -48,7 +49,15 @@ class ViewController: UIViewController {
         print("getFileSize: \(getFileSize(size : length4)!)")
         
         
-        print("getTime: \(getTime())")
+        
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "yyyy-MM-dd"
+        let startDate = dateFormat.date(from: "2020-09-01")!
+        let endDate = dateFormat.date(from: "2020-09-02")!
+        print("getDateSubtract: \(getDateSubtract(from : startDate, to : endDate))")
+        print("getTimeSubtract: \(getTimeSubtract(from : startDate, to : endDate))")
+        
+        
         
         
     }
