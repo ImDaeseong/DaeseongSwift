@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0CD-yh-1ii">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Present Modally Controller-->
+        <scene sceneID="7k2-kB-cDd">
+            <objects>
+                <viewController storyboardIdentifier="PresentModallyController" id="0CD-yh-1ii" customClass="PresentModallyController" customModule="Storyboard_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9y-h9-nTm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzN-YM-AMp" userLabel="btn1">
+                                <rect key="frame" x="10" y="207.5" width="355" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Mainstoryboard"/>
+                                <connections>
+                                    <segue destination="XnD-ya-b3W" kind="presentation" id="PdU-Jw-IH3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgY-HW-lAE" userLabel="btn2">
+                                <rect key="frame" x="10" y="429.5" width="355" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="exit"/>
+                                <connections>
+                                    <action selector="btn2_click:" destination="0CD-yh-1ii" eventType="touchUpInside" id="RGX-Xo-1Cl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PresentModally storyboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPt-L0-i6u" userLabel="label1">
+                                <rect key="frame" x="10" y="30" width="355" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pao-ba-cv2" firstAttribute="trailing" secondItem="VPt-L0-i6u" secondAttribute="trailing" constant="10" id="5jD-7M-7rh"/>
+                            <constraint firstItem="EgY-HW-lAE" firstAttribute="centerY" secondItem="W9y-h9-nTm" secondAttribute="centerY" multiplier="4/3" id="7VF-gu-VtW"/>
+                            <constraint firstItem="VPt-L0-i6u" firstAttribute="leading" secondItem="Pao-ba-cv2" secondAttribute="leading" constant="10" id="9Vz-Qq-mh8"/>
+                            <constraint firstItem="EgY-HW-lAE" firstAttribute="leading" secondItem="Pao-ba-cv2" secondAttribute="leading" constant="10" id="EkR-ba-qA9"/>
+                            <constraint firstItem="BzN-YM-AMp" firstAttribute="centerY" secondItem="W9y-h9-nTm" secondAttribute="centerY" multiplier="2/3" id="NVF-Au-VuB"/>
+                            <constraint firstItem="BzN-YM-AMp" firstAttribute="leading" secondItem="Pao-ba-cv2" secondAttribute="leading" constant="10" id="Y0x-v4-mOe"/>
+                            <constraint firstItem="EgY-HW-lAE" firstAttribute="centerX" secondItem="W9y-h9-nTm" secondAttribute="centerX" id="Zqs-x8-bY3"/>
+                            <constraint firstItem="VPt-L0-i6u" firstAttribute="top" secondItem="Pao-ba-cv2" secondAttribute="top" constant="10" id="arK-gN-Ilh"/>
+                            <constraint firstItem="BzN-YM-AMp" firstAttribute="centerX" secondItem="W9y-h9-nTm" secondAttribute="centerX" id="f1E-yf-GNe"/>
+                            <constraint firstItem="Pao-ba-cv2" firstAttribute="trailing" secondItem="EgY-HW-lAE" secondAttribute="trailing" constant="10" id="rZT-uh-K5c"/>
+                            <constraint firstItem="Pao-ba-cv2" firstAttribute="trailing" secondItem="BzN-YM-AMp" secondAttribute="trailing" constant="10" id="zrA-Xt-hq1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pao-ba-cv2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBb-Rj-x6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="-305"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="v27-vX-qeI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="ViewController" id="XnD-ya-b3W" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z63-oQ-IWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="-306"/>
+        </scene>
+    </scenes>
+</document>
