@@ -14,6 +14,8 @@
 		A1DAE35D250CAA8600F94BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DAE35B250CAA8600F94BF9 /* LaunchScreen.storyboard */; };
 		A1DAE365250CAAFD00F94BF9 /* item1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE364250CAAFD00F94BF9 /* item1.swift */; };
 		A1DAE367250CC16800F94BF9 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE366250CC16800F94BF9 /* itemCell.swift */; };
+		A1DAE369250CCAAD00F94BF9 /* item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE368250CCAAD00F94BF9 /* item2.swift */; };
+		A1DAE36B250CD0F700F94BF9 /* itemCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE36A250CD0F700F94BF9 /* itemCell2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A1DAE35E250CAA8600F94BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1DAE364250CAAFD00F94BF9 /* item1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item1.swift; sourceTree = "<group>"; };
 		A1DAE366250CC16800F94BF9 /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		A1DAE368250CCAAD00F94BF9 /* item2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item2.swift; sourceTree = "<group>"; };
+		A1DAE36A250CD0F700F94BF9 /* itemCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				A1DAE35E250CAA8600F94BF9 /* Info.plist */,
 				A1DAE364250CAAFD00F94BF9 /* item1.swift */,
 				A1DAE366250CC16800F94BF9 /* itemCell.swift */,
+				A1DAE368250CCAAD00F94BF9 /* item2.swift */,
+				A1DAE36A250CD0F700F94BF9 /* itemCell2.swift */,
 			);
 			path = OpenApi_test;
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 				A1DAE367250CC16800F94BF9 /* itemCell.swift in Sources */,
 				A1DAE355250CAA8500F94BF9 /* ViewController.swift in Sources */,
 				A1DAE365250CAAFD00F94BF9 /* item1.swift in Sources */,
+				A1DAE369250CCAAD00F94BF9 /* item2.swift in Sources */,
 				A1DAE353250CAA8500F94BF9 /* AppDelegate.swift in Sources */,
+				A1DAE36B250CD0F700F94BF9 /* itemCell2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

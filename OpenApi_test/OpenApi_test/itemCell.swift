@@ -3,9 +3,7 @@ import UIKit
 class itemCell : UITableViewCell {
     
     @IBOutlet weak var label1: UILabel!
-    
     @IBOutlet weak var label2: UILabel!
-    
     @IBOutlet weak var label3: UILabel!
     
     override func awakeFromNib() {
