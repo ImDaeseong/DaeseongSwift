@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1326014250EF16100140335 /* item3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1326013250EF16100140335 /* item3.swift */; };
+		A1326016250EF17200140335 /* itemCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1326015250EF17200140335 /* itemCell3.swift */; };
 		A1DAE353250CAA8500F94BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE352250CAA8500F94BF9 /* AppDelegate.swift */; };
 		A1DAE355250CAA8500F94BF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAE354250CAA8500F94BF9 /* ViewController.swift */; };
 		A1DAE358250CAA8500F94BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DAE356250CAA8500F94BF9 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1326013250EF16100140335 /* item3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item3.swift; sourceTree = "<group>"; };
+		A1326015250EF17200140335 /* itemCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell3.swift; sourceTree = "<group>"; };
 		A1DAE34F250CAA8500F94BF9 /* OpenApi_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenApi_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DAE352250CAA8500F94BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1DAE354250CAA8500F94BF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				A1DAE366250CC16800F94BF9 /* itemCell.swift */,
 				A1DAE368250CCAAD00F94BF9 /* item2.swift */,
 				A1DAE36A250CD0F700F94BF9 /* itemCell2.swift */,
+				A1326013250EF16100140335 /* item3.swift */,
+				A1326015250EF17200140335 /* itemCell3.swift */,
 			);
 			path = OpenApi_test;
 			sourceTree = "<group>";
@@ -148,8 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DAE367250CC16800F94BF9 /* itemCell.swift in Sources */,
+				A1326014250EF16100140335 /* item3.swift in Sources */,
 				A1DAE355250CAA8500F94BF9 /* ViewController.swift in Sources */,
 				A1DAE365250CAAFD00F94BF9 /* item1.swift in Sources */,
+				A1326016250EF17200140335 /* itemCell3.swift in Sources */,
 				A1DAE369250CCAAD00F94BF9 /* item2.swift in Sources */,
 				A1DAE353250CAA8500F94BF9 /* AppDelegate.swift in Sources */,
 				A1DAE36B250CD0F700F94BF9 /* itemCell2.swift in Sources */,
