@@ -4,11 +4,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var imgview1: UIImageView!
-    
     @IBOutlet weak var imgview2: UIImageView!
-    
     @IBOutlet weak var imgview3: UIImageView!
-    
+    @IBOutlet weak var imgview4: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +22,10 @@ class ViewController: UIViewController {
         let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(imgview3Tapped))
         imgview3.addGestureRecognizer(tapGesture3)
         imgview3.isUserInteractionEnabled = true
+        
+        let tapGesture4 = UITapGestureRecognizer(target: self, action: #selector(imgview4Tapped))
+        imgview4.addGestureRecognizer(tapGesture4)
+        imgview4.isUserInteractionEnabled = true
     }
     
     @objc func imgview1Tapped() {
@@ -47,6 +49,14 @@ class ViewController: UIViewController {
         if let VC3 = storyboard?.instantiateViewController(withIdentifier: "item3") {
             VC3.modalTransitionStyle = UIModalTransitionStyle.coverVertical
             self.present(VC3, animated: true)
+        }
+    }
+    
+    @objc func imgview4Tapped() {
+        
+        if let VC4 = storyboard?.instantiateViewController(withIdentifier: "item4") {
+            VC4.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+            self.present(VC4, animated: true)
         }
     }
 }

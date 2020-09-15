@@ -35,13 +35,22 @@
                                     <constraint firstAttribute="width" secondItem="0Hg-dh-f0b" secondAttribute="height" multiplier="30:10" id="y4D-sx-wIC"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img5" highlightedImage="img6" translatesAutoresizingMaskIntoConstraints="NO" id="LkW-9e-o0f" userLabel="imgview4">
+                                <rect key="frame" x="151.5" y="429.5" width="72" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LkW-9e-o0f" secondAttribute="height" multiplier="30:10" id="EFD-PC-Mop"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TaV-oH-uRx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BSI-Ym-fDv"/>
                             <constraint firstItem="TaV-oH-uRx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CkE-kf-JXz"/>
+                            <constraint firstItem="LkW-9e-o0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NQj-vB-0Md"/>
                             <constraint firstItem="0Hg-dh-f0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OeA-Ki-Ea3"/>
+                            <constraint firstItem="LkW-9e-o0f" firstAttribute="top" secondItem="oXa-7t-Mnf" secondAttribute="bottom" constant="30" id="Rdj-JD-Q3y"/>
                             <constraint firstItem="oXa-7t-Mnf" firstAttribute="top" secondItem="TaV-oH-uRx" secondAttribute="bottom" constant="30" id="VhN-RT-maO"/>
+                            <constraint firstItem="LkW-9e-o0f" firstAttribute="width" secondItem="LkW-9e-o0f" secondAttribute="height" multiplier="30:10" id="Y43-mG-spC"/>
                             <constraint firstItem="oXa-7t-Mnf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bz7-Rr-4ed"/>
                             <constraint firstItem="TaV-oH-uRx" firstAttribute="top" secondItem="0Hg-dh-f0b" secondAttribute="bottom" constant="30" id="yJa-ls-77T"/>
                         </constraints>
@@ -51,11 +60,40 @@
                         <outlet property="imgview1" destination="TaV-oH-uRx" id="vTd-Vy-Y2q"/>
                         <outlet property="imgview2" destination="0Hg-dh-f0b" id="SMZ-SE-AhH"/>
                         <outlet property="imgview3" destination="oXa-7t-Mnf" id="HmU-rr-Loi"/>
+                        <outlet property="imgview4" destination="LkW-9e-o0f" id="Rj0-90-eXf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1938" y="39"/>
+        </scene>
+        <!--item4-->
+        <scene sceneID="y25-cs-4vb">
+            <objects>
+                <viewController storyboardIdentifier="item4" id="1me-kg-QS7" userLabel="item4" customClass="item4" customModule="ImageView_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z4N-7l-26Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="8BF-5l-IWS" customClass="ImageViewEx4" customModule="ImageView_test" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="O8T-Zu-BRN"/>
+                                    <constraint firstAttribute="height" constant="200" id="gxd-VH-aLt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8BF-5l-IWS" firstAttribute="centerX" secondItem="Z4N-7l-26Z" secondAttribute="centerX" id="GSf-q9-YKD"/>
+                            <constraint firstItem="8BF-5l-IWS" firstAttribute="centerY" secondItem="Z4N-7l-26Z" secondAttribute="centerY" id="gI8-gn-1J5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M0T-ki-KLn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I32-vF-Z3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1938" y="713"/>
         </scene>
         <!--item1-->
         <scene sceneID="fMn-YX-ajg">

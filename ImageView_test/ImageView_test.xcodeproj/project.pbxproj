@@ -18,6 +18,8 @@
 		A142084124E9216C00B27EB1 /* ImageViewEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142084024E9216C00B27EB1 /* ImageViewEx1.swift */; };
 		A142084324E929C600B27EB1 /* ImageViewEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142084224E929C600B27EB1 /* ImageViewEx2.swift */; };
 		A142084524E9363000B27EB1 /* ImageViewEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142084424E9363000B27EB1 /* ImageViewEx3.swift */; };
+		A1FEEF9F25109A2A00F7DB68 /* ImageViewEx4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FEEF9E25109A2A00F7DB68 /* ImageViewEx4.swift */; };
+		A1FEEFA125109B1800F7DB68 /* item4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FEEFA025109B1800F7DB68 /* item4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A142084024E9216C00B27EB1 /* ImageViewEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewEx1.swift; sourceTree = "<group>"; };
 		A142084224E929C600B27EB1 /* ImageViewEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewEx2.swift; sourceTree = "<group>"; };
 		A142084424E9363000B27EB1 /* ImageViewEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewEx3.swift; sourceTree = "<group>"; };
+		A1FEEF9E25109A2A00F7DB68 /* ImageViewEx4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewEx4.swift; sourceTree = "<group>"; };
+		A1FEEFA025109B1800F7DB68 /* item4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +79,11 @@
 				A142083A24E8F7B100B27EB1 /* item1.swift */,
 				A142083C24E8F7C000B27EB1 /* item2.swift */,
 				A142083E24E8F7CD00B27EB1 /* item3.swift */,
+				A1FEEFA025109B1800F7DB68 /* item4.swift */,
 				A142084024E9216C00B27EB1 /* ImageViewEx1.swift */,
 				A142084224E929C600B27EB1 /* ImageViewEx2.swift */,
 				A142084424E9363000B27EB1 /* ImageViewEx3.swift */,
+				A1FEEF9E25109A2A00F7DB68 /* ImageViewEx4.swift */,
 			);
 			path = ImageView_test;
 			sourceTree = "<group>";
@@ -154,9 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A142082B24E8F72A00B27EB1 /* ViewController.swift in Sources */,
+				A1FEEF9F25109A2A00F7DB68 /* ImageViewEx4.swift in Sources */,
 				A142084124E9216C00B27EB1 /* ImageViewEx1.swift in Sources */,
 				A142083B24E8F7B100B27EB1 /* item1.swift in Sources */,
 				A142084524E9363000B27EB1 /* ImageViewEx3.swift in Sources */,
+				A1FEEFA125109B1800F7DB68 /* item4.swift in Sources */,
 				A142082924E8F72A00B27EB1 /* AppDelegate.swift in Sources */,
 				A142084324E929C600B27EB1 /* ImageViewEx2.swift in Sources */,
 				A142083D24E8F7C000B27EB1 /* item2.swift in Sources */,
