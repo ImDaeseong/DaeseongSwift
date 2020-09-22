@@ -59,11 +59,27 @@
                                     <segue destination="2x2-xY-Vyf" kind="showDetail" id="rwV-n8-8xR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUH-24-EnY" userLabel="btn4">
+                                <rect key="frame" x="137.5" y="246.5" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Yz2-v5-4oD"/>
+                                    <constraint firstAttribute="height" constant="30" id="wqg-BX-7H8"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gih-Uy-DeF" kind="showDetail" id="tuV-hy-wiA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jqx-2I-UqC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1rl-L8-sJp"/>
                             <constraint firstItem="wyb-8J-gy2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5TF-Db-FK8"/>
+                            <constraint firstItem="IUH-24-EnY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S9c-1g-AqN"/>
+                            <constraint firstItem="IUH-24-EnY" firstAttribute="centerY" secondItem="jqx-2I-UqC" secondAttribute="bottom" constant="50" id="hu4-gN-OcD"/>
                             <constraint firstItem="wyb-8J-gy2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="2/10" id="jHZ-ZQ-OoO"/>
                             <constraint firstItem="3IK-Oj-i9N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s9T-ye-Mri"/>
                             <constraint firstItem="3IK-Oj-i9N" firstAttribute="centerY" secondItem="wyb-8J-gy2" secondAttribute="bottom" constant="50" id="tOI-RH-r7c"/>
@@ -138,6 +154,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iN3-pd-lzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="753" y="134"/>
+        </scene>
+        <!--item4-->
+        <scene sceneID="2ty-2I-Nn9">
+            <objects>
+                <viewController id="Gih-Uy-DeF" userLabel="item4" customClass="item4" customModule="Timer_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f1h-oW-fmZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F7U-9p-fjq" userLabel="switch1">
+                                <rect key="frame" x="163" y="318" width="51" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="switch1_changed:" destination="Gih-Uy-DeF" eventType="valueChanged" id="ZxQ-eX-Xz0"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYy-Cb-zX7" userLabel="label1">
+                                <rect key="frame" x="10" y="284" width="355" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zI0-1M-wW8" firstAttribute="trailing" secondItem="yYy-Cb-zX7" secondAttribute="trailing" constant="10" id="cAM-pj-Qwx"/>
+                            <constraint firstItem="yYy-Cb-zX7" firstAttribute="bottom" secondItem="F7U-9p-fjq" secondAttribute="top" constant="-10" id="kF9-Hy-7cx"/>
+                            <constraint firstItem="F7U-9p-fjq" firstAttribute="centerX" secondItem="f1h-oW-fmZ" secondAttribute="centerX" id="lPg-hH-ttb"/>
+                            <constraint firstItem="F7U-9p-fjq" firstAttribute="centerY" secondItem="f1h-oW-fmZ" secondAttribute="centerY" id="ndw-DH-J1g"/>
+                            <constraint firstItem="yYy-Cb-zX7" firstAttribute="leading" secondItem="zI0-1M-wW8" secondAttribute="leading" constant="10" id="pgX-5v-tIx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zI0-1M-wW8"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="yYy-Cb-zX7" id="ZkL-Lh-Api"/>
+                        <outlet property="switch1" destination="F7U-9p-fjq" id="NAd-eM-tg1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7P5-Of-WgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="876"/>
         </scene>
         <!--item2-->
         <scene sceneID="BtS-XW-ERe">

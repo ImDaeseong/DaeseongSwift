@@ -46,7 +46,7 @@ class item2: UIViewController {
     @objc func updateTimer(){
         
         nCount = nCount + 1
-        print(nCount)
+        //print(nCount)
         
         let hours = Int(nCount) / 3600
         let minutes = Int(nCount) / 60 % 60
