@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oem-jf-rVe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizer_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="148"/>
+        </scene>
+        <!--Item5-->
+        <scene sceneID="UUh-zL-bjg">
+            <objects>
+                <viewController id="Oem-jf-rVe" customClass="item5" customModule="GestureRecognizer_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bwD-rO-S1G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="rek-d8-N6T" userLabel="imageview1">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="O5m-zd-iKe"/>
+                                    <constraint firstAttribute="height" constant="200" id="UpD-GS-2ao"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rek-d8-N6T" firstAttribute="centerY" secondItem="bwD-rO-S1G" secondAttribute="centerY" id="aVy-Hw-dc1"/>
+                            <constraint firstItem="rek-d8-N6T" firstAttribute="centerX" secondItem="bwD-rO-S1G" secondAttribute="centerX" id="tQm-Ng-97h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YXB-fx-EfZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageview1" destination="rek-d8-N6T" id="HLu-Xv-hNe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbL-rh-zzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2788" y="152"/>
+        </scene>
+        <!--Item4-->
+        <scene sceneID="Mc6-aI-Wdr">
+            <objects>
+                <viewController id="MjA-3b-ksH" customClass="item4" customModule="GestureRecognizer_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QaY-fl-jA8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Pxy-r7-rre"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3NQ-d2-aG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2146" y="152"/>
+        </scene>
+        <!--Item3-->
+        <scene sceneID="Uq8-FH-puZ">
+            <objects>
+                <viewController id="OV3-gQ-3Sj" customClass="item3" customModule="GestureRecognizer_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqt-Fy-4bq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="L54-dQ-G4L" userLabel="imageview1">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="dDI-MY-cQz"/>
+                                    <constraint firstAttribute="width" constant="200" id="fAc-OF-dky"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L54-dQ-G4L" firstAttribute="centerX" secondItem="xqt-Fy-4bq" secondAttribute="centerX" id="40A-45-U1F"/>
+                            <constraint firstItem="L54-dQ-G4L" firstAttribute="centerY" secondItem="xqt-Fy-4bq" secondAttribute="centerY" id="7Jr-BC-gcL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PEf-4N-qEi"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageview1" destination="L54-dQ-G4L" id="49V-Os-dfw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dn1-5i-Om3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1508" y="148"/>
+        </scene>
+        <!--item2-->
+        <scene sceneID="jbr-3M-r7W">
+            <objects>
+                <viewController id="4AC-OC-DcG" userLabel="item2" customClass="item2" customModule="GestureRecognizer_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tIk-ko-V3k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="xAf-DJ-hhj" userLabel="imageview1">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="WNU-9E-b9H"/>
+                                    <constraint firstAttribute="width" constant="200" id="gC6-Nq-X8f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YI-lI-Fno" userLabel="label1">
+                                <rect key="frame" x="10" y="438.5" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="2YI-lI-Fno" firstAttribute="top" secondItem="xAf-DJ-hhj" secondAttribute="bottom" constant="5" id="E4n-CE-ISV"/>
+                            <constraint firstItem="xAf-DJ-hhj" firstAttribute="centerY" secondItem="tIk-ko-V3k" secondAttribute="centerY" id="g7I-gd-UuV"/>
+                            <constraint firstItem="xAf-DJ-hhj" firstAttribute="centerX" secondItem="tIk-ko-V3k" secondAttribute="centerX" id="kMi-ST-PdR"/>
+                            <constraint firstItem="2YI-lI-Fno" firstAttribute="leading" secondItem="vWo-04-XRO" secondAttribute="leading" constant="10" id="pOs-jY-s3u"/>
+                            <constraint firstItem="vWo-04-XRO" firstAttribute="trailing" secondItem="2YI-lI-Fno" secondAttribute="trailing" constant="10" id="zbh-6b-LFL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vWo-04-XRO"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageview1" destination="xAf-DJ-hhj" id="rdc-3O-bGQ"/>
+                        <outlet property="label1" destination="2YI-lI-Fno" id="Tqf-rs-i8q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzA-Dn-x3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-871" y="148"/>
+        </scene>
+        <!--Item1-->
+        <scene sceneID="hBh-7g-hTd">
+            <objects>
+                <viewController id="OrK-OA-9kh" customClass="item1" customModule="GestureRecognizer_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RwM-fr-suC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HY2-bC-VIV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVR-KS-KKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img1" width="480" height="232"/>
+    </resources>
+</document>
