@@ -5,13 +5,17 @@ class ButtonEx6 : UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        let imgNoraml = UIImage(named: "img3.png")
-        let imgSelect = UIImage(named: "img4.png")
-        self.backgroundColor = UIColor.clear
-        self.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
-        self.setImage(imgNoraml, for: UIControl.State.normal)
-        self.setImage(imgSelect, for: UIControl.State.selected)
-        translatesAutoresizingMaskIntoConstraints = false
+        self.layer.cornerRadius = 5
+        self.layer.borderWidth = 1
+        
+        if state == .normal {
+            self.layer.borderColor = UIColor.orange.cgColor
+            self.backgroundColor = UIColor.orange
+            setTitleColor(UIColor.darkText, for: UIControl.State.normal)
+        }else if state == .disabled {
+            self.layer.borderColor = UIColor.gray.cgColor
+            self.backgroundColor = UIColor.clear
+            setTitleColor(UIColor.lightText, for: UIControl.State.disabled)
+        }
     }
-    
 }

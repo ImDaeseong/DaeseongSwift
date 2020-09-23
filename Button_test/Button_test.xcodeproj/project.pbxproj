@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1030D73251B32C200DCBAEE /* ButtonEx6.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030D72251B32C200DCBAEE /* ButtonEx6.swift */; };
 		A1FECCEF24E659290006E40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FECCEE24E659290006E40F /* AppDelegate.swift */; };
 		A1FECCF124E659290006E40F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FECCF024E659290006E40F /* ViewController.swift */; };
 		A1FECCF424E659290006E40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FECCF224E659290006E40F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1030D72251B32C200DCBAEE /* ButtonEx6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx6.swift; sourceTree = "<group>"; };
 		A1FECCEB24E659290006E40F /* Button_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Button_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FECCEE24E659290006E40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1FECCF024E659290006E40F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				A1FECD0824E6798F0006E40F /* ButtonEx3.swift */,
 				A1FECD0A24E67BD80006E40F /* ButtonEx4.swift */,
 				A1FECD0C24E682D50006E40F /* ButtonEx5.swift */,
+				A1030D72251B32C200DCBAEE /* ButtonEx6.swift */,
 			);
 			path = Button_test;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				A1FECD0524E66D0E0006E40F /* ButtonEx1.swift in Sources */,
 				A1FECD0724E675D80006E40F /* ButtonEx2.swift in Sources */,
 				A1FECD0924E6798F0006E40F /* ButtonEx3.swift in Sources */,
+				A1030D73251B32C200DCBAEE /* ButtonEx6.swift in Sources */,
 				A1FECCF124E659290006E40F /* ViewController.swift in Sources */,
 				A1FECCEF24E659290006E40F /* AppDelegate.swift in Sources */,
 				A1FECD0D24E682D50006E40F /* ButtonEx5.swift in Sources */,
