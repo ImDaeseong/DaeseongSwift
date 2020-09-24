@@ -45,6 +45,13 @@
                                     <constraint firstAttribute="height" constant="50" id="1Sn-la-FpY"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h71-bb-gfb" userLabel="view5" customClass="UIViewEx5" customModule="UIView_test" customModuleProvider="target">
+                                <rect key="frame" x="50" y="350" width="275" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WxD-gm-LBy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -53,9 +60,12 @@
                             <constraint firstItem="ccj-8k-rrL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="E1K-gS-hJl"/>
                             <constraint firstItem="ObN-n0-uLU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="EbW-Lp-yCL"/>
                             <constraint firstItem="8KL-jy-vkz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VSE-7i-5Sv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h71-bb-gfb" secondAttribute="trailing" constant="50" id="W7S-4Q-f7S"/>
                             <constraint firstItem="ObN-n0-uLU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="XaP-fF-lWo"/>
                             <constraint firstItem="pyb-zd-j5c" firstAttribute="top" secondItem="8KL-jy-vkz" secondAttribute="bottom" constant="20" id="Xde-Hg-y5X"/>
+                            <constraint firstItem="h71-bb-gfb" firstAttribute="top" secondItem="ccj-8k-rrL" secondAttribute="bottom" constant="20" id="cmy-TU-ara"/>
                             <constraint firstItem="pyb-zd-j5c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="f9x-UL-ffh"/>
+                            <constraint firstItem="h71-bb-gfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fuG-eH-9Ik"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ObN-n0-uLU" secondAttribute="trailing" constant="50" id="icR-kd-KWG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8KL-jy-vkz" secondAttribute="trailing" constant="50" id="rlF-cV-EWO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pyb-zd-j5c" secondAttribute="trailing" constant="50" id="txm-od-ZYA"/>
