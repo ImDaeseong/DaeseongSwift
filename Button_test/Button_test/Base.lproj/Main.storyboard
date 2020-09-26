@@ -173,7 +173,6 @@
                                 </state>
                                 <connections>
                                     <action selector="button1_click:" destination="ijO-eV-lG2" eventType="touchUpInside" id="NHO-x0-Ti3"/>
-                                    <action selector="button2_click:" destination="BsP-5p-ee7" eventType="touchUpInside" id="yDc-Qd-RaD"/>
                                 </connections>
                             </button>
                         </subviews>
