@@ -48,7 +48,11 @@ class itemUITableViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        self.tableView.reloadData()
+        let selectitem = self.itemlist[indexPath.row]
+        //print(selectitem.sTitle!)
+        //print(selectitem.sDesc!)
+        //print(selectitem.nSize!)
+        
         self.dismiss(animated: true, completion: nil)
     }
     
