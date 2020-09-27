@@ -2,7 +2,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, Splash1Delegate {
 
     var window: UIWindow?
 
@@ -10,7 +10,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //launchscreen 1초 대기
-        sleep(1)
+        //sleep(1)
+        
+        //launchScreen()
+        
+        //launchSplash()
+        
+        launchSplash1()
+        
         return true
     }
 
@@ -36,6 +43,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    private func launchSplash1(){
+        
+        //Splash1
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "Splash1") as! Splash1
+        vc.delegate = self
+        window!.rootViewController = vc
+        window!.makeKeyAndVisible()
+    }
+    
+    private func launchSplash(){
+        
+        //Splash
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = Splash()
+        window?.makeKeyAndVisible()
+    }
+    
+    private func launchScreen(){
+        
+        //LaunchScreen
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
+        window?.makeKeyAndVisible()
+        
+        //3초
+        Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(dismisslaunchScreen), userInfo: nil, repeats: false)
+    }
+    
+    @objc func dismisslaunchScreen(){
+        
+        //mainVC
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "mainVC") as! ViewController
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window!.rootViewController = vc
+        window!.makeKeyAndVisible()
+    }
+    
+    func callMain()  {
+        
+        //mainVC
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "mainVC") as! ViewController
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window!.rootViewController = vc
+        window!.makeKeyAndVisible()
+    }
 }
 

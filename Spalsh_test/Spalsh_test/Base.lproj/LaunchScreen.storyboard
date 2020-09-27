@@ -12,39 +12,23 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchScreen" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-75" translatesAutoresizingMaskIntoConstraints="NO" id="z9S-BG-5f8">
-                                <rect key="frame" x="112.5" y="233.5" width="150" height="200"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="rWC-Ib-Bd5" userLabel="imgview1">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNN-Mi-hdp" userLabel="label1">
-                                        <rect key="frame" x="0.0" y="125" width="36.5" height="75"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-6r-Q11">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstItem="rWC-Ib-Bd5" firstAttribute="top" secondItem="z9S-BG-5f8" secondAttribute="top" id="9KC-UA-zBG"/>
-                                    <constraint firstAttribute="bottom" secondItem="rWC-Ib-Bd5" secondAttribute="bottom" id="9Mg-Pp-ukK"/>
-                                    <constraint firstAttribute="trailing" secondItem="rWC-Ib-Bd5" secondAttribute="trailing" id="DM9-4k-dKp"/>
-                                    <constraint firstAttribute="height" constant="200" id="QUW-dl-JMd"/>
-                                    <constraint firstAttribute="width" constant="150" id="Qtd-QQ-9Fz"/>
-                                    <constraint firstItem="rWC-Ib-Bd5" firstAttribute="leading" secondItem="z9S-BG-5f8" secondAttribute="leading" id="pbp-V7-Gl4"/>
+                                    <constraint firstAttribute="height" constant="100" id="cQU-0i-uR7"/>
+                                    <constraint firstAttribute="width" constant="100" id="jf9-Wt-4ha"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="z9S-BG-5f8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1N7-a9-Oml"/>
-                            <constraint firstItem="z9S-BG-5f8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lCU-hx-gMA"/>
+                            <constraint firstItem="4aD-6r-Q11" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cCx-NK-TLU"/>
+                            <constraint firstItem="4aD-6r-Q11" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="q9f-2A-qmn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
