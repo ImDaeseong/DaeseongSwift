@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIToolbar_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5f-xp-Vir" userLabel="btn1">
+                                <rect key="frame" x="172.5" y="318.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="btn1"/>
+                                <connections>
+                                    <segue destination="Wb0-tD-bpa" kind="show" id="3yX-Gv-knD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEp-xR-yAm" userLabel="btn2">
+                                <rect key="frame" x="171.5" y="368.5" width="32" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="btn2"/>
+                                <connections>
+                                    <segue destination="SJw-AN-Jcs" kind="show" id="8Np-aI-ngI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uEp-xR-yAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dgz-84-KME"/>
+                            <constraint firstItem="B5f-xp-Vir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ogi-iK-lY8"/>
+                            <constraint firstItem="uEp-xR-yAm" firstAttribute="top" secondItem="B5f-xp-Vir" secondAttribute="bottom" constant="20" id="bLS-6O-dIZ"/>
+                            <constraint firstItem="B5f-xp-Vir" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oLp-of-XUf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="125"/>
+        </scene>
+        <!--Item1-->
+        <scene sceneID="i8E-ZV-9To">
+            <objects>
+                <viewController id="Wb0-tD-bpa" customClass="item1" customModule="UIToolbar_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pht-Qg-MWF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDN-Dw-hxd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item1" image="img1" id="56x-iq-ELc" userLabel="Item1"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="I63-Aa-8ie"/>
+                                    <barButtonItem title="Item2" id="dVj-bS-vF5" userLabel="Item2"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ucE-sA-wd6"/>
+                                    <barButtonItem title="Item3" id="AzY-9P-fYG" userLabel="Item3"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="co6-1F-bEN"/>
+                                    <barButtonItem title="Item4" id="xS6-98-JyP" userLabel="Item4"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RDN-Dw-hxd" firstAttribute="top" secondItem="yyA-QX-Yoh" secondAttribute="top" id="gaF-dM-6Ii"/>
+                            <constraint firstItem="RDN-Dw-hxd" firstAttribute="leading" secondItem="yyA-QX-Yoh" secondAttribute="leading" id="jDC-Lh-9KD"/>
+                            <constraint firstItem="yyA-QX-Yoh" firstAttribute="trailing" secondItem="RDN-Dw-hxd" secondAttribute="trailing" id="kyn-JX-ODi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yyA-QX-Yoh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4V-qH-VX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="125"/>
+        </scene>
+        <!--Item2-->
+        <scene sceneID="Xun-of-Uj4">
+            <objects>
+                <viewController id="SJw-AN-Jcs" customClass="item2" customModule="UIToolbar_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YQS-ud-dqd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c3Q-LM-ORK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGA-9H-163" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img1" width="31" height="31"/>
+    </resources>
+</document>

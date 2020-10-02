@@ -47,12 +47,23 @@
                                     <segue destination="q0k-Mg-sci" kind="show" id="Gs4-H8-o3o"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpA-ul-Edb" userLabel="btn4">
+                                <rect key="frame" x="132.5" y="390" width="110" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="버튼4"/>
+                                <connections>
+                                    <segue destination="8Pc-kK-9cg" kind="show" id="9eQ-TG-sNv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="EpA-ul-Edb" firstAttribute="leading" secondItem="0iK-WN-jW1" secondAttribute="leading" id="6EQ-k7-oXy"/>
                             <constraint firstItem="VhG-hw-QKz" firstAttribute="width" secondItem="A3p-uC-rM6" secondAttribute="width" id="8wk-z1-5JF"/>
+                            <constraint firstItem="EpA-ul-Edb" firstAttribute="trailing" secondItem="0iK-WN-jW1" secondAttribute="trailing" id="9iy-Gi-aIy"/>
                             <constraint firstItem="0iK-WN-jW1" firstAttribute="width" secondItem="VhG-hw-QKz" secondAttribute="width" id="BPQ-1S-Bzs"/>
                             <constraint firstItem="VhG-hw-QKz" firstAttribute="height" secondItem="A3p-uC-rM6" secondAttribute="height" id="LhI-BO-iaK"/>
+                            <constraint firstItem="EpA-ul-Edb" firstAttribute="height" secondItem="0iK-WN-jW1" secondAttribute="height" id="OAc-t5-igr"/>
                             <constraint firstItem="0iK-WN-jW1" firstAttribute="top" secondItem="VhG-hw-QKz" secondAttribute="bottom" constant="40" id="ZGU-oY-okM"/>
                             <constraint firstItem="VhG-hw-QKz" firstAttribute="top" secondItem="A3p-uC-rM6" secondAttribute="bottom" constant="40" id="a0U-Jl-W7f"/>
                             <constraint firstItem="VhG-hw-QKz" firstAttribute="leading" secondItem="A3p-uC-rM6" secondAttribute="leading" id="aYS-0C-XhM"/>
@@ -61,6 +72,8 @@
                             <constraint firstItem="VhG-hw-QKz" firstAttribute="trailing" secondItem="A3p-uC-rM6" secondAttribute="trailing" id="hUM-HM-Bmd"/>
                             <constraint firstItem="0iK-WN-jW1" firstAttribute="height" secondItem="VhG-hw-QKz" secondAttribute="height" id="iFf-UJ-3bO"/>
                             <constraint firstItem="0iK-WN-jW1" firstAttribute="leading" secondItem="VhG-hw-QKz" secondAttribute="leading" id="idG-Mx-qTv"/>
+                            <constraint firstItem="EpA-ul-Edb" firstAttribute="width" secondItem="0iK-WN-jW1" secondAttribute="width" id="lrL-i5-bLm"/>
+                            <constraint firstItem="EpA-ul-Edb" firstAttribute="top" secondItem="0iK-WN-jW1" secondAttribute="bottom" constant="40" id="oXs-Nb-7WT" userLabel="btn4.top = btn3.bottom + 40"/>
                             <constraint firstItem="A3p-uC-rM6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="rJX-Te-7vJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -69,6 +82,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Item4-->
+        <scene sceneID="9BW-lA-hkP">
+            <objects>
+                <viewController id="8Pc-kK-9cg" customClass="item4" customModule="UIAlertController_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="amD-uJ-MIa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wz8-eL-nNI" userLabel="btn1">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="8Pc-kK-9cg" eventType="touchUpInside" id="IaP-8N-zUj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wz8-eL-nNI" firstAttribute="centerY" secondItem="amD-uJ-MIa" secondAttribute="centerY" id="Jya-5W-96S"/>
+                            <constraint firstItem="wz8-eL-nNI" firstAttribute="centerX" secondItem="amD-uJ-MIa" secondAttribute="centerX" id="cKi-PF-zcr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JTv-GQ-Gr4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7r-sN-KhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="794"/>
         </scene>
         <!--Item1-->
         <scene sceneID="Uh6-uY-Mjr">
