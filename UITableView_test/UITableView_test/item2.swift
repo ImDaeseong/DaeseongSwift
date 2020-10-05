@@ -19,7 +19,7 @@ class item2: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableview1.dequeueReusableCell(withIdentifier: "itemcell", for: indexPath) as! UITableViewCell
+        let cell : UITableViewCell = tableview1.dequeueReusableCell(withIdentifier: "itemcell", for: indexPath) as UITableViewCell
         
         cell.textLabel?.text = itemArray[indexPath.row]
         

@@ -4,13 +4,15 @@ class item4: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableview1: UITableView!
    
-    let itemArray = ["img1","img2","img3","img4"]
+    var itemArray : [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableview1.delegate = self
         tableview1.dataSource = self
+        
+        itemArray = ["img1","img2","img3","img4"]
     }
     
     
@@ -24,7 +26,6 @@ class item4: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         cell.imgview1.image = UIImage(named: itemArray[indexPath.row])
         cell.label1.text = itemArray[indexPath.row]
-        
         
         return cell
     }

@@ -15,6 +15,9 @@
 		A11DC98524ED260000795B48 /* item1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DC98424ED260000795B48 /* item1.swift */; };
 		A11DC98724ED260E00795B48 /* item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DC98624ED260E00795B48 /* item2.swift */; };
 		A11DC98924ED261A00795B48 /* item3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DC98824ED261A00795B48 /* item3.swift */; };
+		A13CC6EB252A97520092B030 /* item5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CC6EA252A97520092B030 /* item5.swift */; };
+		A13CC6ED252AA35A0092B030 /* UITableViewCellEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CC6EC252AA35A0092B030 /* UITableViewCellEx2.swift */; };
+		A13CC6EF252AA4910092B030 /* itemcell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13CC6EE252AA4910092B030 /* itemcell2.swift */; };
 		A1FEF48324EE727900A605E6 /* item4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FEF48224EE727900A605E6 /* item4.swift */; };
 		A1FEF48524EE738F00A605E6 /* UITableViewCellEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FEF48424EE738F00A605E6 /* UITableViewCellEx1.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +33,9 @@
 		A11DC98424ED260000795B48 /* item1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item1.swift; sourceTree = "<group>"; };
 		A11DC98624ED260E00795B48 /* item2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item2.swift; sourceTree = "<group>"; };
 		A11DC98824ED261A00795B48 /* item3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item3.swift; sourceTree = "<group>"; };
+		A13CC6EA252A97520092B030 /* item5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item5.swift; sourceTree = "<group>"; };
+		A13CC6EC252AA35A0092B030 /* UITableViewCellEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellEx2.swift; sourceTree = "<group>"; };
+		A13CC6EE252AA4910092B030 /* itemcell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemcell2.swift; sourceTree = "<group>"; };
 		A1FEF48224EE727900A605E6 /* item4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item4.swift; sourceTree = "<group>"; };
 		A1FEF48424EE738F00A605E6 /* UITableViewCellEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellEx1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +80,10 @@
 				A11DC98624ED260E00795B48 /* item2.swift */,
 				A11DC98824ED261A00795B48 /* item3.swift */,
 				A1FEF48224EE727900A605E6 /* item4.swift */,
+				A13CC6EA252A97520092B030 /* item5.swift */,
 				A1FEF48424EE738F00A605E6 /* UITableViewCellEx1.swift */,
+				A13CC6EC252AA35A0092B030 /* UITableViewCellEx2.swift */,
+				A13CC6EE252AA4910092B030 /* itemcell2.swift */,
 			);
 			path = UITableView_test;
 			sourceTree = "<group>";
@@ -152,11 +161,14 @@
 			files = (
 				A11DC97524ED21BB00795B48 /* ViewController.swift in Sources */,
 				A1FEF48524EE738F00A605E6 /* UITableViewCellEx1.swift in Sources */,
+				A13CC6EB252A97520092B030 /* item5.swift in Sources */,
+				A13CC6EF252AA4910092B030 /* itemcell2.swift in Sources */,
 				A1FEF48324EE727900A605E6 /* item4.swift in Sources */,
 				A11DC98524ED260000795B48 /* item1.swift in Sources */,
 				A11DC97324ED21BB00795B48 /* AppDelegate.swift in Sources */,
 				A11DC98724ED260E00795B48 /* item2.swift in Sources */,
 				A11DC98924ED261A00795B48 /* item3.swift in Sources */,
+				A13CC6ED252AA35A0092B030 /* UITableViewCellEx2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
