@@ -2,10 +2,14 @@ import UIKit
 
 class item1: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var collectionview1: UICollectionView!
+    
     var itemArray : [itemcell]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //collectionview1.allowsMultipleSelection = true
         
         itemArray = [
             itemcell(imgview1: "img1", label1: "img1"),

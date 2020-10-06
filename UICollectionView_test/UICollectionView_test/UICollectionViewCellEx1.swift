@@ -13,4 +13,18 @@ class UICollectionViewCellEx1 : UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
     }
+    
+    override var isSelected: Bool{
+        didSet {
+            
+            self.layer.borderWidth = isSelected ? 1 : 0
+            
+            if isSelected{
+                self.layer.borderColor = UIColor.orange.cgColor
+            }else {
+                self.layer.borderColor = UIColor.clear.cgColor
+            }
+        }
+    }
+    
 }
