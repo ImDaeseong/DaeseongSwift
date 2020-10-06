@@ -39,6 +39,11 @@ class item5: UIViewController, UITableViewDelegate, UITableViewDataSource, itemc
         
     }
     
+    //row 높이 설정
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     func selectCell(item : itemcell2){
         print(item.imgview1)
         print(item.label1)
