@@ -175,10 +175,19 @@
                                     <action selector="button1_click:" destination="ijO-eV-lG2" eventType="touchUpInside" id="NHO-x0-Ti3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-Ip-8M8" userLabel="btn7" customClass="ButtonEx7" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="313.5" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GRd-HN-u1L"/>
+                                    <constraint firstAttribute="width" constant="200" id="ldd-KP-Cii"/>
+                                </constraints>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ucm-LN-klg" firstAttribute="centerX" secondItem="pE3-co-vcY" secondAttribute="centerX" id="4LJ-9s-NUo"/>
+                            <constraint firstItem="GhG-Ip-8M8" firstAttribute="centerY" secondItem="pE3-co-vcY" secondAttribute="centerY" id="CQt-hw-Ab2"/>
+                            <constraint firstItem="GhG-Ip-8M8" firstAttribute="centerX" secondItem="pE3-co-vcY" secondAttribute="centerX" id="Nsp-HA-bvV"/>
                             <constraint firstItem="Ucm-LN-klg" firstAttribute="top" secondItem="6hr-fl-fc0" secondAttribute="top" constant="60" id="ids-hR-LjW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6hr-fl-fc0"/>

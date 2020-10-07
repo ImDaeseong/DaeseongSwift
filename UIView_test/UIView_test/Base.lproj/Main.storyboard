@@ -52,27 +52,50 @@
                                     <constraint firstAttribute="height" constant="50" id="WxD-gm-LBy"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lF-kr-25r" userLabel="view6" customClass="UIViewEx6" customModule="UIView_test" customModuleProvider="target">
+                                <rect key="frame" x="50" y="420" width="275" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wUq-Ry-YEI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I21-sa-5XP" userLabel="view7" customClass="UIViewEx7" customModule="UIView_test" customModuleProvider="target">
+                                <rect key="frame" x="50" y="490" width="275" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="huN-KM-ZMj"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccj-8k-rrL" secondAttribute="trailing" constant="50" id="0Ax-Lk-yce"/>
                             <constraint firstItem="8KL-jy-vkz" firstAttribute="top" secondItem="ObN-n0-uLU" secondAttribute="bottom" constant="20" id="88J-mO-CGK"/>
                             <constraint firstItem="ccj-8k-rrL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="E1K-gS-hJl"/>
                             <constraint firstItem="ObN-n0-uLU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="EbW-Lp-yCL"/>
+                            <constraint firstItem="I21-sa-5XP" firstAttribute="top" secondItem="9lF-kr-25r" secondAttribute="bottom" constant="20" id="So2-XL-Z6u"/>
                             <constraint firstItem="8KL-jy-vkz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VSE-7i-5Sv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h71-bb-gfb" secondAttribute="trailing" constant="50" id="W7S-4Q-f7S"/>
                             <constraint firstItem="ObN-n0-uLU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="XaP-fF-lWo"/>
                             <constraint firstItem="pyb-zd-j5c" firstAttribute="top" secondItem="8KL-jy-vkz" secondAttribute="bottom" constant="20" id="Xde-Hg-y5X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I21-sa-5XP" secondAttribute="trailing" constant="50" id="YMP-br-Zbk"/>
+                            <constraint firstItem="9lF-kr-25r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="aar-Bn-KE6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9lF-kr-25r" secondAttribute="trailing" constant="50" id="ajQ-tl-ySS"/>
                             <constraint firstItem="h71-bb-gfb" firstAttribute="top" secondItem="ccj-8k-rrL" secondAttribute="bottom" constant="20" id="cmy-TU-ara"/>
+                            <constraint firstItem="9lF-kr-25r" firstAttribute="top" secondItem="h71-bb-gfb" secondAttribute="bottom" constant="20" id="cyw-ML-pnj"/>
                             <constraint firstItem="pyb-zd-j5c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="f9x-UL-ffh"/>
                             <constraint firstItem="h71-bb-gfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fuG-eH-9Ik"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ObN-n0-uLU" secondAttribute="trailing" constant="50" id="icR-kd-KWG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8KL-jy-vkz" secondAttribute="trailing" constant="50" id="rlF-cV-EWO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pyb-zd-j5c" secondAttribute="trailing" constant="50" id="txm-od-ZYA"/>
                             <constraint firstItem="ccj-8k-rrL" firstAttribute="top" secondItem="pyb-zd-j5c" secondAttribute="bottom" constant="20" id="uKh-AW-iEY"/>
+                            <constraint firstItem="I21-sa-5XP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="yTL-Gz-5xi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="view7" destination="I21-sa-5XP" id="uEB-zM-lmQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -20,6 +20,7 @@
 		A1FECD0924E6798F0006E40F /* ButtonEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FECD0824E6798F0006E40F /* ButtonEx3.swift */; };
 		A1FECD0B24E67BD80006E40F /* ButtonEx4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FECD0A24E67BD80006E40F /* ButtonEx4.swift */; };
 		A1FECD0D24E682D50006E40F /* ButtonEx5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FECD0C24E682D50006E40F /* ButtonEx5.swift */; };
+		A1FFBF45252D5D62005A7E1F /* ButtonEx7.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FFBF44252D5D62005A7E1F /* ButtonEx7.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A1FECD0824E6798F0006E40F /* ButtonEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx3.swift; sourceTree = "<group>"; };
 		A1FECD0A24E67BD80006E40F /* ButtonEx4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx4.swift; sourceTree = "<group>"; };
 		A1FECD0C24E682D50006E40F /* ButtonEx5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx5.swift; sourceTree = "<group>"; };
+		A1FFBF44252D5D62005A7E1F /* ButtonEx7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx7.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				A1FECD0A24E67BD80006E40F /* ButtonEx4.swift */,
 				A1FECD0C24E682D50006E40F /* ButtonEx5.swift */,
 				A1030D72251B32C200DCBAEE /* ButtonEx6.swift */,
+				A1FFBF44252D5D62005A7E1F /* ButtonEx7.swift */,
 			);
 			path = Button_test;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FECD0124E65A040006E40F /* ViewController1.swift in Sources */,
+				A1FFBF45252D5D62005A7E1F /* ButtonEx7.swift in Sources */,
 				A1FECD0324E65A540006E40F /* ViewController2.swift in Sources */,
 				A1FECD0524E66D0E0006E40F /* ButtonEx1.swift in Sources */,
 				A1FECD0724E675D80006E40F /* ButtonEx2.swift in Sources */,

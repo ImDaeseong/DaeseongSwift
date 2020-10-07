@@ -1,6 +1,6 @@
 import UIKit
 
-class UIViewEx4 : UIView {
+class UIViewEx6 : UIView {
     
     let gradient : CAGradientLayer = {
         let gradient = CAGradientLayer()
@@ -10,11 +10,12 @@ class UIViewEx4 : UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        gradient.colors = [ UIColor(red: 0.200, green: 0.200, blue: 0.200, alpha: 1).cgColor, UIColor(red: 0.200, green: 0.200, blue: 0.200, alpha: 0).cgColor ]
-        gradient.startPoint = CGPoint(x: 0.5, y: 0.5)
+        gradient.colors = [ UIColor.orange.cgColor, UIColor.white.cgColor ]
+        gradient.startPoint = CGPoint(x: 0.5, y: 0.0)
         gradient.endPoint = CGPoint(x: 0.5, y: 1.0)
-        gradient.cornerRadius = 5
+        gradient.locations = [0.0, 1.0]
         gradient.frame = bounds
+        
         self.layer.insertSublayer(gradient, at: 0)
     }
     
