@@ -14,6 +14,7 @@ class item4: UIViewController {
         alertController = UIAlertController(title: "제목", message: "메시지", preferredStyle: .alert)
         alertOk = UIAlertAction(title: "확인", style: .default, handler: nil)
         alertController.addAction(alertOk)
+        alertController.view.tintColor = UIColor.orange
         self.present(alertController, animated: true, completion: nil)
         
         Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false, block: { (timer : Timer) in

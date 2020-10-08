@@ -16,6 +16,8 @@
 		A1087A5424EB9B2B002EBC19 /* item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1087A5324EB9B2B002EBC19 /* item2.swift */; };
 		A1087A5624EB9B39002EBC19 /* item3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1087A5524EB9B39002EBC19 /* item3.swift */; };
 		A13491B72526D4980030ACBA /* item4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13491B62526D4980030ACBA /* item4.swift */; };
+		A1463593252E8F790008A39A /* item5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1463592252E8F790008A39A /* item5.swift */; };
+		A1463595252EA2560008A39A /* item6.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1463594252EA2560008A39A /* item6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A1087A5324EB9B2B002EBC19 /* item2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item2.swift; sourceTree = "<group>"; };
 		A1087A5524EB9B39002EBC19 /* item3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item3.swift; sourceTree = "<group>"; };
 		A13491B62526D4980030ACBA /* item4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item4.swift; sourceTree = "<group>"; };
+		A1463592252E8F790008A39A /* item5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item5.swift; sourceTree = "<group>"; };
+		A1463594252EA2560008A39A /* item6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item6.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				A1087A5324EB9B2B002EBC19 /* item2.swift */,
 				A1087A5524EB9B39002EBC19 /* item3.swift */,
 				A13491B62526D4980030ACBA /* item4.swift */,
+				A1463592252E8F790008A39A /* item5.swift */,
+				A1463594252EA2560008A39A /* item6.swift */,
 			);
 			path = UIAlertController_test;
 			sourceTree = "<group>";
@@ -150,7 +156,9 @@
 				A1087A4224EB84BB002EBC19 /* ViewController.swift in Sources */,
 				A13491B72526D4980030ACBA /* item4.swift in Sources */,
 				A1087A5224EB9A66002EBC19 /* item1.swift in Sources */,
+				A1463595252EA2560008A39A /* item6.swift in Sources */,
 				A1087A4024EB84BB002EBC19 /* AppDelegate.swift in Sources */,
+				A1463593252E8F790008A39A /* item5.swift in Sources */,
 				A1087A5424EB9B2B002EBC19 /* item2.swift in Sources */,
 				A1087A5624EB9B39002EBC19 /* item3.swift in Sources */,
 			);
