@@ -14,6 +14,7 @@
 		A10060A224E7859E00786033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10060A024E7859E00786033 /* LaunchScreen.storyboard */; };
 		A10060AA24E7868000786033 /* item1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10060A924E7868000786033 /* item1.swift */; };
 		A10060AC24E7869000786033 /* item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10060AB24E7869000786033 /* item2.swift */; };
+		A123574F252FF91400DBA88B /* item3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123574E252FF91400DBA88B /* item3.swift */; };
 		A1A1077824E7B98C00A74A71 /* TextFieldEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1077724E7B98C00A74A71 /* TextFieldEx1.swift */; };
 		A1A1077A24E7C9FD00A74A71 /* TextFieldEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1077924E7C9FD00A74A71 /* TextFieldEx2.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		A10060A324E7859E00786033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10060A924E7868000786033 /* item1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item1.swift; sourceTree = "<group>"; };
 		A10060AB24E7869000786033 /* item2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item2.swift; sourceTree = "<group>"; };
+		A123574E252FF91400DBA88B /* item3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item3.swift; sourceTree = "<group>"; };
 		A1A1077724E7B98C00A74A71 /* TextFieldEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEx1.swift; sourceTree = "<group>"; };
 		A1A1077924E7C9FD00A74A71 /* TextFieldEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEx2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				A10060A324E7859E00786033 /* Info.plist */,
 				A10060A924E7868000786033 /* item1.swift */,
 				A10060AB24E7869000786033 /* item2.swift */,
+				A123574E252FF91400DBA88B /* item3.swift */,
 				A1A1077724E7B98C00A74A71 /* TextFieldEx1.swift */,
 				A1A1077924E7C9FD00A74A71 /* TextFieldEx2.swift */,
 			);
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10060AA24E7868000786033 /* item1.swift in Sources */,
+				A123574F252FF91400DBA88B /* item3.swift in Sources */,
 				A10060AC24E7869000786033 /* item2.swift in Sources */,
 				A1A1077824E7B98C00A74A71 /* TextFieldEx1.swift in Sources */,
 				A1A1077A24E7C9FD00A74A71 /* TextFieldEx2.swift in Sources */,

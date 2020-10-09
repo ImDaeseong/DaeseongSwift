@@ -19,12 +19,20 @@ class ViewController: UIViewController {
         
         if let VC2 = storyboard?.instantiateViewController(withIdentifier: "item2") {
             
-            //VC2.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
-            //VC2.modalTransitionStyle = UIModalTransitionStyle.partialCurl
             //VC2.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            VC2.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+            VC2.modalTransitionStyle = UIModalTransitionStyle.partialCurl
             self.present(VC2, animated: true)
         }
     }
+    
+    @IBAction func btn3_click(_ sender: UIButton) {
+        
+        if let VC3 = storyboard?.instantiateViewController(withIdentifier: "item3") {
+            
+            VC3.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+            self.present(VC3, animated: true)
+        }
+    }
+    
 }
 
