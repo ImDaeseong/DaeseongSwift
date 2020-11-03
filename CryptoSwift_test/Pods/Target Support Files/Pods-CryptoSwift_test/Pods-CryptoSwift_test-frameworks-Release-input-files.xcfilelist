@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-CryptoSwift_test/Pods-CryptoSwift_test-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
