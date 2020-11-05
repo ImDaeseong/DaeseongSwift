@@ -35,6 +35,10 @@ class ViewController: UIViewController {
         
         let dec = aesDecryptMessage(aeskey: cryptkey, sData:enc)!
         print("dec:" + dec)
+        
+        let deviceinfo = getDeviceInfo()
+        print("deviceinfo:" + deviceinfo)
+        
     }
     
     private func getlogin(){
@@ -83,10 +87,11 @@ class ViewController: UIViewController {
             }
             
         }
+        
     }
     
     private func getBTC(){
-        
+       
         let url = "https://api.bithumb.com/public/ticker/BTC"
         
         AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { response in

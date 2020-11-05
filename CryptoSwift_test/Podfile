@@ -5,8 +5,6 @@ target 'CryptoSwift_test' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for CryptoSwift_test
-
   pod 'Alamofire', '~> 5.2'
   pod 'CryptoSwift', '~> 0.9.0'
 
