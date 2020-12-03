@@ -70,8 +70,8 @@
 				A18E502724F4EDEA00088607 /* Info.plist */,
 				A18E502D24F4F03900088607 /* item1.swift */,
 				A18E502F24F4F04500088607 /* item2.swift */,
-				A18E503324F50DA100088607 /* UserDefaultsManager.swift */,
 				A1FD20EF24F5D6260040BCED /* item3.swift */,
+				A18E503324F50DA100088607 /* UserDefaultsManager.swift */,
 			);
 			path = UserDefaults_test;
 			sourceTree = "<group>";
@@ -299,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UserDefaults_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UserDefaults_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

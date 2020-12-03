@@ -71,10 +71,10 @@
 				A10977C924FA095D001E080C /* LaunchScreen.storyboard */,
 				A10977CC24FA095D001E080C /* Info.plist */,
 				A10977D224FA0B52001E080C /* item1.swift */,
-				A10977D424FA0DEE001E080C /* DownloadUrl.swift */,
 				A10977D624FA1753001E080C /* item2.swift */,
 				A10977D824FA60DD001E080C /* item3.swift */,
 				A1FDD1D324FCD4BC008B19D6 /* item4.swift */,
+				A10977D424FA0DEE001E080C /* DownloadUrl.swift */,
 			);
 			path = URL_test;
 			sourceTree = "<group>";
@@ -303,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = URL_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = URL_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

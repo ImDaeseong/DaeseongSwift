@@ -76,6 +76,7 @@
 				A1030D87251B393500DCBAEE /* Assets.xcassets */,
 				A1030D89251B393500DCBAEE /* LaunchScreen.storyboard */,
 				A1030D8C251B393500DCBAEE /* Info.plist */,
+				A1FFF77E251EFDEF00446735 /* item1ViewController.swift */,
 				A1030D92251B395C00DCBAEE /* UIViewEx1.swift */,
 				A1030D94251B40DA00DCBAEE /* UIViewEx2.swift */,
 				A1030D96251B422100DCBAEE /* UIViewEx3.swift */,
@@ -83,7 +84,6 @@
 				A10F5B99251C820000293A92 /* UIViewEx5.swift */,
 				A1FFBF40252D412A005A7E1F /* UIViewEx6.swift */,
 				A1FFBF42252D4EDE005A7E1F /* UIViewEx7.swift */,
-				A1FFF77E251EFDEF00446735 /* item1ViewController.swift */,
 			);
 			path = UIView_test;
 			sourceTree = "<group>";
@@ -315,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UIView_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UIView_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

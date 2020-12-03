@@ -63,12 +63,12 @@
 				A141A94E250474DA00918C8D /* AppDelegate.swift */,
 				A141A950250474DA00918C8D /* item1.swift */,
 				A141A952250474DA00918C8D /* item2.swift */,
+				A141A9642504899900918C8D /* item3.swift */,
 				A141A954250474DA00918C8D /* Main.storyboard */,
 				A141A957250474DB00918C8D /* Assets.xcassets */,
 				A141A959250474DB00918C8D /* LaunchScreen.storyboard */,
 				A141A95C250474DB00918C8D /* Info.plist */,
 				A141A9622504798000918C8D /* UITabBarControllerEx1.swift */,
-				A141A9642504899900918C8D /* item3.swift */,
 			);
 			path = UITabBarController_test5;
 			sourceTree = "<group>";
@@ -295,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UITabBarController_test5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UITabBarController_test5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

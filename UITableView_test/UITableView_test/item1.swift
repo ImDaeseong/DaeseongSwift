@@ -33,7 +33,6 @@ class item1: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.layer.cornerRadius = 10
         cell.clipsToBounds = true
         
-        
         return cell
     }
     

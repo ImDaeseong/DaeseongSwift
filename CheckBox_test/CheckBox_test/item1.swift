@@ -17,6 +17,5 @@ class item1: UIViewController {
     @IBAction func btn2_click(_ sender: CheckBoxEx1) {
         
         print(sender.isSelected)
-        
     }
 }

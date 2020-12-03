@@ -1,9 +1,11 @@
 import UIKit
 
-class item2: UIViewController {
+class item2: UIViewController , UITextFieldDelegate {
     
     @IBOutlet weak var textfield1: UITextField!
     @IBOutlet weak var view1: UIView!
+    
+    var keyboardheight = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,7 @@ class item2: UIViewController {
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
         view1.addGestureRecognizer(tap1)
         
+        
         //텍스트 에디트 설정
         self.textfield1.placeholder = "값을 입력하세요"
         self.textfield1.tintColor = UIColor.white
@@ -27,30 +30,54 @@ class item2: UIViewController {
         self.textfield1.contentHorizontalAlignment = .center
         self.textfield1.contentVerticalAlignment = .center
         
-        //텍스트 에디트에 포커스
+        self.textfield1.delegate = self
+        
+        
+        //키보드 보임/숨김 여부 감시
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        //print("keyboard 보임")
         textfield1.becomeFirstResponder()
+    }
+    
+    @objc func keyboardWillAppear(_ sender : NotificationCenter){
+        
+        //print("keyboard 보임")
+        
+        if (keyboardheight != 0) {
+            self.view.frame.origin.y -= 200
+            self.keyboardheight += 200
+        }
+    }
+
+    @objc func keyboardWillDisappear(_ sender : NotificationCenter){
+        
+        //print("keyboard 숨김")
+        
+        self.view.frame.origin.y += CGFloat(self.keyboardheight)
+        self.keyboardheight = 0
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        //print("textFieldShouldReturn 리턴키 입력시 키보드 숨김")
+        
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        //print("touchesBegan 터치 이벤트 키보드 숨김")
+        
+        self.view.endEditing(true)
+        self.view.frame.origin.y += CGFloat(self.keyboardheight)
+        self.keyboardheight = 0
     }
     
     @objc func viewTapped(_ sender: UITapGestureRecognizer) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    //텍스트 입력 시작할때
-    @IBAction func editingDidBegin(_ sender: UITextField) {
-        print("텍스트 입력 시작할때")
-    }
-    
-    //텍스트 입력 중일때
-    @IBAction func editingChanged(_ sender: UITextField) {
-        print("텍스트 입력 중일때")
-    }
-    
-    //텍스트 입력에서 벗어날때
-    @IBAction func DidEndOnExit(_ sender: UITextField) {
-        
-        print("텍스트 입력에서 벗어날때")
-        
-        //키보드 숨기기
-        textfield1.resignFirstResponder()
-    }
 }

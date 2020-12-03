@@ -17,7 +17,8 @@ class ViewController: UIViewController {
         
         let authorizationProvider = ASAuthorizationAppleIDProvider()
         let request = authorizationProvider.createRequest()
-        request.requestedScopes = [.email]//request.requestedScopes = [.fullName, .email]
+        //request.requestedScopes = [.email]
+        request.requestedScopes = [.fullName, .email]
         
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
         authorizationController.delegate = self
@@ -31,6 +32,8 @@ extension ViewController : ASAuthorizationControllerDelegate {
     
     //로그인 완료시
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        
+        print("로그인 완료시")
         
         guard let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential else { return }
         print("user:\(appleIDCredential.user) , email:\(appleIDCredential.email), fullName:\(appleIDCredential.fullName)")

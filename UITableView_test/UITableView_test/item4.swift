@@ -15,7 +15,6 @@ class item4: UIViewController, UITableViewDelegate, UITableViewDataSource {
         itemArray = ["img1","img2","img3","img4"]
     }
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
     }

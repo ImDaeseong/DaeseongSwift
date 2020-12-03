@@ -39,8 +39,9 @@ class item5: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let current = round(scrollView.contentOffset.x / self.scrollview1.frame.width)
-        //print(current)
-        pagecontrol1.currentPage = Int(CGFloat(current))
         
+        //print(current)
+        
+        pagecontrol1.currentPage = Int(CGFloat(current))
     }
 }

@@ -15,7 +15,8 @@ class item4: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        print("viewDidDisappear")
+        //print("viewDidDisappear")
+        
         stopTimer()
     }
     

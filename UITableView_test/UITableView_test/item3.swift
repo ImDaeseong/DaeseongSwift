@@ -24,7 +24,6 @@ class item3: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.imageView?.image = UIImage(named: "img\(indexPath.row+1).png")
         cell.textLabel?.text = itemArray[indexPath.row]
         
-        
         return cell
     }
     

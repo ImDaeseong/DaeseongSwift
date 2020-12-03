@@ -6,6 +6,8 @@ class item5: UIViewController, UITableViewDelegate, UITableViewDataSource, itemc
     
     var itemArray : [itemcell2]!
     
+    var cellHeight : CGFloat = 150
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +43,14 @@ class item5: UIViewController, UITableViewDelegate, UITableViewDataSource, itemc
     
     //row 높이 설정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        
+        let count = itemArray.count
+    
+        let Height = CGFloat(tableView.bounds.height / CGFloat(count))
+    
+        return Height
+        
+        //return cellHeight
     }
     
     func selectCell(item : itemcell2){

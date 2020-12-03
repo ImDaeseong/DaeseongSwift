@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKp-ey-GUa" userLabel="btn1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKp-ey-GUa" userLabel="btn1">
                                 <rect key="frame" x="164.5" y="207.5" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -25,7 +24,7 @@
                                     <segue destination="am6-vG-N5J" kind="presentation" id="Pm8-xZ-Kbl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32J-aH-h16" userLabel="btn2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32J-aH-h16" userLabel="btn2">
                                 <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -33,7 +32,7 @@
                                     <segue destination="FWu-UN-Dow" kind="presentation" id="b0R-cL-oJS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z9-M2-Rp7" userLabel="btn3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z9-M2-Rp7" userLabel="btn3">
                                 <rect key="frame" x="164.5" y="429.5" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -41,7 +40,7 @@
                                     <segue destination="huh-OI-UJh" kind="presentation" id="zZg-zN-OCf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-Gw-pY5" userLabel="btn4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-Gw-pY5" userLabel="btn4">
                                 <rect key="frame" x="164.5" y="541" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -50,6 +49,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="32J-aH-h16" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2RU-Ow-BY7"/>
@@ -61,7 +61,6 @@
                             <constraint firstItem="7Z9-M2-Rp7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="4/3" id="hi8-vU-b5O"/>
                             <constraint firstItem="32J-aH-h16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wAZ-fb-s04"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,11 +72,11 @@
             <objects>
                 <viewController id="am6-vG-N5J" userLabel="item1" customClass="item1" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2OA-Ql-tou">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpA-BC-HSQ" userLabel="btn1">
-                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpA-BC-HSQ" userLabel="btn1">
+                                <rect key="frame" x="319" y="10" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -85,7 +84,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lfM-o9-qdz" userLabel="segment1">
-                                <rect key="frame" x="127" y="319.5" width="121" height="29"/>
+                                <rect key="frame" x="122" y="308" width="131" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -95,6 +94,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="tDG-3M-r9q"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lfM-o9-qdz" firstAttribute="centerY" secondItem="2OA-Ql-tou" secondAttribute="centerY" id="6ki-cT-EfZ"/>
@@ -102,7 +102,6 @@
                             <constraint firstItem="qpA-BC-HSQ" firstAttribute="top" secondItem="tDG-3M-r9q" secondAttribute="top" constant="10" id="RBN-jk-xjx"/>
                             <constraint firstItem="lfM-o9-qdz" firstAttribute="centerX" secondItem="2OA-Ql-tou" secondAttribute="centerX" id="tFR-9Y-CjS"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tDG-3M-r9q"/>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="qpA-BC-HSQ" id="C5N-hh-Euq"/>
@@ -118,11 +117,11 @@
             <objects>
                 <viewController id="FWu-UN-Dow" userLabel="item2" customClass="item2" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="esY-vK-Drn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhO-yr-Lth" userLabel="btn1">
-                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhO-yr-Lth" userLabel="btn1">
+                                <rect key="frame" x="319" y="10" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -130,7 +129,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Ua-8n-Ae6" userLabel="segment1">
-                                <rect key="frame" x="10" y="319.5" width="355" height="29"/>
+                                <rect key="frame" x="10" y="308" width="355" height="32"/>
                                 <segments>
                                     <segment title=""/>
                                     <segment title=""/>
@@ -141,6 +140,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="zNM-gu-wGy"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XhO-yr-Lth" firstAttribute="top" secondItem="zNM-gu-wGy" secondAttribute="top" constant="10" id="24W-kI-o38"/>
@@ -149,7 +149,6 @@
                             <constraint firstItem="0Ua-8n-Ae6" firstAttribute="leading" secondItem="zNM-gu-wGy" secondAttribute="leading" constant="10" id="a8w-Ch-DIh"/>
                             <constraint firstItem="zNM-gu-wGy" firstAttribute="trailing" secondItem="0Ua-8n-Ae6" secondAttribute="trailing" constant="10" id="vq3-eZ-hrQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zNM-gu-wGy"/>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="XhO-yr-Lth" id="yLt-gh-OTO"/>
@@ -165,11 +164,11 @@
             <objects>
                 <viewController id="huh-OI-UJh" userLabel="item3" customClass="item3" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tnl-hE-X12">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yG-75-DKA" userLabel="btn1">
-                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yG-75-DKA" userLabel="btn1">
+                                <rect key="frame" x="319" y="10" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -177,7 +176,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NGG-sU-0w6" userLabel="segment1">
-                                <rect key="frame" x="127" y="319.5" width="121" height="29"/>
+                                <rect key="frame" x="122" y="308" width="131" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -187,6 +186,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6w3-ST-Jz2"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6yG-75-DKA" firstAttribute="top" secondItem="6w3-ST-Jz2" secondAttribute="top" constant="10" id="Fpg-7C-X2F"/>
@@ -194,7 +194,6 @@
                             <constraint firstItem="NGG-sU-0w6" firstAttribute="centerY" secondItem="tnl-hE-X12" secondAttribute="centerY" id="aOW-zq-YEz"/>
                             <constraint firstItem="6w3-ST-Jz2" firstAttribute="trailing" secondItem="6yG-75-DKA" secondAttribute="trailing" constant="10" id="c6r-6M-D01"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6w3-ST-Jz2"/>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="6yG-75-DKA" id="W55-Lg-tQt"/>
@@ -210,11 +209,11 @@
             <objects>
                 <viewController id="HpP-8I-8lq" userLabel="item4" customClass="item4" customModule="UISegmentedControl_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ruV-eF-lpA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCZ-hA-Vjf" userLabel="btn1">
-                                <rect key="frame" x="319" y="30" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCZ-hA-Vjf" userLabel="btn1">
+                                <rect key="frame" x="319" y="10" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -223,7 +222,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iTH-AB-6ny" userLabel="segment1">
-                                <rect key="frame" x="10" y="319.5" width="355" height="29"/>
+                                <rect key="frame" x="10" y="308" width="355" height="32"/>
                                 <segments>
                                     <segment title="" image="img1"/>
                                     <segment title="" image="img1"/>
@@ -233,6 +232,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Je-lj-b47"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iTH-AB-6ny" firstAttribute="leading" secondItem="0Je-lj-b47" secondAttribute="leading" constant="10" id="0II-WB-soa"/>
@@ -241,7 +241,6 @@
                             <constraint firstItem="0Je-lj-b47" firstAttribute="trailing" secondItem="WCZ-hA-Vjf" secondAttribute="trailing" constant="10" id="VbY-gh-OtS"/>
                             <constraint firstItem="iTH-AB-6ny" firstAttribute="centerY" secondItem="ruV-eF-lpA" secondAttribute="centerY" id="nex-Ch-v58"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Je-lj-b47"/>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="WCZ-hA-Vjf" id="FlV-fj-5N0"/>

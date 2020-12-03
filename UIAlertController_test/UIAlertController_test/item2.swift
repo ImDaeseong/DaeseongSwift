@@ -32,7 +32,8 @@ class item2: UIViewController {
         alertController.addAction(alertCancel)
         alertController.addAction(alertOk)
         alertController.addAction(alertDelete)
-        //alertController.view.tintColor = UIColor.orange
+        
         self.present(alertController, animated: true, completion: nil)
     }
+    
 }

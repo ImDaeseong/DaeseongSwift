@@ -57,9 +57,6 @@ class ViewController: UIViewController {
         print("getDateSubtract: \(getDateSubtract(from : startDate, to : endDate))")
         print("getTimeSubtract: \(getTimeSubtract(from : startDate, to : endDate))")
         
-        
-        
-        
     }
     
 }

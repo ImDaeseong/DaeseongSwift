@@ -42,13 +42,11 @@ class UITabBarControllerEx1 : UITabBarController, UITabBarControllerDelegate {
         
         //print(item.tag)
         //print(item.title!)
-        
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
         self.selectedIndex = tabBarController.selectedIndex
-        
     }
     
 }

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,6 +41,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TaV-oH-uRx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BSI-Ym-fDv"/>
@@ -54,7 +54,6 @@
                             <constraint firstItem="oXa-7t-Mnf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bz7-Rr-4ed"/>
                             <constraint firstItem="TaV-oH-uRx" firstAttribute="top" secondItem="0Hg-dh-f0b" secondAttribute="bottom" constant="30" id="yJa-ls-77T"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="imgview1" destination="TaV-oH-uRx" id="vTd-Vy-Y2q"/>
@@ -82,16 +81,26 @@
                                     <constraint firstAttribute="height" constant="200" id="gxd-VH-aLt"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ace-hM-hnY">
+                                <rect key="frame" x="299" y="30" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Rau-vX-bIE" kind="unwind" unwindAction="unwindToVC:" id="FqB-4m-arU"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="M0T-ki-KLn"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="M0T-ki-KLn" firstAttribute="trailing" secondItem="ace-hM-hnY" secondAttribute="trailing" constant="30" id="ABS-d6-h2f"/>
                             <constraint firstItem="8BF-5l-IWS" firstAttribute="centerX" secondItem="Z4N-7l-26Z" secondAttribute="centerX" id="GSf-q9-YKD"/>
+                            <constraint firstItem="ace-hM-hnY" firstAttribute="top" secondItem="M0T-ki-KLn" secondAttribute="top" constant="30" id="QW6-We-Ach"/>
                             <constraint firstItem="8BF-5l-IWS" firstAttribute="centerY" secondItem="Z4N-7l-26Z" secondAttribute="centerY" id="gI8-gn-1J5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="M0T-ki-KLn"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I32-vF-Z3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Rau-vX-bIE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1938" y="713"/>
         </scene>
@@ -110,13 +119,14 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="I2O-3N-3vq" customClass="ImageViewEx2" customModule="ImageView_test" customModuleProvider="target">
-                                <rect key="frame" x="315" y="30" width="50" height="50"/>
+                                <rect key="frame" x="315" y="10" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5Qu-uU-ZSj"/>
                                     <constraint firstAttribute="width" constant="50" id="iA1-C5-jUN"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="5eZ-iK-2fc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5eZ-iK-2fc" firstAttribute="trailing" secondItem="I2O-3N-3vq" secondAttribute="trailing" constant="10" id="1YR-kD-uSq"/>
@@ -126,7 +136,6 @@
                             <constraint firstItem="I2O-3N-3vq" firstAttribute="top" secondItem="5eZ-iK-2fc" secondAttribute="top" constant="10" id="tyJ-Kg-5Fs"/>
                             <constraint firstItem="5UI-aM-zvM" firstAttribute="centerY" secondItem="J2z-JE-pbb" secondAttribute="centerY" id="vxg-2O-3bd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5eZ-iK-2fc"/>
                     </view>
                     <connections>
                         <outlet property="img1" destination="I2O-3N-3vq" id="V00-lx-YUd"/>
@@ -145,7 +154,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="QhQ-lh-J7I" userLabel="img1" customClass="ImageViewEx2" customModule="ImageView_test" customModuleProvider="target">
-                                <rect key="frame" x="315" y="30" width="50" height="50"/>
+                                <rect key="frame" x="315" y="10" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="So0-Ld-5hS"/>
                                     <constraint firstAttribute="width" constant="50" id="faX-fq-Nh6"/>
@@ -159,6 +168,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="aGY-cU-IEc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QhQ-lh-J7I" firstAttribute="top" secondItem="aGY-cU-IEc" secondAttribute="top" constant="10" id="RB5-FW-VI7"/>
@@ -166,7 +176,6 @@
                             <constraint firstItem="ahI-Ol-uN4" firstAttribute="centerY" secondItem="kAB-YW-95c" secondAttribute="centerY" id="uJs-Dq-7mp"/>
                             <constraint firstItem="aGY-cU-IEc" firstAttribute="trailing" secondItem="QhQ-lh-J7I" secondAttribute="trailing" constant="10" id="whD-Ku-3xB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aGY-cU-IEc"/>
                     </view>
                     <connections>
                         <outlet property="img1" destination="QhQ-lh-J7I" id="Qck-gV-5Eu"/>
@@ -185,7 +194,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="5VJ-zh-B8w" userLabel="img1" customClass="ImageViewEx2" customModule="ImageView_test" customModuleProvider="target">
-                                <rect key="frame" x="315" y="30" width="50" height="50"/>
+                                <rect key="frame" x="315" y="10" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="I9e-AA-gRm"/>
                                     <constraint firstAttribute="height" constant="50" id="IvD-UP-j3d"/>
@@ -198,6 +207,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Xw-qc-Mws"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5Xw-qc-Mws" firstAttribute="trailing" secondItem="5VJ-zh-B8w" secondAttribute="trailing" constant="10" id="4SQ-QN-Wd8"/>
@@ -207,11 +217,10 @@
                             <constraint firstAttribute="trailing" secondItem="rLa-CY-6nc" secondAttribute="trailing" constant="10" id="oGm-bm-bjh"/>
                             <constraint firstItem="rLa-CY-6nc" firstAttribute="leading" secondItem="Qaj-25-BgM" secondAttribute="leading" constant="10" id="yfa-1b-qx2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5Xw-qc-Mws"/>
                     </view>
                     <connections>
-                        <outlet property="img1" destination="rLa-CY-6nc" id="iI0-n4-NPq"/>
-                        <outlet property="img2" destination="rLa-CY-6nc" id="NYH-Gj-2xn"/>
+                        <outlet property="img1" destination="5VJ-zh-B8w" id="YFa-l0-H88"/>
+                        <outlet property="img2" destination="rLa-CY-6nc" id="rZz-xe-NLI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXZ-af-6JQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,8 +229,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="img1" width="480" height="232"/>
-        <image name="img2" width="31" height="31"/>
+        <image name="img1" width="480" height="232.5"/>
+        <image name="img2" width="31.5" height="31.5"/>
         <image name="img4" width="438" height="285"/>
         <image name="img5" width="69" height="24"/>
         <image name="img6" width="69" height="24"/>

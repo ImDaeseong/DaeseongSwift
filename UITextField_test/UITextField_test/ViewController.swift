@@ -19,8 +19,7 @@ class ViewController: UIViewController {
         
         if let VC2 = storyboard?.instantiateViewController(withIdentifier: "item2") {
             
-            //VC2.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            VC2.modalTransitionStyle = UIModalTransitionStyle.partialCurl
+            VC2.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             self.present(VC2, animated: true)
         }
     }

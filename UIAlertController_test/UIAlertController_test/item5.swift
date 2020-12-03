@@ -43,6 +43,7 @@ class item5: UIViewController {
                 self.label1.text = text
             }
         })
+        
         self.present(alertController, animated: true, completion: nil)
         
     }

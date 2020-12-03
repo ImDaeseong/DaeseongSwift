@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-HM-64W" userLabel="Button2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-HM-64W" userLabel="Button2">
                                 <rect key="frame" x="137.5" y="368.5" width="100" height="50"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.051343107876712327" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -47,6 +46,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MRi-HM-64W" firstAttribute="leading" secondItem="auu-Py-xhV" secondAttribute="leading" id="CSH-DQ-m0b"/>
@@ -55,7 +55,6 @@
                             <constraint firstItem="auu-Py-xhV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZzC-zt-1Xe"/>
                             <constraint firstItem="auu-Py-xhV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uu4-og-tLo"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,11 +67,11 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BsP-5p-ee7" userLabel="View Controller1" customClass="ViewController1" customModule="Button_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jwX-bR-zL8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUF-pT-b8K" userLabel="button1">
-                                <rect key="frame" x="87.5" y="70" width="200" height="35"/>
+                                <rect key="frame" x="87.5" y="50" width="200" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="KRy-de-4ax"/>
                                     <constraint firstAttribute="height" constant="35" id="McA-Q7-Ujc"/>
@@ -84,35 +83,35 @@
                                     <action selector="button1_click:" destination="BsP-5p-ee7" eventType="touchUpInside" id="KCM-AG-3Ki"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlO-Sa-6pv" userLabel="btn1" customClass="ButtonEx1" customModule="Button_test" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="147" width="200" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlO-Sa-6pv" userLabel="btn1" customClass="ButtonEx1" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="142" width="200" height="40"/>
                                 <state key="normal" title="테스트1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl2-Vp-15R" userLabel="btn2" customClass="ButtonEx2" customModule="Button_test" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="237" width="200" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl2-Vp-15R" userLabel="btn2" customClass="ButtonEx2" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="232" width="200" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="테스트2">
                                     <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyG-iM-yMi" userLabel="btn3" customClass="ButtonEx3" customModule="Button_test" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="327" width="200" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyG-iM-yMi" userLabel="btn3" customClass="ButtonEx3" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="322" width="200" height="40"/>
                                 <state key="normal" title="테스트3"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjD-tH-JAz" userLabel="btn4" customClass="ButtonEx4" customModule="Button_test" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="417" width="200" height="40"/>
+                                <rect key="frame" x="87.5" y="412" width="200" height="40"/>
                                 <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8x-0k-drR" userLabel="btn5" customClass="ButtonEx5" customModule="Button_test" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="507" width="200" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8x-0k-drR" userLabel="btn5" customClass="ButtonEx5" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="502" width="200" height="40"/>
                                 <state key="normal" title="테스트5"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CO-e2-Fyg" userLabel="btn6" customClass="ButtonEx6" customModule="Button_test" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="597" width="200" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CO-e2-Fyg" userLabel="btn6" customClass="ButtonEx6" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="592" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6Qj-2t-5i6"/>
                                     <constraint firstAttribute="width" constant="200" id="8ae-ZL-k0d"/>
@@ -120,6 +119,7 @@
                                 <state key="normal" title="테스트6"/>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="tDJ-oc-8jc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Xl2-Vp-15R" firstAttribute="height" secondItem="RlO-Sa-6pv" secondAttribute="height" id="07c-da-Di1"/>
@@ -147,8 +147,8 @@
                             <constraint firstItem="Xl2-Vp-15R" firstAttribute="width" secondItem="RlO-Sa-6pv" secondAttribute="width" id="z0U-bc-ssU"/>
                             <constraint firstItem="2CO-e2-Fyg" firstAttribute="top" secondItem="M8x-0k-drR" secondAttribute="bottom" constant="50" id="zwO-TF-w7D"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="tDJ-oc-8jc"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wkd-2p-jjQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ChU-Qs-gSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,11 +159,11 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ijO-eV-lG2" userLabel="View Controller2" customClass="ViewController2" customModule="Button_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pE3-co-vcY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucm-LN-klg" userLabel="button1">
-                                <rect key="frame" x="87.5" y="80" width="200" height="35"/>
+                                <rect key="frame" x="87.5" y="60" width="200" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="2Mo-bX-Hsx"/>
                                     <constraint firstAttribute="height" constant="35" id="2f6-jI-weq"/>
@@ -175,14 +175,15 @@
                                     <action selector="button1_click:" destination="ijO-eV-lG2" eventType="touchUpInside" id="NHO-x0-Ti3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-Ip-8M8" userLabel="btn7" customClass="ButtonEx7" customModule="Button_test" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="313.5" width="200" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-Ip-8M8" userLabel="btn7" customClass="ButtonEx7" customModule="Button_test" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="298.5" width="200" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="GRd-HN-u1L"/>
-                                    <constraint firstAttribute="width" constant="200" id="ldd-KP-Cii"/>
+                                    <constraint firstAttribute="width" constant="200" id="ECf-d5-XD4"/>
+                                    <constraint firstAttribute="height" constant="50" id="Qsf-Fn-9pe"/>
                                 </constraints>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6hr-fl-fc0"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ucm-LN-klg" firstAttribute="centerX" secondItem="pE3-co-vcY" secondAttribute="centerX" id="4LJ-9s-NUo"/>
@@ -190,7 +191,6 @@
                             <constraint firstItem="GhG-Ip-8M8" firstAttribute="centerX" secondItem="pE3-co-vcY" secondAttribute="centerX" id="Nsp-HA-bvV"/>
                             <constraint firstItem="Ucm-LN-klg" firstAttribute="top" secondItem="6hr-fl-fc0" secondAttribute="top" constant="60" id="ids-hR-LjW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6hr-fl-fc0"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXC-P1-RMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -199,6 +199,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="img2" width="31" height="31"/>
+        <image name="img2" width="31.5" height="31.5"/>
     </resources>
 </document>
