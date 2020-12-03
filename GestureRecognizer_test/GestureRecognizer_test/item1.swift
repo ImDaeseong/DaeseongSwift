@@ -2,6 +2,8 @@ import UIKit
 
 class item1: UIViewController {
     
+    @IBOutlet weak var label1: UILabel!
+    
     var swipeLeft : UISwipeGestureRecognizer!
     var swipeRight : UISwipeGestureRecognizer!
     var swipeLeftMulti : UISwipeGestureRecognizer!
@@ -36,9 +38,9 @@ class item1: UIViewController {
         if let swipe = gesture as? UISwipeGestureRecognizer {
             switch swipe.direction {
             case UISwipeGestureRecognizer.Direction.left:
-                print("left")
+                label1.text = "left swipeGesture"
             case UISwipeGestureRecognizer.Direction.right:
-                print("right")
+                label1.text = "right swipeGesture"
             default:
                 break
             }
@@ -50,9 +52,9 @@ class item1: UIViewController {
         if let swipe = gesture as? UISwipeGestureRecognizer {
             switch swipe.direction {
             case UISwipeGestureRecognizer.Direction.left:
-                print("Multi left")
+                label1.text = "Multi left swipeGesture"
             case UISwipeGestureRecognizer.Direction.right:
-                print("Multi right")
+                label1.text = "Multi right swipeGesture"
             default:
                 break
             }
