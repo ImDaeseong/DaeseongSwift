@@ -8,8 +8,16 @@ class itemUITableViewController : UITableViewController {
     
     var mainVC: ViewController? = nil
     
+    let cellspaceHeight : CGFloat = 50
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        navigationController?.navigationBar.topItem?.title = "title"
+        navigationController?.navigationBar.tintColor = UIColor.gray
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.red]
+        
         
         tableview1.delegate = self
         
@@ -36,6 +44,11 @@ class itemUITableViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) ->
         String? {
             return "item 선택하세요"
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return cellspaceHeight
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
