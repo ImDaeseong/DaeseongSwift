@@ -11,6 +11,9 @@ class item3: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         tableview1.delegate = self
         tableview1.dataSource = self
+        
+        tableview1.separatorStyle = .none
+        tableview1.backgroundColor = UIColor(displayP3Red: 100/255, green: 100/255, blue: 100/255, alpha: 1.0)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

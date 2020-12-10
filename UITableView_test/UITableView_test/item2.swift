@@ -6,11 +6,38 @@ class item2: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let itemArray = ["사과","라면","과자","바나나"]
     
+    let cellspaceHeight : CGFloat = 50
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableview1.delegate = self
         tableview1.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let header = UIView()
+        header.backgroundColor = UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+        
+        let title = UILabel()
+        title.textColor = UIColor.white
+        title.font = UIFont.systemFont(ofSize: 15)
+        title.text = "title"
+        
+        header.addSubview(title)
+        
+        title.translatesAutoresizingMaskIntoConstraints = false
+        title.leadingAnchor.constraint(equalTo: header.layoutMarginsGuide.leadingAnchor, constant: 10).isActive = true
+        title.leadingAnchor.constraint(equalTo: header.layoutMarginsGuide.trailingAnchor, constant: 10).isActive = true
+        title.centerYAnchor.constraint(equalTo: header.layoutMarginsGuide.centerYAnchor).isActive = true
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return cellspaceHeight
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

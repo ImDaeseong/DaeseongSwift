@@ -11,6 +11,8 @@ class item5: UIViewController, UITableViewDelegate, UITableViewDataSource, itemc
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableview1.separatorStyle = .none
+        
         itemArray = [
             itemcell2(imgview1: "img1", label1: "img1", label2: "img1"),
             itemcell2(imgview1: "img2", label1: "img2", label2: "img2"),
