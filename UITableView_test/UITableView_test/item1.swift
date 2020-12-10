@@ -6,6 +6,8 @@ class item1: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let itemArray = ["사과","라면","과자","바나나"]
     
+    let cellspaceHeight : CGFloat = 50
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,21 +19,49 @@ class item1: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        //row count
         return itemArray.count
+    }
+    
+    //상단 공간
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return cellspaceHeight
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let head = UIView()
+        head.backgroundColor = UIColor.clear
+        return head
+    }
+    
+    //하단 공간
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        
+        return cellspaceHeight
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        
+        let head = UIView()
+        head.backgroundColor = UIColor.clear
+        return head
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell : UITableViewCell = tableview1.dequeueReusableCell(withIdentifier: "itemcell", for: indexPath) as UITableViewCell
-        
+       
         cell.textLabel?.text = itemArray[indexPath.row]
-        cell.textLabel?.textColor = UIColor.orange
+        cell.textLabel?.textColor = UIColor.gray
         
+        cell.layer.masksToBounds = true
         cell.backgroundColor = UIColor.white
         cell.layer.borderColor = UIColor.orange.cgColor
         cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 10
-        cell.clipsToBounds = true
         
         return cell
     }
@@ -45,8 +75,8 @@ class item1: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.selectCellInfo()
         }
         alart.addAction(ok)
-        self.present(alart, animated: false)
         
+        self.present(alart, animated: false)
     }
     
     func selectCellInfo(){

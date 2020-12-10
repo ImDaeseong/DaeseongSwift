@@ -20,6 +20,7 @@ class item5: UIViewController, UITableViewDelegate, UITableViewDataSource, itemc
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return itemArray.count
     }
     
@@ -39,23 +40,28 @@ class item5: UIViewController, UITableViewDelegate, UITableViewDataSource, itemc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        guard let selectitem = itemArray[indexPath.row] as? itemcell2 else  { return }
+            
+        print("selectitem.imgview1:" + selectitem.imgview1)
+        print("selectitem.label1:" + selectitem.label1)
+        print("selectitem.label2:" + selectitem.label2)
     }
     
     //row 높이 설정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        //return cellHeight
         
         let count = itemArray.count
     
         let Height = CGFloat(tableView.bounds.height / CGFloat(count))
     
         return Height
-        
-        //return cellHeight
     }
     
     func selectCell(item : itemcell2){
-        print(item.imgview1)
-        print(item.label1)
-        print(item.label2)
+        
+        print("itemcell2Delegate:" + item.label1)
+        print("itemcell2Delegate:" + item.label2)
     }
 }

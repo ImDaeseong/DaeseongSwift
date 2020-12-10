@@ -14,6 +14,7 @@ class item2: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return itemArray.count
     }
     
@@ -24,7 +25,13 @@ class item2: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = itemArray[indexPath.row]
         
         cell.detailTextLabel?.text = String(indexPath.row)
-        cell.detailTextLabel?.textColor = UIColor.orange
+        cell.detailTextLabel?.textColor = UIColor.gray
+        
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 2
+        cell.layer.borderWidth = 1
+        cell.layer.shadowOffset = CGSize(width: -1, height: 1)
+        cell.layer.borderColor = UIColor.orange.cgColor
        
         return cell
     }
@@ -34,6 +41,7 @@ class item2: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableview1.deselectRow(at: indexPath, animated: true)
         
         let row = indexPath.row
+        
         print(itemArray[row])
     }
 }

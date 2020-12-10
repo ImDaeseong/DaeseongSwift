@@ -34,6 +34,7 @@ class item3: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (UIAlertAction) in
         }
         alart.addAction(ok)
+        
         self.present(alart, animated: false)
     }
 }
