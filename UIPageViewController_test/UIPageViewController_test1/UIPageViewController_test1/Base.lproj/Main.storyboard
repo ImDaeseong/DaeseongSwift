@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aIc-Q4-Sb1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="IBO-OE-gnY">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="aIc-Q4-Sb1" customClass="ViewController" customModule="UIPageViewController_test1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LSK-y4-IXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="16"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="12W-HL-jrd">
+            <objects>
+                <viewController storyboardIdentifier="item1" id="bHI-Bk-ANA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kwZ-Nc-KYD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="item1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG1-f8-Tv6">
+                                <rect key="frame" x="187" y="437.5" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L8l-KW-xLw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pG1-f8-Tv6" firstAttribute="centerY" secondItem="kwZ-Nc-KYD" secondAttribute="centerY" id="RIP-JZ-Apm"/>
+                            <constraint firstItem="pG1-f8-Tv6" firstAttribute="centerX" secondItem="kwZ-Nc-KYD" secondAttribute="centerX" id="bAD-Mf-da9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6h-n4-Una" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="20"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sa1-Kl-VTv">
+            <objects>
+                <viewController storyboardIdentifier="item2" id="ND7-2F-X4D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7c2-yv-DCP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="item2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS3-Vh-ZSW">
+                                <rect key="frame" x="185.5" y="437.5" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PtJ-El-BRs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WS3-Vh-ZSW" firstAttribute="centerX" secondItem="7c2-yv-DCP" secondAttribute="centerX" id="JL1-t2-0on"/>
+                            <constraint firstItem="WS3-Vh-ZSW" firstAttribute="centerY" secondItem="7c2-yv-DCP" secondAttribute="centerY" id="M6S-GC-0qY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKe-Fx-e4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1227" y="22"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="boz-Rm-IWl">
+            <objects>
+                <viewController storyboardIdentifier="item3" id="dgl-c9-8Re" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jHw-dX-Anb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="item3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-Bn-8Ae">
+                                <rect key="frame" x="185.5" y="437.5" width="43.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Li-hn-Egp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IRa-Bn-8Ae" firstAttribute="centerX" secondItem="jHw-dX-Anb" secondAttribute="centerX" id="RtC-Rj-QPI"/>
+                            <constraint firstItem="IRa-Bn-8Ae" firstAttribute="centerY" secondItem="jHw-dX-Anb" secondAttribute="centerY" id="jVF-XT-cch"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1W-9l-PgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
