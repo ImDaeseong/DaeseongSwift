@@ -18,6 +18,8 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
         self.delegate = self
         self.dataSource = self
         
+        self.view.backgroundColor = UIColor.white
+        
         if let VC = itemArray.first {
             setViewControllers([VC], direction: .forward, animated: true, completion: nil)
         }

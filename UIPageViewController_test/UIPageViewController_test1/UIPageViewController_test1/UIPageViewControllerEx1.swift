@@ -18,11 +18,13 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
         self.delegate = self
         self.dataSource = self
         
+        self.view.backgroundColor = UIColor.white
+        
         if let VC = itemArray.first {
             setViewControllers([VC], direction: .forward, animated: true, completion: nil)
         }
         
-        UIPageControl.appearance().backgroundColor = UIColor.clear
+        //UIPageControl.appearance().backgroundColor = UIColor.clear
         UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.orange
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.white
     }
