@@ -68,6 +68,8 @@ class item1: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableview1.deselectRow(at: indexPath, animated: true)
+        
         let selectitem = itemArray[indexPath.row]
         let alart = UIAlertController(title: "선택 항목", message: selectitem, preferredStyle: .alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (UIAlertAction) in

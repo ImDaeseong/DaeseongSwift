@@ -41,4 +41,9 @@ class item6: UIViewController , UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableview1.deselectRow(at: indexPath, animated: true)
+    }
+    
 }

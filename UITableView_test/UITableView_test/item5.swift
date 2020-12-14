@@ -42,6 +42,8 @@ class item5: UIViewController, UITableViewDelegate, UITableViewDataSource, itemc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableview1.deselectRow(at: indexPath, animated: true)
+        
         guard let selectitem = itemArray[indexPath.row] as? itemcell2 else  { return }
             
         print("selectitem.imgview1:" + selectitem.imgview1)
