@@ -24,6 +24,8 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
             setViewControllers([VC], direction: .forward, animated: true, completion: nil)
         }
         
+        UIPageControl.appearance().numberOfPages = itemArray.count
+        
         //UIPageControl.appearance().backgroundColor = UIColor.clear
         UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.orange
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.white
@@ -111,6 +113,13 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
 
         return itemArray[nextIndex]
         
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        guard completed else { return }
+        
+        //print(completed)
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {

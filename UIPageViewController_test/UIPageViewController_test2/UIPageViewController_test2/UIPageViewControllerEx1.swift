@@ -24,7 +24,9 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
             setViewControllers([VC], direction: .forward, animated: true, completion: nil)
         }
         
-        UIPageControl.appearance().backgroundColor = UIColor.white
+        UIPageControl.appearance().numberOfPages = itemArray.count
+        
+        //UIPageControl.appearance().backgroundColor = UIColor.white
         UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.orange
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.white
     }
@@ -51,7 +53,6 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        /*
         guard var index = itemArray.index(of: viewController) else { return nil }
         
         index -= 1
@@ -59,9 +60,9 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
         guard index >= 0 else { return itemArray.last }
         
         return itemArray[index]
-        */
         
         
+        /*
         guard let index = itemArray.index(of: viewController) else {
             return nil
         }
@@ -77,12 +78,11 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
         }
 
         return itemArray[previousIndex]
-        
+        */
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        /*
         guard var index = itemArray.index(of: viewController) else { return nil }
         
         index += 1
@@ -90,10 +90,9 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
         guard index < itemArray.count else { return itemArray.first }
         
         return itemArray[index]
-        */
         
         
-       
+        /*
         guard let index = itemArray.index(of: viewController) else {
             return nil
         }
@@ -109,7 +108,14 @@ class UIPageViewControllerEx1: UIPageViewController, UIPageViewControllerDataSou
         }
 
         return itemArray[nextIndex]
+        */
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         
+        guard completed else { return }
+        
+        print(completed)
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
