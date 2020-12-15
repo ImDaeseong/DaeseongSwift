@@ -19,7 +19,6 @@ class ViewController: UICollectionViewController , UICollectionViewDelegateFlowL
         
         self.collectionView.backgroundColor = UIColor.white
         //self.collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -59,9 +58,15 @@ class ViewController: UICollectionViewController , UICollectionViewDelegateFlowL
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
+        //print("view.frame.width:\(view.frame.width)")
+        //print("view.frame.height:\(view.frame.height)")
+        //print("collectionView.frame.width:\(collectionView.frame.width)")
+        //print("collectionView.frame.height:\(collectionView.frame.height)")
+       
+        var height : CGFloat = ( collectionView.frame.height / 3)
+        
         //itme size
-        return CGSize(width: view.frame.width, height: 150)
-        //return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        return CGSize(width: collectionView.frame.width - 20, height: height - 20)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
