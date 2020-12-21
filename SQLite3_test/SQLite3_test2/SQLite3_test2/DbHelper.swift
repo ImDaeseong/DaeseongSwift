@@ -1,91 +1,52 @@
 
-import UIKit
+import Foundation
 import SQLite3
 
-class ViewController: UIViewController {
-
-    var db:OpaquePointer?
+class DbHelper {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var db: OpaquePointer? = nil
+    
+    init() {
         
-        if let delegate = UIApplication.shared.delegate as? AppDelegate {
-            db = delegate.db
-        }
+        self.db = openDatabase()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    func openDatabase() -> OpaquePointer? {
         
-        print("viewWillAppear")
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+        var db: OpaquePointer? = nil
         
-        print("viewWillDisappear")
-    }
-    
-    @IBAction func btn1_click(_ sender: Any) {
+        let fileMgr = FileManager.default
+        let docPath = fileMgr.urls(for: .documentDirectory, in: .userDomainMask).first
+        let dbPath = docPath!.appendingPathComponent("LottoDB.db").path
         
-        //총개수
-        //let nTotalcount = getLottoRowCount()
-        //print("nTotalcount:\(nTotalcount)")
-        
-        
-        /*
-        //선택 정보 조회
-        var aryLotto : [Lotto] = []
-        aryLotto = getData(rIndex: 1)
-        print("aryLotto:\(aryLotto)")
-        print("aryLotto[0].rIndex:\(aryLotto[0].rIndex)")
-        */
-        
-        
-        //삭제
-        //let bDelete = deleteLotto(rIndex: 825)
-        //print("bDelete:\(bDelete)")
-        
-        
-        //업데이트
-        //let bUpdate = updateLotto(Date: "2002.12.07", Part1: "10", Part2: "23", Part3: "29", Part4: "33", Part5: "37", Part6: "40", Bonus: "16", rIndex: 1)
-        //print("bUpdate:\(bUpdate)")
-        
-        //추가
-        //let bInsert = insertLotto(rIndex: 825, Date: "2020.12.12", Part1: "1", Part2: "2", Part3: "3", Part4: "4", Part5: "5", Part6: "6", Bonus: "7")
-        //print("bInsert:\(bInsert)")
-        
-        
-        /*
-        //전체 데이터 조회
-        var allLotto : [Lotto] = []
-        allLotto = getLotto()
-        for item in allLotto {
-            print("item.rIndex:\(item.rIndex) item.Date:\(item.Date) item.Bonus:\(item.Bonus)")
-        }
-        */
-        
-        
-        //부분별 가장 많은 수 조회
-        //let TopPart = getPartTop(nPart:6)
-        //print("TopPart:\(TopPart)")
-        
-      
-        //전체 가장 많은 수 60개 조회
-        var LottoTop : [LottoTop] = []
-        LottoTop.append(contentsOf: getLottoTop(nPart: 1))
-        LottoTop.append(contentsOf: getLottoTop(nPart: 2))
-        LottoTop.append(contentsOf: getLottoTop(nPart: 3))
-        LottoTop.append(contentsOf: getLottoTop(nPart: 4))
-        LottoTop.append(contentsOf: getLottoTop(nPart: 5))
-        LottoTop.append(contentsOf: getLottoTop(nPart: 6))
-        
-        var i : Int = 0
-        for item in LottoTop.sorted(by: { $0.nCount > $1.nCount }) {
-            i += 1
-            print("제일 많은순으로:\(i)  item.sPart:\(item.sPart) item.nCount:\(item.nCount)")
+        if fileMgr.fileExists(atPath: dbPath) == false {
+            
+            let dbSource = Bundle.main.path(forResource: "LottoDB", ofType: "db")
+            
+            do {
+            
+                try fileMgr.copyItem(atPath: dbSource!, toPath: dbPath)
+                
+            } catch _ {
+                
+                print("file copy error")
+            }
         }
         
+        if sqlite3_open(dbPath, &db) != SQLITE_OK {
+            
+            //print("dbPath failed")
+            db = nil
+        }
+        
+        return db
+    }
+    
+    func closeDatabase() {
+        
+        if self.db != nil {
+            sqlite3_close(self.db)
+        }
     }
     
     //많은순 60개 조회
@@ -93,7 +54,7 @@ class ViewController: UIViewController {
         
         var aryLottoTop : [LottoTop] = []
         
-        if db != nil {
+        if self.db != nil {
             
             var queryStatement : OpaquePointer? = nil
             var query : String = ""
@@ -141,7 +102,7 @@ class ViewController: UIViewController {
         
         var lottoPart : String = ""
         
-        if db != nil {
+        if self.db != nil {
             
             var queryStatement : OpaquePointer? = nil
             var query : String = ""
@@ -189,7 +150,7 @@ class ViewController: UIViewController {
         
         var bInsert : Bool = false
         
-        if db != nil {
+        if self.db != nil {
             
             var queryStatement : OpaquePointer? = nil
             let query = "Insert into Lotto(rIndex, Date, Part1, Part2, Part3, Part4, Part5, Part6, Bonus) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);"
@@ -223,7 +184,7 @@ class ViewController: UIViewController {
         
         var nTotalcount : Int = 0
         
-        if db != nil {
+        if self.db != nil {
             
             var queryStatement : OpaquePointer? = nil
             let query = "Select count(*) FROM Lotto"
@@ -246,7 +207,7 @@ class ViewController: UIViewController {
         
         var bUpdate : Bool = false
         
-        if db != nil {
+        if self.db != nil {
             
             var queryStatement : OpaquePointer? = nil
             let query = "UPDATE Lotto SET Date = ?, Part1 = ?, Part2 = ?, Part3 = ?, Part4 = ?, Part5 = ?, Part6 = ?, Bonus = ? WHERE rIndex = ?"
@@ -280,7 +241,7 @@ class ViewController: UIViewController {
         
         var bDelete : Bool = false
         
-        if db != nil {
+        if self.db != nil {
             
             var queryStatement : OpaquePointer? = nil
             let query = "Delete FROM Lotto where rIndex = \(rIndex)"
@@ -304,7 +265,7 @@ class ViewController: UIViewController {
         
         var aryLotto : [Lotto] = []
         
-        if db != nil {
+        if self.db != nil {
             
             var queryStatement : OpaquePointer? = nil
             let query = "Select * FROM Lotto where rIndex = \(rIndex)"
@@ -339,7 +300,7 @@ class ViewController: UIViewController {
         
         var aryLotto : [Lotto] = []
         
-        if db != nil {
+        if self.db != nil {
             
             var queryStatement : OpaquePointer? = nil
             let query = "Select * FROM Lotto ORDER BY rIndex DESC"
@@ -368,6 +329,4 @@ class ViewController: UIViewController {
         
         return aryLotto
     }
-    
 }
-

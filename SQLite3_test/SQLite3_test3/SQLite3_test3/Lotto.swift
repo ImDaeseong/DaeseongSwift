@@ -25,3 +25,4 @@ struct Lotto {
         self.Bonus = Bonus
     }
 }
+

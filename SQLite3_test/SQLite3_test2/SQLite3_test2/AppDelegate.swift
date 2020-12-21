@@ -1,54 +1,14 @@
+
 import UIKit
-import SQLite3
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    var window: UIWindow?
-    var db: OpaquePointer? = nil
 
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        copyLotto()
-        
+        // Override point for customization after application launch.
         return true
-    }
-    
-    func applicationWillTerminate(_ application: UIApplication) {
-        
-        print("applicationWillTerminate")
-        
-        if db != nil{
-            sqlite3_close(db)
-        }
-    }
-    
-    func copyLotto(){
-        
-        let fileMgr = FileManager.default
-        let docPath = fileMgr.urls(for: .documentDirectory, in: .userDomainMask).first
-        let dbPath = docPath!.appendingPathComponent("LottoDB.db").path
-        
-        if fileMgr.fileExists(atPath: dbPath) == false {
-            
-            let dbSource = Bundle.main.path(forResource: "LottoDB", ofType: "db")
-            
-            do {
-            
-                try fileMgr.copyItem(atPath: dbSource!, toPath: dbPath)
-                
-            } catch _ {
-                
-                print("file copy error")
-            }
-        }
-        
-        if sqlite3_open(dbPath, &db) == SQLITE_OK {
-            //print("dbPath:\(dbPath)")
-        } else {
-            //print("dbPath failed")
-            db = nil
-        }
     }
 
     // MARK: UISceneSession Lifecycle
