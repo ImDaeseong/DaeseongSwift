@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,61 +11,62 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIView_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="UIView_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ObN-n0-uLU" userLabel="view1" customClass="UIViewEx1" customModule="UIView_test" customModuleProvider="target">
-                                <rect key="frame" x="50" y="70" width="275" height="50"/>
+                                <rect key="frame" x="50" y="50" width="275" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FVx-z4-lcP"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8KL-jy-vkz" userLabel="view2" customClass="UIViewEx2" customModule="UIView_test" customModuleProvider="target">
-                                <rect key="frame" x="50" y="140" width="275" height="50"/>
+                                <rect key="frame" x="50" y="120" width="275" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="wAa-Iz-eS8"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyb-zd-j5c" userLabel="view3" customClass="UIViewEx3" customModule="UIView_test" customModuleProvider="target">
-                                <rect key="frame" x="50" y="210" width="275" height="50"/>
+                                <rect key="frame" x="50" y="190" width="275" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="R3P-kN-Dfl"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccj-8k-rrL" userLabel="view4" customClass="UIViewEx4" customModule="UIView_test" customModuleProvider="target">
-                                <rect key="frame" x="50" y="280" width="275" height="50"/>
+                                <rect key="frame" x="50" y="260" width="275" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1Sn-la-FpY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h71-bb-gfb" userLabel="view5" customClass="UIViewEx5" customModule="UIView_test" customModuleProvider="target">
-                                <rect key="frame" x="50" y="350" width="275" height="50"/>
+                                <rect key="frame" x="50" y="330" width="275" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="WxD-gm-LBy"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lF-kr-25r" userLabel="view6" customClass="UIViewEx6" customModule="UIView_test" customModuleProvider="target">
-                                <rect key="frame" x="50" y="420" width="275" height="50"/>
+                                <rect key="frame" x="50" y="400" width="275" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="wUq-Ry-YEI"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I21-sa-5XP" userLabel="view7" customClass="UIViewEx7" customModule="UIView_test" customModuleProvider="target">
-                                <rect key="frame" x="50" y="490" width="275" height="50"/>
+                                <rect key="frame" x="50" y="470" width="275" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="huN-KM-ZMj"/>
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccj-8k-rrL" secondAttribute="trailing" constant="50" id="0Ax-Lk-yce"/>
@@ -91,7 +91,6 @@
                             <constraint firstItem="ccj-8k-rrL" firstAttribute="top" secondItem="pyb-zd-j5c" secondAttribute="bottom" constant="20" id="uKh-AW-iEY"/>
                             <constraint firstItem="I21-sa-5XP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="yTL-Gz-5xi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="view7" destination="I21-sa-5XP" id="uEB-zM-lmQ"/>
@@ -104,12 +103,12 @@
         <!--Item1 View Controller-->
         <scene sceneID="NhQ-uF-4iW">
             <objects>
-                <viewController id="wPz-aK-wJ6" customClass="item1ViewController" customModule="UIView_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="item1ViewController" id="wPz-aK-wJ6" customClass="item1ViewController" customModule="UIView_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fg5-vE-ybt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Dik-en-oaJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYI-KL-VWz" userLabel="First Responder" sceneMemberID="firstResponder"/>

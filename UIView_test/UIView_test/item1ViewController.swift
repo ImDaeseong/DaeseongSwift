@@ -118,5 +118,26 @@ class item1ViewController: UIViewController {
         let Trailing7 = NSLayoutConstraint(item: self.view, attribute: .trailing, relatedBy: .equal, toItem: bottomunderlabel, attribute: .trailing, multiplier: 1, constant: 0)
         self.view.addSubview(bottomunderlabel)
         self.view.addConstraints([Top7, Leading7, Trailing7, hHeight7])
+        
+        
+        let tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(view1Tapped))
+        view1.addGestureRecognizer(tapGesture1)
+        view1.isUserInteractionEnabled = true
+        
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(view2Tapped))
+        view2.addGestureRecognizer(tapGesture2)
+        view2.isUserInteractionEnabled = true
+    }
+    
+    @objc func view1Tapped() {
+        
+        if let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController {
+            
+            UIApplication.shared.keyWindow?.rootViewController = VC
+        }
+    }
+    
+    @objc func view2Tapped() {
+        
     }
 }
