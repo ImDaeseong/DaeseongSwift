@@ -16,6 +16,9 @@
 		A1030D95251B40DA00DCBAEE /* UIViewEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030D94251B40DA00DCBAEE /* UIViewEx2.swift */; };
 		A1030D97251B422100DCBAEE /* UIViewEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030D96251B422100DCBAEE /* UIViewEx3.swift */; };
 		A1030D99251B4ABF00DCBAEE /* UIViewEx4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030D98251B4ABF00DCBAEE /* UIViewEx4.swift */; };
+		A10A247525948007000893B9 /* item2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A247425948007000893B9 /* item2ViewController.swift */; };
+		A10A247A259483AB000893B9 /* roundbackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A2479259483AB000893B9 /* roundbackground.swift */; };
+		A10A247D25949120000893B9 /* roundview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A247C25949120000893B9 /* roundview.swift */; };
 		A10F5B9A251C820000293A92 /* UIViewEx5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F5B99251C820000293A92 /* UIViewEx5.swift */; };
 		A1FFBF41252D412A005A7E1F /* UIViewEx6.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FFBF40252D412A005A7E1F /* UIViewEx6.swift */; };
 		A1FFBF43252D4EDE005A7E1F /* UIViewEx7.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FFBF42252D4EDE005A7E1F /* UIViewEx7.swift */; };
@@ -34,6 +37,9 @@
 		A1030D94251B40DA00DCBAEE /* UIViewEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx2.swift; sourceTree = "<group>"; };
 		A1030D96251B422100DCBAEE /* UIViewEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx3.swift; sourceTree = "<group>"; };
 		A1030D98251B4ABF00DCBAEE /* UIViewEx4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx4.swift; sourceTree = "<group>"; };
+		A10A247425948007000893B9 /* item2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item2ViewController.swift; sourceTree = "<group>"; };
+		A10A2479259483AB000893B9 /* roundbackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundbackground.swift; sourceTree = "<group>"; };
+		A10A247C25949120000893B9 /* roundview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundview.swift; sourceTree = "<group>"; };
 		A10F5B99251C820000293A92 /* UIViewEx5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx5.swift; sourceTree = "<group>"; };
 		A1FFBF40252D412A005A7E1F /* UIViewEx6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx6.swift; sourceTree = "<group>"; };
 		A1FFBF42252D4EDE005A7E1F /* UIViewEx7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx7.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 				A1030D89251B393500DCBAEE /* LaunchScreen.storyboard */,
 				A1030D8C251B393500DCBAEE /* Info.plist */,
 				A1FFF77E251EFDEF00446735 /* item1ViewController.swift */,
+				A10A247425948007000893B9 /* item2ViewController.swift */,
 				A1030D92251B395C00DCBAEE /* UIViewEx1.swift */,
 				A1030D94251B40DA00DCBAEE /* UIViewEx2.swift */,
 				A1030D96251B422100DCBAEE /* UIViewEx3.swift */,
@@ -84,6 +91,8 @@
 				A10F5B99251C820000293A92 /* UIViewEx5.swift */,
 				A1FFBF40252D412A005A7E1F /* UIViewEx6.swift */,
 				A1FFBF42252D4EDE005A7E1F /* UIViewEx7.swift */,
+				A10A2479259483AB000893B9 /* roundbackground.swift */,
+				A10A247C25949120000893B9 /* roundview.swift */,
 			);
 			path = UIView_test;
 			sourceTree = "<group>";
@@ -161,10 +170,13 @@
 			files = (
 				A1030D99251B4ABF00DCBAEE /* UIViewEx4.swift in Sources */,
 				A10F5B9A251C820000293A92 /* UIViewEx5.swift in Sources */,
+				A10A247525948007000893B9 /* item2ViewController.swift in Sources */,
 				A1030D97251B422100DCBAEE /* UIViewEx3.swift in Sources */,
+				A10A247A259483AB000893B9 /* roundbackground.swift in Sources */,
 				A1FFF77F251EFDEF00446735 /* item1ViewController.swift in Sources */,
 				A1030D83251B393400DCBAEE /* ViewController.swift in Sources */,
 				A1030D93251B395C00DCBAEE /* UIViewEx1.swift in Sources */,
+				A10A247D25949120000893B9 /* roundview.swift in Sources */,
 				A1030D95251B40DA00DCBAEE /* UIViewEx2.swift in Sources */,
 				A1FFBF43252D4EDE005A7E1F /* UIViewEx7.swift in Sources */,
 				A1030D81251B393400DCBAEE /* AppDelegate.swift in Sources */,
@@ -317,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UIView_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UIView_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

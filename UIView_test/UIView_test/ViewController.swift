@@ -14,6 +14,5 @@ class ViewController: UIViewController {
     @objc func callFlip(){
         view7.flip()
     }
-    
 }
 

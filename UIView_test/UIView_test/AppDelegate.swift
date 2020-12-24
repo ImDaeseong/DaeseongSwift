@@ -6,12 +6,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let viewController1 = item1ViewController() as UIViewController
+        let viewController = item1ViewController() as UIViewController
         window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = viewController1
+        window!.rootViewController = viewController
         window!.makeKeyAndVisible()
         
         return true

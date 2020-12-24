@@ -139,5 +139,9 @@ class item1ViewController: UIViewController {
     
     @objc func view2Tapped() {
         
+        if let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "item2ViewController") as? item2ViewController {
+            
+            UIApplication.shared.keyWindow?.rootViewController = VC
+        }
     }
 }
