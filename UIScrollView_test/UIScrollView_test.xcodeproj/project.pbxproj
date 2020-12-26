@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A108F2CC251345EC005C78CA /* item5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A108F2CB251345EC005C78CA /* item5.swift */; };
+		A1703BEF2597141000B9A2C4 /* item6.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1703BEE2597141000B9A2C4 /* item6.swift */; };
 		A1FD211C24F5DF340040BCED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD211B24F5DF340040BCED /* AppDelegate.swift */; };
 		A1FD211E24F5DF340040BCED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD211D24F5DF340040BCED /* ViewController.swift */; };
 		A1FD212124F5DF340040BCED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FD211F24F5DF340040BCED /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A108F2CB251345EC005C78CA /* item5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item5.swift; sourceTree = "<group>"; };
+		A1703BEE2597141000B9A2C4 /* item6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item6.swift; sourceTree = "<group>"; };
 		A1FD211824F5DF340040BCED /* UIScrollView_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIScrollView_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FD211B24F5DF340040BCED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1FD211D24F5DF340040BCED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				A1FD213124F5E7F90040BCED /* item3.swift */,
 				A1FD213324F5E8050040BCED /* item4.swift */,
 				A108F2CB251345EC005C78CA /* item5.swift */,
+				A1703BEE2597141000B9A2C4 /* item6.swift */,
 			);
 			path = UIScrollView_test;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				A1FD211E24F5DF340040BCED /* ViewController.swift in Sources */,
 				A1FD213424F5E8050040BCED /* item4.swift in Sources */,
 				A1FD212E24F5E7E10040BCED /* item1.swift in Sources */,
+				A1703BEF2597141000B9A2C4 /* item6.swift in Sources */,
 				A1FD211C24F5DF340040BCED /* AppDelegate.swift in Sources */,
 				A108F2CC251345EC005C78CA /* item5.swift in Sources */,
 				A1FD213024F5E7ED0040BCED /* item2.swift in Sources */,

@@ -6,30 +6,29 @@ class item5: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pagecontrol1: UIPageControl!
     
-    var imgs = ["img1.png", "img1.png", "img1.png", "img1.png", "img1.png" ]
+    var imgs = ["img2.png", "img2.png", "img2.png", "img2.png", "img2.png" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollview1.delegate = self
-        
         pagecontrol1.numberOfPages = imgs.count
         pagecontrol1.currentPage = 0
         
-        //print("width: \(self.scrollview1.frame.width)")
-        //print("height: \(self.scrollview1.frame.height)")
+        
+        scrollview1.delegate = self
+        scrollview1.isPagingEnabled = true
+        
+        scrollview1.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        scrollview1.contentSize = CGSize(width: view.frame.width * CGFloat(imgs.count), height: view.frame.height)
         
         for i in 0 ..< imgs.count{
+            
             let imgview = UIImageView()
             imgview.image = UIImage(named: imgs[i])
+            //imgview.contentMode = .scaleToFill
             imgview.contentMode = .scaleAspectFit
+            imgview.frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
             
-            let x = self.scrollview1.frame.width * CGFloat(i)
-            //print("locationX: \(x)")
-            
-            imgview.frame = CGRect(x: x, y: 0, width: self.scrollview1.frame.width, height: self.scrollview1.frame.height)
-            
-            scrollview1.contentSize.width = self.scrollview1.frame.width * CGFloat(1+i)
             scrollview1.addSubview(imgview)
         }
         
@@ -38,10 +37,7 @@ class item5: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        let current = round(scrollView.contentOffset.x / self.scrollview1.frame.width)
-        
-        //print(current)
-        
-        pagecontrol1.currentPage = Int(CGFloat(current))
+        let pageIndex = round(scrollView.contentOffset.x / self.view.frame.width)
+        pagecontrol1.currentPage = Int(pageIndex)
     }
 }
