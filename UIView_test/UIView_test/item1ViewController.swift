@@ -127,6 +127,10 @@ class item1ViewController: UIViewController {
         let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(view2Tapped))
         view2.addGestureRecognizer(tapGesture2)
         view2.isUserInteractionEnabled = true
+        
+        let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(view3Tapped))
+        bottomview.addGestureRecognizer(tapGesture3)
+        bottomview.isUserInteractionEnabled = true
     }
     
     @objc func view1Tapped() {
@@ -140,6 +144,14 @@ class item1ViewController: UIViewController {
     @objc func view2Tapped() {
         
         if let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "item2ViewController") as? item2ViewController {
+            
+            UIApplication.shared.keyWindow?.rootViewController = VC
+        }
+    }
+    
+    @objc func view3Tapped() {
+        
+        if let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "item3ViewController") as? item3ViewController {
             
             UIApplication.shared.keyWindow?.rootViewController = VC
         }
