@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         tabmenuview.delegate = self
         tabmenuview.dataSource = self
         
+        tabmenuview.isScrollEnabled = false
+        
         swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeGesture(_:)))
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeGesture(_:)))
@@ -71,6 +73,22 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController : UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+       
+        //현재탭
+        tabmenuview.reloadItems(at: [IndexPath(item: selectIndex, section: 0)])
+        
+        //선택탭
+        selectIndex = indexPath.row
+        tabmenuview.reloadItems(at: [IndexPath(item: selectIndex, section: 0)])
+        
+        SelecttabIndex(selectIndex: selectIndex)
+    }
+}
+
 extension ViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -85,11 +103,7 @@ extension ViewController: UICollectionViewDataSource{
         cell.namelabel.text = tabmenuName[indexPath.row]
         cell.namelabel.textColor = .orange
         
-        if #available(iOS 13.0, *) {
-            cell.lineview.backgroundColor = .systemIndigo
-        } else {
-            cell.lineview.backgroundColor = .clear
-        }
+        cell.lineview.backgroundColor = .clear
         
         if indexPath.item == selectIndex {
             cell.isSelected = true
@@ -134,7 +148,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = collectionView.bounds.width/4
+        let width = collectionView.bounds.width / 4.0
         let height = 50
         return CGSize(width: Int(width), height: height)
     }
