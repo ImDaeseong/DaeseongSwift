@@ -10,7 +10,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pickerview1.backgroundColor = UIColor.gray
+        pickerview1.backgroundColor = UIColor.white
         
         pickerview1.delegate = self
         pickerview1.dataSource = self
@@ -19,12 +19,33 @@ class ViewController: UIViewController {
 
 extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
     
-    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+    //선택된 텍스트 색상 변경
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        
+        var pickerLabel : UILabel? = (view as? UILabel)
+        if pickerLabel == nil {
+            
+            pickerLabel = UILabel()
+            pickerLabel?.font = UIFont.systemFont(ofSize: 14)
+            pickerLabel?.textAlignment = .center
+            pickerLabel?.adjustsFontSizeToFitWidth = true
+            pickerLabel?.minimumScaleFactor = 0.8
+        }
+        
+        var textColor : UIColor!
+        if pickerView.selectedRow(inComponent: component) == row {
+            textColor = UIColor.orange
+        } else {
+            textColor = UIColor.gray
+        }
         
         var attributeStr = NSAttributedString()
-        attributeStr = NSAttributedString(string: imgs[row], attributes: [NSAttributedString.Key.foregroundColor : UIColor.orange])
+        attributeStr = NSAttributedString(string: imgs[row], attributes: [NSAttributedString.Key.foregroundColor : textColor])
+        pickerLabel?.attributedText = attributeStr
         
-        return attributeStr
+        pickerLabel?.text = imgs[row]
+        
+        return pickerLabel!
     }
     
     //컴포넌트 수
@@ -55,6 +76,8 @@ extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
     //선택된 경우
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        print(imgs[row])
+        //print(imgs[row])
+        
+        pickerView.reloadAllComponents()
     }
 }
