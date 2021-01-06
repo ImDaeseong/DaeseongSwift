@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SideMenu_test3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeV-L0-qVw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ueB-Lb-9WN"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" image="menu" id="gm2-wL-EtU">
+                                        <connections>
+                                            <action selector="menu_click:" destination="BYZ-38-t0r" id="QYJ-Zx-vgZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aeV-L0-qVw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SnP-Ac-Cvz"/>
+                            <constraint firstItem="aeV-L0-qVw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k5A-bY-hFe"/>
+                            <constraint firstItem="aeV-L0-qVw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l5Z-Xd-yjP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BIg-8x-zua">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="SOR-y8-baR"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539" y="88"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="9WO-Qu-8a8">
+            <objects>
+                <viewController storyboardIdentifier="menuViewController" id="xJv-Ms-4vk" customClass="menuViewController" customModule="SideMenu_test3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SjC-eB-og9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ItI-PU-uKz" customClass="roundborder" customModule="SideMenu_test3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlZ-JB-3uk">
+                                        <rect key="frame" x="10" y="121.5" width="394" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="메뉴1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menu1_click:" destination="xJv-Ms-4vk" eventType="touchUpInside" id="WCU-xN-4ns"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpm-wz-nIg">
+                                        <rect key="frame" x="10" y="394" width="394" height="30"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="메뉴2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menu2_click:" destination="xJv-Ms-4vk" eventType="touchUpInside" id="XHk-Eg-HjL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rP-bS-BuT">
+                                        <rect key="frame" x="10" y="666.5" width="394" height="30"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="메뉴3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menu3_click:" destination="xJv-Ms-4vk" eventType="touchUpInside" id="c41-ve-hlP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3rP-bS-BuT" secondAttribute="trailing" constant="10" id="7iW-1q-Oe9"/>
+                                    <constraint firstItem="3rP-bS-BuT" firstAttribute="leading" secondItem="ItI-PU-uKz" secondAttribute="leading" constant="10" id="8Dj-za-63R"/>
+                                    <constraint firstItem="3rP-bS-BuT" firstAttribute="centerY" secondItem="ItI-PU-uKz" secondAttribute="centerY" multiplier="5/3" id="FrH-Bx-eDm"/>
+                                    <constraint firstAttribute="trailing" secondItem="tpm-wz-nIg" secondAttribute="trailing" constant="10" id="SEc-p5-7yk"/>
+                                    <constraint firstItem="rlZ-JB-3uk" firstAttribute="leading" secondItem="ItI-PU-uKz" secondAttribute="leading" constant="10" id="dUx-gI-hb9"/>
+                                    <constraint firstItem="rlZ-JB-3uk" firstAttribute="centerY" secondItem="ItI-PU-uKz" secondAttribute="centerY" multiplier="1/3" id="lJz-Xn-sCU"/>
+                                    <constraint firstItem="tpm-wz-nIg" firstAttribute="leading" secondItem="ItI-PU-uKz" secondAttribute="leading" constant="10" id="rbE-qQ-e11"/>
+                                    <constraint firstItem="tpm-wz-nIg" firstAttribute="centerY" secondItem="ItI-PU-uKz" secondAttribute="centerY" id="sWH-PY-d1e"/>
+                                    <constraint firstAttribute="trailing" secondItem="rlZ-JB-3uk" secondAttribute="trailing" constant="10" id="taq-XJ-Jfh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eJH-pu-d56"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eJH-pu-d56" firstAttribute="bottom" secondItem="ItI-PU-uKz" secondAttribute="bottom" id="83U-re-NrW"/>
+                            <constraint firstItem="ItI-PU-uKz" firstAttribute="leading" secondItem="eJH-pu-d56" secondAttribute="leading" id="Si0-qD-jCt"/>
+                            <constraint firstItem="eJH-pu-d56" firstAttribute="trailing" secondItem="ItI-PU-uKz" secondAttribute="trailing" id="bkd-IW-7aU"/>
+                            <constraint firstItem="ItI-PU-uKz" firstAttribute="top" secondItem="eJH-pu-d56" secondAttribute="top" id="qEo-rD-bl8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Psb-fV-iZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1178" y="88"/>
+        </scene>
+        <!--Tab1 View Controller-->
+        <scene sceneID="STh-wh-bRH">
+            <objects>
+                <viewController storyboardIdentifier="tab1ViewController" id="Hni-FQ-ecP" customClass="tab1ViewController" customModule="SideMenu_test3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jcq-3b-EyH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLB-0y-dmB">
+                                <rect key="frame" x="341" y="54" width="63" height="63"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="2"/>
+                                <connections>
+                                    <segue destination="42F-9S-80z" kind="unwind" unwindAction="unwindToVC:" id="icl-DE-EnS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hJd-Nl-LUk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uLB-0y-dmB" firstAttribute="top" secondItem="hJd-Nl-LUk" secondAttribute="top" constant="10" id="8Pm-BT-3qR"/>
+                            <constraint firstItem="hJd-Nl-LUk" firstAttribute="trailing" secondItem="uLB-0y-dmB" secondAttribute="trailing" constant="10" id="G1X-rH-K9r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZw-Qx-ZWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="42F-9S-80z" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="88"/>
+        </scene>
+        <!--Tab2 View Controller-->
+        <scene sceneID="OPV-MJ-5yf">
+            <objects>
+                <viewController storyboardIdentifier="tab2ViewController" id="oqa-2s-p2L" customClass="tab2ViewController" customModule="SideMenu_test3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KLL-e7-eUb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKS-HW-Qet">
+                                <rect key="frame" x="341" y="54" width="63" height="63"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="2"/>
+                                <connections>
+                                    <segue destination="NDM-wP-tEI" kind="unwind" unwindAction="unwindToVC:" id="LAo-XP-ZRL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hR4-b0-ASE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hR4-b0-ASE" firstAttribute="trailing" secondItem="xKS-HW-Qet" secondAttribute="trailing" constant="10" id="J6z-1t-jW4"/>
+                            <constraint firstItem="xKS-HW-Qet" firstAttribute="top" secondItem="hR4-b0-ASE" secondAttribute="top" constant="10" id="JDQ-mU-oN3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cpr-1l-z06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NDM-wP-tEI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2578" y="88"/>
+        </scene>
+        <!--Tab3 View Controller-->
+        <scene sceneID="Viq-7R-Ff4">
+            <objects>
+                <viewController storyboardIdentifier="tab3ViewController" id="1Xy-UC-nd3" customClass="tab3ViewController" customModule="SideMenu_test3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OOa-GU-rMC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQu-XP-o6L">
+                                <rect key="frame" x="341" y="54" width="63" height="63"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="2"/>
+                                <connections>
+                                    <segue destination="6DY-WS-XMw" kind="unwind" unwindAction="unwindToVC:" id="Yfb-UY-bU1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jYC-vT-8qW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GQu-XP-o6L" firstAttribute="top" secondItem="jYC-vT-8qW" secondAttribute="top" constant="10" id="6Fy-bU-EbX"/>
+                            <constraint firstItem="jYC-vT-8qW" firstAttribute="trailing" secondItem="GQu-XP-o6L" secondAttribute="trailing" constant="10" id="wGK-ch-UXs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2G-sU-Ybk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6DY-WS-XMw" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3233" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2" width="63" height="63"/>
+        <image name="menu" width="18" height="14"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
