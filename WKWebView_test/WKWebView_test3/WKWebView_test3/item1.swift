@@ -1,7 +1,7 @@
 import UIKit
 import WebKit
 
-class item1: UIViewController, WKUIDelegate, WKNavigationDelegate {
+class item1: UIViewController {
     
     @IBOutlet weak var webview1: WKWebView!
     
@@ -10,8 +10,9 @@ class item1: UIViewController, WKUIDelegate, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webview1.uiDelegate = self
-        webview1.navigationDelegate = self
+        webview1.uiDelegate = self //WKUIDelegate
+        webview1.navigationDelegate = self //WKNavigationDelegate
+        webview1.allowsBackForwardNavigationGestures = true//webview 앞으로가기, 뒤로가기 제스처 사용 가능
         webview1.loadHTMLString(htmlString, baseURL: nil)
     }
     
@@ -22,8 +23,38 @@ class item1: UIViewController, WKUIDelegate, WKNavigationDelegate {
             webview1 = nil
         }
     }
+}
+
+extension item1 : WKNavigationDelegate{
     
-    //------------------------WKUIDelegate--------------------------//
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        print("페이지 로드 시작")
+    }
+    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        print("didcommit")
+    }
+    
+    func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+        print("webViewWebContentProcessDidTerminate")
+    }
+    
+    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        print("didReceiveServerRedirectForProvisionalNavigation")
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        print("실패")
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("완료")
+        print(webView.title!)
+    }
+    
+}
+    
+extension item1 : WKUIDelegate {
     
     func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
         print("confirm")
@@ -45,38 +76,4 @@ class item1: UIViewController, WKUIDelegate, WKNavigationDelegate {
     func webViewDidClose(_ webView: WKWebView) {
         print("webview close")
     }
-    
-    //------------------------WKUIDelegate--------------------------//
-    
-    
-    
-    //------------------------WKUIDelegate--------------------------//
-    
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        print("didcommit")
-    }
-    
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        print("페이지 로드 시작")
-    }
-    
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        print("실패")
-    }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("완료")
-        print(webView.title!)
-    }
-    
-    func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
-        print("webViewWebContentProcessDidTerminate")
-    }
-    
-    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
-        print("didReceiveServerRedirectForProvisionalNavigation")
-    }
-    
-    //------------------------WKUIDelegate--------------------------//
-    
 }
