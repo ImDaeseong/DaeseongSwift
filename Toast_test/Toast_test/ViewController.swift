@@ -65,5 +65,9 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func btn3_click(_ sender: UIButton) {
+        
+        ToastEx2.shared.show(sMessage: "toast test", VC: self)
+    }
 }
 
