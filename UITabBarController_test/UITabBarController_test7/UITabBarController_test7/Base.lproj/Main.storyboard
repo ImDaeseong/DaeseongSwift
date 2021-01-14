@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="ViewController" customModule="UITabBarController_test7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWo-yH-uQ7" userLabel="btn1">
+                                <rect key="frame" x="10" y="134.5" width="394" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jlL-Ua-hqV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gV-75-yeO" userLabel="btn2">
+                                <rect key="frame" x="10" y="433" width="394" height="30"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn2_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="da6-lh-WY9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJl-sR-cAp" userLabel="btn3">
+                                <rect key="frame" x="10" y="731.5" width="394" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn3_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2GO-jr-goH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yJl-sR-cAp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="5/3" id="36g-uv-14B"/>
+                            <constraint firstItem="cWo-yH-uQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8OE-9z-78y"/>
+                            <constraint firstItem="cWo-yH-uQ7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1/3" id="EPI-GZ-QOA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cWo-yH-uQ7" secondAttribute="trailing" constant="10" id="I7N-F1-Sg0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yJl-sR-cAp" secondAttribute="trailing" constant="10" id="KYo-tH-otv"/>
+                            <constraint firstItem="4gV-75-yeO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ozh-6a-T1C"/>
+                            <constraint firstItem="4gV-75-yeO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bCl-YL-vt2"/>
+                            <constraint firstItem="yJl-sR-cAp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lBb-Os-PeB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4gV-75-yeO" secondAttribute="trailing" constant="10" id="qtP-Yo-sIE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268" y="94"/>
+        </scene>
+        <!--Item1-->
+        <scene sceneID="WXP-lY-DPZ">
+            <objects>
+                <viewController storyboardIdentifier="Item1" id="HOJ-wg-VzG" customClass="Item1" customModule="UITabBarController_test7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K1Z-9W-QaI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-OC-CcE">
+                                <rect key="frame" x="10" y="433" width="394" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn_close:" destination="HOJ-wg-VzG" eventType="touchUpInside" id="xji-bd-B8q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xmc-ZJ-ofh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tUJ-OC-CcE" firstAttribute="leading" secondItem="Xmc-ZJ-ofh" secondAttribute="leading" constant="10" id="D3r-Ny-t6J"/>
+                            <constraint firstItem="tUJ-OC-CcE" firstAttribute="centerY" secondItem="K1Z-9W-QaI" secondAttribute="centerY" id="Ucd-Tn-J3a"/>
+                            <constraint firstItem="Xmc-ZJ-ofh" firstAttribute="trailing" secondItem="tUJ-OC-CcE" secondAttribute="trailing" constant="10" id="pgL-DR-efy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnS-wN-1fK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="94"/>
+        </scene>
+        <!--Item2-->
+        <scene sceneID="AwX-aH-hbF">
+            <objects>
+                <viewController storyboardIdentifier="Item2" id="pjV-38-frz" customClass="Item2" customModule="UITabBarController_test7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ExP-lf-SPb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXj-Kx-VQ5">
+                                <rect key="frame" x="10" y="433" width="394" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn_close:" destination="pjV-38-frz" eventType="touchUpInside" id="atR-mP-duG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0hW-vp-wiW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SXj-Kx-VQ5" firstAttribute="leading" secondItem="0hW-vp-wiW" secondAttribute="leading" constant="10" id="5Ex-z6-skj"/>
+                            <constraint firstItem="SXj-Kx-VQ5" firstAttribute="centerY" secondItem="ExP-lf-SPb" secondAttribute="centerY" id="a8L-Eo-AAH"/>
+                            <constraint firstItem="0hW-vp-wiW" firstAttribute="trailing" secondItem="SXj-Kx-VQ5" secondAttribute="trailing" constant="10" id="cqa-kD-a8j"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Fd-xa-YuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="89"/>
+        </scene>
+        <!--Item3-->
+        <scene sceneID="6yM-fQ-g3c">
+            <objects>
+                <viewController storyboardIdentifier="Item3" id="bdU-qQ-aVJ" customClass="Item3" customModule="UITabBarController_test7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hce-Ne-NAE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5y-8e-dgD" userLabel="btn1">
+                                <rect key="frame" x="10" y="433" width="394" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn_close:" destination="bdU-qQ-aVJ" eventType="touchUpInside" id="ul7-NQ-pS3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIo-7v-Oxe" userLabel="btn2">
+                                <rect key="frame" x="10" y="513" width="394" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn_click:" destination="bdU-qQ-aVJ" eventType="touchUpInside" id="EgR-9B-WVw"/>
+                                    <action selector="btn_click:" destination="0FT-4f-jLG" eventType="touchUpInside" id="e4e-5J-hQK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WbU-21-AfJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WbU-21-AfJ" firstAttribute="trailing" secondItem="v5y-8e-dgD" secondAttribute="trailing" constant="10" id="6pD-F1-h9Z"/>
+                            <constraint firstItem="xIo-7v-Oxe" firstAttribute="top" secondItem="v5y-8e-dgD" secondAttribute="bottom" constant="50" id="F7n-SQ-6nw"/>
+                            <constraint firstItem="v5y-8e-dgD" firstAttribute="leading" secondItem="WbU-21-AfJ" secondAttribute="leading" constant="10" id="NUA-4v-1PJ"/>
+                            <constraint firstItem="xIo-7v-Oxe" firstAttribute="trailing" secondItem="v5y-8e-dgD" secondAttribute="trailing" id="NXI-Hy-d6Y"/>
+                            <constraint firstItem="xIo-7v-Oxe" firstAttribute="leading" secondItem="v5y-8e-dgD" secondAttribute="leading" id="WN4-Wy-TEz"/>
+                            <constraint firstItem="v5y-8e-dgD" firstAttribute="centerY" secondItem="Hce-Ne-NAE" secondAttribute="centerY" id="YfD-wI-rLm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRe-Jv-qi6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0FT-4f-jLG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1669" y="93"/>
+        </scene>
+        <!--Item4-->
+        <scene sceneID="CGp-BD-n2c">
+            <objects>
+                <viewController storyboardIdentifier="Item4" id="8hB-Tl-Rqk" customClass="Item4" customModule="UITabBarController_test7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DPX-ho-grz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFF-pR-kJA">
+                                <rect key="frame" x="10" y="433" width="394" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn_close:" destination="8hB-Tl-Rqk" eventType="touchUpInside" id="u06-rs-sah"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xTU-Jd-W9P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VFF-pR-kJA" firstAttribute="leading" secondItem="xTU-Jd-W9P" secondAttribute="leading" constant="10" id="Oar-u2-Or1"/>
+                            <constraint firstItem="xTU-Jd-W9P" firstAttribute="trailing" secondItem="VFF-pR-kJA" secondAttribute="trailing" constant="10" id="azQ-XY-msa"/>
+                            <constraint firstItem="VFF-pR-kJA" firstAttribute="centerY" secondItem="DPX-ho-grz" secondAttribute="centerY" id="gjf-eA-oqz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLK-JS-Urt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
