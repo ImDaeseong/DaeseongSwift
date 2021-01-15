@@ -29,7 +29,6 @@ class UIPageViewControllerEx: UIPageViewController {
         
         //let pageControl = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewControllerEx.self])
         //pageControl.isHidden = true
-        
     }
     
     override init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [UIPageViewController.OptionsKey : Any]? = nil) {
@@ -40,6 +39,7 @@ class UIPageViewControllerEx: UIPageViewController {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }
     
+    //UIPageControl 숨기기 위해 필요
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         

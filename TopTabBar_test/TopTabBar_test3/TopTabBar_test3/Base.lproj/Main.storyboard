@@ -88,7 +88,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQN-wD-l4b" userLabel="contentview">
                                 <rect key="frame" x="0.0" y="150" width="414" height="712"/>
                                 <connections>
-                                    <segue destination="tXy-88-GyE" kind="embed" identifier="selectIndex" id="UBU-nL-EBa"/>
+                                    <segue destination="tXy-88-GyE" kind="embed" identifier="selectIndex" id="n84-sI-Nlh"/>
                                 </connections>
                             </containerView>
                         </subviews>

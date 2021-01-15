@@ -25,9 +25,21 @@ class UIPageViewControllerEx1: UIPageViewController {
             self.setViewControllers([VC], direction: .forward, animated: true, completion: nil)
         }
         
-        let pageControl = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewControllerEx1.self])
-        pageControl.isHidden = true
+        //let pageControl = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewControllerEx1.self])
+        //pageControl.isHidden = true
+    }
+    
+    //UIPageControl 숨기기 위해 필요
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
+        for view in self.view.subviews {
+            if view is UIScrollView {
+                view.frame = UIScreen.main.bounds
+            } else if view is UIPageControl {
+                view.isHidden = true
+            }
+        }
     }
     
     public func SelectPage(index: Int) {
