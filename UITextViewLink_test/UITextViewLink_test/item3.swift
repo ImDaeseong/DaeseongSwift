@@ -59,7 +59,7 @@ class item3: UIViewController {
         
         let sValue = et1.text!
         
-        var linkData = getUrl(sInput : data)
+        var linkData = getUrl(sInput : sValue)
         
         //textview 링크 설정
         let mutalbeattributedString = NSMutableAttributedString(string: sValue)
