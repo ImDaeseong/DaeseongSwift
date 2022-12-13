@@ -1,0 +1,16 @@
+PODS:
+  - MultilineTextField (1.0.0)
+
+DEPENDENCIES:
+  - MultilineTextField
+
+SPEC REPOS:
+  trunk:
+    - MultilineTextField
+
+SPEC CHECKSUMS:
+  MultilineTextField: bb965487257ce72f880d313074d419cac34024ff
+
+PODFILE CHECKSUM: fc984903cf9ad3381c5b53729831180a6e3805dc
+
+COCOAPODS: 1.10.0

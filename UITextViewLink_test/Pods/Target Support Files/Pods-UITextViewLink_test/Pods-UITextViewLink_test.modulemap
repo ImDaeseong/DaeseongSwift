@@ -1,0 +1,6 @@
+framework module Pods_UITextViewLink_test {
+  umbrella header "Pods-UITextViewLink_test-umbrella.h"
+
+  export *
+  module * { export * }
+}
