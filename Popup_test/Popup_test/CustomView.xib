@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="Popup_test" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m30-U2-ztV" userLabel="btn1">
+                    <rect key="frame" x="0.0" y="0.0" width="76" height="35"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="button1_Click:" destination="-1" eventType="touchUpInside" id="Bql-kl-qbl"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9b-cc-jLm" userLabel="line">
+                    <rect key="frame" x="0.0" y="35" width="76" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="6bQ-Ib-YEF"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImT-2Y-nQB" userLabel="btn2">
+                    <rect key="frame" x="0.0" y="36" width="76" height="35"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="button2_Click:" destination="-1" eventType="touchUpInside" id="e9J-1N-X6x"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="m30-U2-ztV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0H6-1T-gFl"/>
+                <constraint firstAttribute="trailing" secondItem="C9b-cc-jLm" secondAttribute="trailing" id="4hS-ih-eOd"/>
+                <constraint firstAttribute="bottom" secondItem="ImT-2Y-nQB" secondAttribute="bottom" id="GBb-cu-3sP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="m30-U2-ztV" secondAttribute="trailing" id="PcS-S2-X2m"/>
+                <constraint firstItem="C9b-cc-jLm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SBR-pd-MII"/>
+                <constraint firstItem="ImT-2Y-nQB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="hde-9N-C5S"/>
+                <constraint firstItem="C9b-cc-jLm" firstAttribute="top" secondItem="m30-U2-ztV" secondAttribute="bottom" id="q2T-2J-e1Y"/>
+                <constraint firstItem="ImT-2Y-nQB" firstAttribute="top" secondItem="C9b-cc-jLm" secondAttribute="bottom" id="sUx-bF-uM7"/>
+                <constraint firstItem="m30-U2-ztV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tW9-BX-Jfk"/>
+                <constraint firstItem="ImT-2Y-nQB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="udH-vm-lzA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

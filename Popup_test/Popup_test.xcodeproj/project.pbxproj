@@ -13,6 +13,13 @@
 		A15EE0D42A32C3F4004F27AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15EE0D22A32C3F4004F27AE /* Main.storyboard */; };
 		A15EE0D62A32C3F6004F27AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15EE0D52A32C3F6004F27AE /* Assets.xcassets */; };
 		A15EE0D92A32C3F6004F27AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15EE0D72A32C3F6004F27AE /* LaunchScreen.storyboard */; };
+		A1E7915F2A399CB400DE7043 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7915E2A399CB400DE7043 /* ViewController1.swift */; };
+		A1E791612A399CC500DE7043 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E791602A399CC500DE7043 /* ViewController2.swift */; };
+		A1E791632A399ED000DE7043 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E791622A399ED000DE7043 /* PopupView.swift */; };
+		A1E791652A399F5500DE7043 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E791642A399F5500DE7043 /* RoundView.swift */; };
+		A1E791672A39A64F00DE7043 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E791662A39A64F00DE7043 /* ViewController3.swift */; };
+		A1E791692A39AC4100DE7043 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E791682A39AC4100DE7043 /* CustomView.xib */; };
+		A1E7916B2A39AC5E00DE7043 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7916A2A39AC5E00DE7043 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		A15EE0D52A32C3F6004F27AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A15EE0D82A32C3F6004F27AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A15EE0DA2A32C3F6004F27AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E7915E2A399CB400DE7043 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController1.swift; path = ../../../../.Trash/Popup_test/Popup_test/ViewController1.swift; sourceTree = "<group>"; };
+		A1E791602A399CC500DE7043 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		A1E791622A399ED000DE7043 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		A1E791642A399F5500DE7043 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		A1E791662A39A64F00DE7043 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		A1E791682A39AC4100DE7043 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		A1E7916A2A39AC5E00DE7043 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +73,17 @@
 				A15EE0CC2A32C3F4004F27AE /* AppDelegate.swift */,
 				A15EE0CE2A32C3F4004F27AE /* SceneDelegate.swift */,
 				A15EE0D02A32C3F4004F27AE /* ViewController.swift */,
+				A1E7915E2A399CB400DE7043 /* ViewController1.swift */,
+				A1E791602A399CC500DE7043 /* ViewController2.swift */,
+				A1E791662A39A64F00DE7043 /* ViewController3.swift */,
+				A1E791622A399ED000DE7043 /* PopupView.swift */,
+				A1E791642A399F5500DE7043 /* RoundView.swift */,
 				A15EE0D22A32C3F4004F27AE /* Main.storyboard */,
 				A15EE0D52A32C3F6004F27AE /* Assets.xcassets */,
 				A15EE0D72A32C3F6004F27AE /* LaunchScreen.storyboard */,
 				A15EE0DA2A32C3F6004F27AE /* Info.plist */,
+				A1E791682A39AC4100DE7043 /* CustomView.xib */,
+				A1E7916A2A39AC5E00DE7043 /* CustomView.swift */,
 			);
 			path = Popup_test;
 			sourceTree = "<group>";
@@ -126,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15EE0D92A32C3F6004F27AE /* LaunchScreen.storyboard in Resources */,
+				A1E791692A39AC4100DE7043 /* CustomView.xib in Resources */,
 				A15EE0D62A32C3F6004F27AE /* Assets.xcassets in Resources */,
 				A15EE0D42A32C3F4004F27AE /* Main.storyboard in Resources */,
 			);
@@ -138,7 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E791612A399CC500DE7043 /* ViewController2.swift in Sources */,
+				A1E791652A399F5500DE7043 /* RoundView.swift in Sources */,
+				A1E791672A39A64F00DE7043 /* ViewController3.swift in Sources */,
+				A1E7916B2A39AC5E00DE7043 /* CustomView.swift in Sources */,
+				A1E7915F2A399CB400DE7043 /* ViewController1.swift in Sources */,
 				A15EE0D12A32C3F4004F27AE /* ViewController.swift in Sources */,
+				A1E791632A399ED000DE7043 /* PopupView.swift in Sources */,
 				A15EE0CD2A32C3F4004F27AE /* AppDelegate.swift in Sources */,
 				A15EE0CF2A32C3F4004F27AE /* SceneDelegate.swift in Sources */,
 			);
