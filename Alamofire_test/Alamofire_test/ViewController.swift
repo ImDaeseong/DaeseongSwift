@@ -1,45 +1,17 @@
-
 import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var imageview1: UIImageView!
+    @IBOutlet var imageview1: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imageview1.image = UIImage(named: "img1")
-        self.imageview1.contentMode = .scaleAspectFill
-        
-        
-        downloadImg(sUrl: "https://cdn.pixabay.com/photo/2015/07/14/18/14/school-845196_960_720.png", completion: { data in
-            
-            if let image = UIImage(data: data) {
-                self.imageview1.image = image
-                self.imageview1.contentMode = .scaleAspectFill
-            }
-        })
+        loadImg()
     }
-    
-    func downloadImg(sUrl: String, completion: @escaping (Data) -> Void) {
-        
-        Alamofire.request(sUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: [:]).responseData { (res) in
-            switch res.result {
-            case .success(let data):
-                completion(data)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
-    
-    @IBAction func unwindToVC(_ unwindSegue: UIStoryboardSegue) {
-        let sourceViewController = unwindSegue.source
-        print(sourceViewController)
-    }
-    
-    @IBAction func btn1_click(_ sender: Any) {
+
+    @IBAction func button1_Click(_ sender: Any) {
         
         if #available(iOS 13.0, *) {
         
@@ -48,11 +20,16 @@ class ViewController: UIViewController {
             }
             self.present(vc, animated: true)
             
+        } else {
+            
+            let mainboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = mainboard.instantiateViewController(withIdentifier : "item1")
+            self.present(vc, animated: true)
+            
         }
-        
     }
     
-    @IBAction func btn2_click(_ sender: Any) {
+    @IBAction func button2_Click(_ sender: Any) {
         
         if #available(iOS 13.0, *) {
         
@@ -61,8 +38,65 @@ class ViewController: UIViewController {
             }
             self.present(vc, animated: true)
             
+        } else {
+            
+            let mainboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = mainboard.instantiateViewController(withIdentifier : "item2")
+            self.present(vc, animated: true)
+            
         }
     }
     
+    @IBAction func button3_Click(_ sender: Any) {
+        
+        if #available(iOS 13.0, *) {
+        
+            guard let vc = self.storyboard?.instantiateViewController(identifier: "item3") else {
+                return
+            }
+            self.present(vc, animated: true)
+            
+        } else {
+            
+            let mainboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = mainboard.instantiateViewController(withIdentifier : "item3")
+            self.present(vc, animated: true)
+            
+        }
+    }
+    
+    @IBAction func unwindToVC(_ unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
+    private func loadImg() {
+        
+        let Url = "https://cdn.pixabay.com/photo/2015/07/14/18/14/school-845196_960_720.png"
+        
+        downloadImg(sUrl: Url) { imgdata in
+            
+            guard let img1 = UIImage(data: imgdata) else {
+                print("error")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.imageview1.image = img1
+            }
+        }
+    }
+
+    
+    func downloadImg(sUrl: String, handler: @escaping (Data) -> Void) {
+        
+        AF.request(sUrl, method: .get, parameters: nil).validate().responseData { response in
+            switch response.result {
+            case .success(let data):
+                handler(data)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
 
