@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - SWXMLHash (7.0.2)
+
+DEPENDENCIES:
+  - Moya
+  - SWXMLHash
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  SWXMLHash: dd733a457e9c4fe93b1538654057aefae4acb382
+
+PODFILE CHECKSUM: c93e21423faff55f60a89630d9cf027558fb2114
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Moya_test/Pods-Moya_test-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
+${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework
